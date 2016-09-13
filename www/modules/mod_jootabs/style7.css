@@ -1,0 +1,89 @@
+.menu {
+	background: url(bg_tab7.gif) repeat-x #ececec; 
+	color:#666; 
+	border:1px solid #ccc; 
+	height:23px;
+	width:auto;
+}
+.menu ul {
+	margin:0px; 
+	padding:0px; 
+	list-style:none; 
+	text-align:center;}
+.menu li {
+	display:inline; 
+	line-height:23px; 
+	background:none; 
+	margin:0;
+	color:#333; 
+	text-decoration:none; 
+	padding:4px 5px 6px 5px; 
+	font-size:11px;
+	font-family:arial,verdana,tahoma;
+	cursor:default; }
+
+.menu li.tabactive {
+	border-top:1px solid #ccc;
+	border-left:1px solid #ccc; 
+	border-right:1px solid #ccc; 
+	font-weight:bold;  
+	position:relative; 
+	background:#D4D4D4;
+	font-size:11px;
+	color:#fff;
+	font-family:arial,verdana,tahoma;}
+
+
+
+#tabcontent1,#tabcontent2,#tabcontent3,#tabcontent4,#tabcontent5,#tabcontent6,#tabcontent7,#tabcontent8,#tabcontent9,#tabcontent10
+ {
+	background: url(bg_tabcontent7.gif) repeat-x #FCFCFC; 
+	color:#666;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	width: auto; 
+	text-align:center;
+	padding:6px 0px; 
+	font-size:12px; 
+}
+  
+#tabcontent1 div.moduletable,#tabcontent2 div.moduletable,#tabcontent3 div.moduletable,#tabcontent4 div.moduletable,#tabcontent5 div.moduletable,#tabcontent6 div.moduletable,#tabcontent7 div.moduletable,#tabcontent8 div.moduletable,#tabcontent9 div.moduletable,#tabcontent10 div.moduletable
+{
+color:#666;
+margin:5px;
+
+}
+
+#tabcontent1 div.moduletable td,
+#tabcontent1 div.moduletable p,
+#tabcontent1 div.moduletable div,
+#tabcontent2 div.moduletable td,
+#tabcontent2 div.moduletable p,
+#tabcontent2 div.moduletable div,
+#tabcontent3 div.moduletable td,
+#tabcontent3 div.moduletable p,
+#tabcontent3 div.moduletable div,
+#tabcontent4 div.moduletable td,
+#tabcontent4 div.moduletable p,
+#tabcontent4 div.moduletable div,
+#tabcontent5 div.moduletable td,
+#tabcontent5 div.moduletable p,
+#tabcontent5 div.moduletable div,
+#tabcontent6 div.moduletable td,
+#tabcontent6 div.moduletable p,
+#tabcontent6 div.moduletable div,
+#tabcontent7 div.moduletable td,
+#tabcontent7 div.moduletable p,
+#tabcontent7 div.moduletable div,
+#tabcontent8 div.moduletable td,
+#tabcontent8 div.moduletable p,
+#tabcontent8 div.moduletable div,
+#tabcontent9 div.moduletable td,
+#tabcontent9 div.moduletable p,
+#tabcontent9 div.moduletable div,
+#tabcontent10 div.moduletable td,
+#tabcontent10 div.moduletable p,
+#tabcontent10 div.moduletable div,
+{
+	color:#666;}

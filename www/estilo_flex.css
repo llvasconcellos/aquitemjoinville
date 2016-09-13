@@ -1,0 +1,23 @@
+/* CSS file */
+
+ScrollBar
+{
+	thumbOffset: 0;
+	trackColors: #FFFFFF, #FFFFFF;
+	fillAlphas: 1.0, 1.0, 1.0, 1.0;
+	fillColors: #E99C15, #E99C15, #E99C15, #E99C15;
+	borderColor: #000000;
+	cornerRadius: 20;
+	trackSkin: Embed(source="file:///C|/Documents and Settings/Leo/Desktop/aquitemjoinville/barra.png");
+	thumbUpSkin: Embed(source="file:///C|/Documents and Settings/Leo/Desktop/aquitemjoinville/bola.png");
+	thumbOverSkin: Embed(source="file:///C|/Documents and Settings/Leo/Desktop/aquitemjoinville/bola_over.png");
+	thumbDownSkin: Embed(source="file:///C|/Documents and Settings/Leo/Desktop/aquitemjoinville/bola_down.png");
+	downArrowUpSkin: Embed(source="file:///C|/Documents and Settings/Leo/Desktop/aquitemjoinville/empty.png");
+	downArrowOverSkin: Embed(source="file:///C|/Documents and Settings/Leo/Desktop/aquitemjoinville/empty.png");
+	downArrowDownSkin: Embed(source="file:///C|/Documents and Settings/Leo/Desktop/aquitemjoinville/empty.png");
+	downArrowDisabledSkin: Embed(source="file:///C|/Documents and Settings/Leo/Desktop/aquitemjoinville/empty.png");
+	upArrowUpSkin: Embed(source="file:///C|/Documents and Settings/Leo/Desktop/aquitemjoinville/empty.png");
+	upArrowOverSkin: Embed(source="file:///C|/Documents and Settings/Leo/Desktop/aquitemjoinville/empty.png");
+	upArrowDownSkin: Embed(source="file:///C|/Documents and Settings/Leo/Desktop/aquitemjoinville/empty.png");
+	upArrowDisabledSkin: Embed(source="file:///C|/Documents and Settings/Leo/Desktop/aquitemjoinville/empty.png");
+}

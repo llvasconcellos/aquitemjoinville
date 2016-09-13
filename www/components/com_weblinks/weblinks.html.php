@@ -140,12 +140,14 @@ class HTML_weblinks {
 
 				case 2:
 					// open in a popup window
-					$txt = "<a href=\"#\" onclick=\"javascript: window.open('". $link ."', '', 'toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=780,height=550'); return false\" class=\"$menuclass\">". $row->title ."</a>\n";
+					//$txt = "<a href=\"#\" onclick=\"javascript: window.open('". $link ."', '', 'toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=780,height=550'); return false\" class=\"$menuclass\">". $row->title ."</a>\n";
+					$txt = '<a href="'. $link .'" target="_blank" class="'. $menuclass .'">'. $row->title .'</a>';
 					break;
 
 				default:	// formerly case 2
 					// open in parent window
-					$txt = '<a href="'. $link .'" class="'. $menuclass .'">'. $row->title .'</a>';
+					//$txt = '<a href="'. $link .'" class="'. $menuclass .'">'. $row->title .'</a>';
+					$txt = '<a href="'. $link .'" target="_blank" class="'. $menuclass .'">'. $row->title .'</a>';
 					break;
 			}
 			?>

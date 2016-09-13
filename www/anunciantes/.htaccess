@@ -1,0 +1,4 @@
+AuthName "Anunciantes do Aqui tem Joinville"
+AuthUserFile "/home/aquitem/.htpasswds/public_html/anunciantes/passwd"
+AuthType Basic
+require valid-user

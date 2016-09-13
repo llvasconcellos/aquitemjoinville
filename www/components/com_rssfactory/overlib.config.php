@@ -1,0 +1,9 @@
+<?php
+	        define('OL_FGCOLOR','#e77918');
+	        define('OL_BGCOLOR','#000000');
+	        define('OL_TXCOLOR','#000000');
+	        define('OL_CAPCOLOR','#FFFFFF');
+	        define('OL_TXSIZE','1');
+	        define('OL_CAPSIZE','2');
+	        define('OL_BORDERSIZE','1');
+	        ?>

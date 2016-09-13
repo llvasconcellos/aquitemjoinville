@@ -1,0 +1,27 @@
+J! Tabs
+Module for Joomla!
+
+Created by: Ricardo Sousa and Andy Sikumbang
+
+Date of Creation: October 2007
+
+Copyright: AiediLabs and TemplatePlazza.com
+
+Released by: TemplatePlazza.com
+
+Based on: EASY TABS 1.2 Produced and Copyright by Koller Juergen www.kollermedia.at | www.austria-media.at
+
+About:
+
+TemplatePlazza.com -> The best professional and free Joomla! templates... Dont waste time... www.templateplazza.com
+
+
+AiediLabs -> Joomla Extensions for free its there 
+
+Ricardo Sousa -> AiediLabs owner
+Andy Sikumbang -> TemplatePlazza.com owner
+
+
+More information and Support at:
+
+TemplatePlazza.com

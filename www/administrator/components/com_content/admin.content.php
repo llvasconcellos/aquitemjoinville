@@ -386,13 +386,13 @@ function editContent( $uid=0, $sectionid=0, $option ) {
 	if ($uid) {
 		$sectionid = $row->sectionid;
 		if ($row->state < 0) {
-			mosRedirect( 'index2.php?option=com_content&sectionid='. $row->sectionid, 'Não pode editar um item arquivado' );
+			mosRedirect( 'index2.php?option=com_content&sectionid='. $row->sectionid, 'NÃ£o pode editar um item arquivado' );
 		}
 	}
 
 	// fail if checked out not by 'me'
 	if ($row->checked_out && $row->checked_out != $my->id) {
-		mosRedirect( 'index2.php?option=com_content', 'O módulo '. $row->title .' está, atualmente, sendo editado por outro administrador' );
+		mosRedirect( 'index2.php?option=com_content', 'O mÃ³dulo '. $row->title .' estÃ¡, atualmente, sendo editado por outro administrador' );
 	}
 
 	$selected_folders = NULL;
@@ -477,7 +477,7 @@ function editContent( $uid=0, $sectionid=0, $option ) {
 	. "\n ORDER BY s.ordering";
 	$database->setQuery( $query );
 	if ( $sectionid == 0 ) {
-		$sections[] = mosHTML::makeOption( '-1', 'Escolher Seção', 'id', 'title' );
+		$sections[] = mosHTML::makeOption( '-1', 'Escolher SeÃ§Ã£o', 'id', 'title' );
 		$sections = array_merge( $sections, $database->loadObjectList() );
 		$lists['sectionid'] = mosHTML::selectList( $sections, 'sectionid', 'class="inputbox" size="1" '. $javascript, 'id', 'title' );
 	} else {
@@ -781,7 +781,7 @@ function saveContent( $sectionid, $task ) {
 			break;
 
 		case 'apply':
-			$msg = 'Alterações realizadas com sucesso: '. $row->title;
+			$msg = 'AlteraÃ§Ãµes realizadas com sucesso: '. $row->title;
 			mosRedirect( 'index2.php?option=com_content&sectionid='. $redirect .'&task=edit&hidemainmenu=1&id='. $row->id, $msg );
 			break;
 
@@ -1091,7 +1091,7 @@ function moveSectionSave( &$cid, $sectionid, $option ) {
 	// clean any existing cache files
 	mosCache::cleanCache( 'com_content' );
 
-	$msg = $total. ' Artigo movido com sucesso para a Seção : '. $section .', e Categoria: '. $category;
+	$msg = $total. ' Artigo movido com sucesso para a SeÃ§Ã£o : '. $section .', e Categoria: '. $category;
 	mosRedirect( 'index2.php?option='. $option .'&sectionid='. $sectionid .'&mosmsg='. $msg );
 }
 
@@ -1223,7 +1223,7 @@ function copyItemSave( $cid, $sectionid, $option ) {
 	// clean any existing cache files
 	mosCache::cleanCache( 'com_content' );
 
-	$msg = $total. ' Item(s) copiado para outra seção com sucesso: '. $section .',e Categoria: '. $category;
+	$msg = $total. ' Item(s) copiado para outra seÃ§Ã£o com sucesso: '. $section .',e Categoria: '. $category;
 	mosRedirect( 'index2.php?option='. $option .'&sectionid='. $sectionid .'&mosmsg='. $msg );
 }
 
@@ -1318,7 +1318,7 @@ function menuLink( $redirect, $id ) {
 	// clean any existing cache files
 	mosCache::cleanCache( 'com_content' );
 
-	$msg = $link .' (Link - Item de Conteúdo) no menu: '. $menu .' criado com sucesso';
+	$msg = $link .' (Link - Item de ConteÃºdo) no menu: '. $menu .' criado com sucesso';
 	mosRedirect( 'index2.php?option=com_content&sectionid='. $redirect .'&task=edit&hidemainmenu=1&id='. $id, $msg );
 }
 
@@ -1379,7 +1379,7 @@ function saveOrder( &$cid ) {
 	// clean any existing cache files
 	mosCache::cleanCache( 'com_content' );
 
-	$msg 	= 'Nova ordenação salva';
+	$msg 	= 'Nova ordenaÃ§Ã£o salva';
 	switch ( $rettask ) {
 		case 'showarchive':
 			mosRedirect( 'index2.php?option=com_content&task=showarchive&sectionid='. $redirect, $msg );

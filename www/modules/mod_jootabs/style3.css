@@ -1,0 +1,53 @@
+.menu {
+	background: #f0f0f0; 
+	color:#666; 
+	border:1px solid #ccc; 
+	height:23px;
+	width:auto;
+}
+.menu ul {
+	margin:0px; 
+	padding:0px; 
+	list-style:none; 
+	text-align:center;}
+.menu li {
+	display:inline; 
+	line-height:23px; 
+	background:none; 
+	margin:0;
+	color:#666; 
+	text-decoration:none; 
+	padding:4px 5px 6px 5px; 
+	font-size:11px;
+	font-family:arial,verdana,tahoma;
+	cursor:default;}
+
+.menu li.tabactive {
+	border-top:1px solid #ccc;
+	border-left:1px solid #ccc; 
+	border-right:1px solid #ccc; 
+	font-weight:bold;  
+	position:relative; 
+	background:#FFFFFF;
+	font-size:11px;
+	color:#333333;
+	font-family:arial,verdana,tahoma;}
+
+
+
+#tabcontent1,#tabcontent2,#tabcontent3,#tabcontent4,#tabcontent5,#tabcontent6,#tabcontent7,#tabcontent8,#tabcontent9,#tabcontent10
+ {
+	background:#FFFFFF;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	width: auto; 
+	text-align:center;
+	padding:6px 0px; 
+	font-size:12px; 
+	margin-bottom:5px;}
+  
+#tabcontent1 div.moduletable,#tabcontent2 div.moduletable,#tabcontent3 div.moduletable,#tabcontent4 div.moduletable,#tabcontent5 div.moduletable,#tabcontent6 div.moduletable,#tabcontent7 div.moduletable,#tabcontent8 div.moduletable,#tabcontent9 div.moduletable,#tabcontent10 div.moduletable
+{
+margin:5px;
+}

@@ -106,7 +106,7 @@ if ( $my->id ) {
 				<br />
 			<?php endif; ?>	-->
 	<?php
-	if ( $registration_enabled ) {
+	/*if ( $registration_enabled ) {
 		?>
 	
 				
@@ -114,7 +114,7 @@ if ( $my->id ) {
 					<?php echo "Register?" ?></a>
 	
 		<?php
-	}
+	}*/
 	?>
 	
 	<?php

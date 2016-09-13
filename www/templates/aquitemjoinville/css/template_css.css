@@ -27,6 +27,8 @@ body{
 	padding-bottom:1px;
 	border:inset 2px;
 }
+
+
 div.moduletable {
 	padding: 0;
 	margin-bottom: 4px;
@@ -44,6 +46,65 @@ table.moduletable th, div.moduletable h3 {
 	font-family:Arial, Helvetica, sans-serif;
 	margin: 0 0 2px 0;
 }
+div.moduletable-cinza h3 {
+	color: #FF7510;
+	font-weight: bold;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-family:Arial, Helvetica, sans-serif;
+	margin: 0 0 2px 0;
+	background-color: #E9E9E9;
+}
+div.moduletable-cinza {
+	border:solid 2px #DDDADA;
+	background-color: #E9E9E9;
+	margin-bottom:5px;
+	padding:2px;
+}
+div.moduletable-cinema {
+	margin-bottom:5px;
+	padding:2px;
+}
+div.moduletable-cinema a {
+	text-decoration:none;
+}
+.myBox
+	{
+		margin: 0 auto;
+		color: #ffffff;
+		font-weight:bold;
+		width: 100%;
+		padding: 5px;
+		text-align: left;
+		background-color: #FF8000;
+		border-top:1px solid #d6ad55;
+		border-left:1px solid #d6ad55;
+		border-right:1px solid #d6ad55;
+		border-bottom:1px solid #FF8000;
+		position:relative;
+		margin-bottom:-1px;
+	}
+	
+.myBox2
+	{
+		margin: 0 auto;
+		color: #ffffff;
+		font-weight:bold;
+		width: 100%;
+		padding: 5px;
+		text-align: left;
+		background-color: #FF8000;
+		border-top:1px solid #d6ad55;
+		border-left:1px solid #d6ad55;
+		border-right:1px solid #d6ad55;
+		border-bottom:1px solid #FF8000;
+		margin-bottom:-1px;
+	}	
+
+.pollstableborder-cinza{
+	background-color:#FFFFFF;
+}
+
 .contentpaneopen{
 	color:#454141;
 	font-size:10px;
@@ -91,6 +152,38 @@ a.mainlevel#active_menu {
 }
 
 a.mainlevel#active_menu:hover {
+	color: #666666;
+}
+
+
+
+a.mainlevel-rodape:link, a.mainlevel-rodape:visited {
+	/*display: block;*/
+	vertical-align: middle;
+	font-size: 11px;
+	font-weight: bold;
+	color: #454141;
+	text-align: center;
+	padding-top: 5px;
+	padding-left: 10px;
+	height: 20px !important;
+	height: 25px;
+	width: 169px;
+	text-decoration: none;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+a.mainlevel-rodape:hover {
+	text-decoration: none;
+	color: #666666;
+}
+
+a.mainlevel-rodape#active_menu {
+	color:#7B6564;
+	font-weight: bold;
+}
+
+a.mainlevel-rodape#active_menu:hover {
 	color: #666666;
 }
 

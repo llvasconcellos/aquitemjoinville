@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module">
+	<name>MagpieRSS module for Joomla</name>
+	<creationDate>24 Nov 2006</creationDate>
+	<author>EddyChang</author>
+	<authorEmail>taiwanmambo@gmail.com</authorEmail>
+	<authorUrl>www.joomla.org.tw</authorUrl>
+	<version>1.0 beta</version>
+	<copyright>GPL</copyright>
+	<description>MagpieRSS RSS parser module for Joomla!. It use the famous MagpieRSS XML-based (expat) RSS parser in PHP. Its website is in http://magpierss.sourceforge.net/.
+</description>
+	<files>
+		<filename module="mod_magpierss">mod_magpierss.php</filename>
+		<filename>magpierss/rss_cache.inc</filename>
+		<filename>magpierss/rss_fetch.inc</filename>
+		<filename>magpierss/rss_parse.inc</filename>
+		<filename>magpierss/rss_utils.inc</filename>
+		<filename>magpierss/extlib/Snoopy.class.inc</filename>
+	</files>
+	<params>
+		<param name="url" type="textarea" rows="1" cols="40" default="" label="RSS feed url" description="RSS feed url">
+		</param>
+		<param name="num_items" type="list" default="5" label="Number of articles" description="Number of articles">
+			<option value="0">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+			<option value="15">15</option>
+		</param>
+		<param name="is_cache" type="radio" default="1" label="Use Cache" description="Should Magpie cache parsed RSS objects?">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="cache_age" type="text" default="3600" label="Cache Age" description="How long to store cached RSS objects? In seconds. Default 3600 seconds">
+		</param>
+		<param name="show_time" type="radio" default="0" label="Show Time" description="Display headlines published time. Only for RSS 1.0">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+	</params>
+	</mosinstall>

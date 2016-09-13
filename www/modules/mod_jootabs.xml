@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module">
+	<name>JooTabs</name>
+	<author>Ricardo Sousa and Andy Sikumbang</author>
+	<creationDate>October 2007</creationDate>
+	<copyright>TemplatePlazza.com and AiediLabs</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>sikumbang@gmail.com and ricardosousa@aiedi.com</authorEmail>
+	<authorUrl>http://www.templateplazza.com </authorUrl>
+	<version>1.0</version>
+	<description><![CDATA[  <p /><img src="../modules/mod_jootabs/logo.gif" align="left" hspace="25" style="padding-bottom:25px" />
+     <br/> Exhausted to waste space in your Joomla! powered website with a lot of modules?
+     <br/> Put a lot of modules in just one position using jooTabs
+     <br/> Features :
+     <ol>
+	 <li> Option to change active tab with mouseover or mouseclick </li>
+	 <li> 8 ready-to-use tab template </li>
+     <li> Up to 10 tab available </li>
+
+	 <li> Option to use AutoChange of the Tabs and the delay time of each transition </li>
+	 <li> Option to change the width of tabs</li>
+     <li> Option to choose which tab that you want to open after first page loading (to attract users attention) </li>
+     <li> Assign specific module into each tab </li>
+     <li> Set the title of each tab </li>
+     <li> Option to show or hide the modules title inside the tabs </li>
+     <li> Module Class Suffix ready </li>
+     <li> Show everything: Images, Scripts, Links... inside the tabs ;) </li>
+     </ol>
+     <br/> Tested in all common Browsers: IE 6+; Firefox 1.0+; Opera 7+ // The Joomla 1.5 version is on progress 
+     <br/> If you found this module useful you may want to rate and comment JooTabs at <a href="http://extensions.joomla.org/component/option,com_mtree/task,viewlink/link_id,3141/Itemid,35/"><strong>extensions.joomla.org</strong></a> 
+     <br/> Based on: EASY TABS 1.2 Produced and Copyright by Koller Juergen www.kollermedia.at | www.austria-media.at
+     ]]>
+     </description>
+     	<files>
+		<filename module="mod_jootabs">mod_jootabs.php</filename>
+		<filename module="mod_jootabs">mod_jootabs/easytabs.js</filename>
+		<filename module="mod_jootabs">mod_jootabs/style1.css</filename>
+		<filename module="mod_jootabs">mod_jootabs/style2.css</filename>
+		<filename module="mod_jootabs">mod_jootabs/style3.css</filename>
+		<filename module="mod_jootabs">mod_jootabs/style4.css</filename>
+		<filename module="mod_jootabs">mod_jootabs/style5.css</filename>
+		<filename module="mod_jootabs">mod_jootabs/style6.css</filename>
+		<filename module="mod_jootabs">mod_jootabs/style7.css</filename>
+		<filename module="mod_jootabs">mod_jootabs/style8.css</filename>
+		<filename module="mod_jootabs">mod_jootabs/logo.gif</filename>
+		<filename module="mod_jootabs">mod_jootabs/bg_tabcontent8.gif</filename>
+		<filename module="mod_jootabs">mod_jootabs/bg_tabcontent7.gif</filename>
+		<filename module="mod_jootabs">mod_jootabs/bg_tab8.gif</filename>
+		<filename module="mod_jootabs">mod_jootabs/bg_tab7.gif</filename>
+		<filename module="mod_jootabs">mod_jootabs/bg_tab5.gif</filename>
+		<filename module="mod_jootabs">mod_jootabs/bg_tab4.gif</filename>
+		<filename module="mod_jootabs">mod_jootabs/bg_tab3.gif</filename>
+		<filename module="mod_jootabs">mod_jootabs/bg_tab2.gif</filename>
+		<filename module="mod_jootabs">mod_jootabs/bg_tab1.gif</filename>
+		<filename module="mod_jootabs">mod_jootabs/bg_active1.gif</filename>
+		<filename module="mod_jootabs">mod_jootabs/credits.txt</filename>
+		
+	</files>
+	<params>
+		<param name="@spacer" type="spacer" default="------------ General Settings -------------" label="" description="" />
+        <param name="nameidlinks" type="text" default="tablink" label="Unique name for Links" description="Please insert a unique name to use with the links (title of tabs)"></param>
+		<param name="nameidarea" type="text" default="tabcontent" label="Unique name for Tabs" description="Please insert a unique name to use with the tabs (content area)"></param>
+<param name="changetype" type="list" default="click" label="How to change the tabs" description="Please choose how did you want to choose the tabs: By Mouseover or Click">
+        <option value="mouseover">Choose Tabs on MouseOver</option>
+		<option value="click">Choose Tabs on Click</option>
+        </param>
+		<param name="numbertab" type="list" default="2" label="Number of Tabs to use" description="Please select how many tabs you want to use">
+			<option value="2">2</option>
+			<option value="3">3</option>
+            <option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </param>
+         <param name="@spacer" type="spacer" default="------------ AutoChange Settings -------------" label="" description="" />
+          <param name="autochange" type="radio" default="0" label="Use AutoChange" description="Please select if you want to use or not the autochange tab funct...">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+           <param name="changestop" type="radio" default="0" label="Stop AutoChange" description="Select if the autochange should stop if the user mouseover/click the tabs">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+        <param name="changedelay" type="text" default="3" label="Change Delay" description="Please select the time (in seconds) to change the tabs"></param>
+         <param name="@spacer" type="spacer" default="------------ Appearance Settings -------------" label="" description="" />
+         <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+		 		<param name="tab_template" type="list" default="1" label="Tab Template" description="Tab Template">
+        <option value="1">Style 1</option>
+		<option value="2">Style 2</option>
+		<option value="3">Style 3</option>
+		<option value="4">Style 4</option>
+		<option value="5">Style 5</option>
+		<option value="6">Style 6</option>
+		<option value="7">Style 7</option>
+		<option value="8">Style 8</option>
+
+        </param>
+		<param name="width_tab" type="text" default="300" label="Tab Width" description="Width of tab in px"/>
+         <param name="titleshow" type="radio" default="0" label="Show Title of Modules" description="Select if you want to show the title of the modules inside the tabs">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+          <param name="@spacer" type="spacer" default="------------ Tabs Settings -------------" label="" description="" />
+          <param name="tab1name" type="text" default="TAB1" label="Title of the 1st Tab" description="Select the title you want to use in the 1st tab"></param>
+          <param name="tab1" type="text" default="user1" label="Module of the 1st Tab" description="Select the module you want to use in the 1st tab"></param>
+          <param name="tab2name" type="text" default="TAB2" label="Title of the 2nd Tab" description="Select the title you want to use in the 2nd tab"></param>
+          <param name="tab2" type="text" default="user2" label="Module of the 2nd Tab" description="Select the module you want to use in the 2nd tab"></param>
+          <param name="tab3name" type="text" default="TAB3" label="Title of the 3rd Tab" description="Select the title you want to use in the 3rd tab"></param>
+          <param name="tab3" type="text" default="user3" label="Module of the 3rd Tab" description="Select the module you want to use in the 3rd tab"></param>
+          <param name="tab4name" type="text" default="TAB4" label="Title of the 4th Tab" description="Select the title you want to use in the 4th tab"></param>
+          <param name="tab4" type="text" default="user4" label="Module of the 4th Tab" description="Select the module you want to use in the 4th tab"></param>
+          <param name="tab5name" type="text" default="TAB5" label="Title of the 5th Tab" description="Select the title you want to use in the 5th tab"></param>
+          <param name="tab5" type="text" default="user5" label="Module of the 5th Tab" description="Select the module you want to use in the 5th tab"></param>
+          <param name="tab6name" type="text" default="TAB6" label="Title of the 6th Tab" description="Select the title you want to use in the 6th tab"></param>
+          <param name="tab6" type="text" default="user6" label="Module of the 6th Tab" description="Select the module you want to use in the 6th tab"></param>
+          <param name="tab7name" type="text" default="TAB7" label="Title of the 7th Tab" description="Select the title you want to use in the 7th tab"></param>
+          <param name="tab7" type="text" default="user7" label="Module of the 7th Tab" description="Select the module you want to use in the 7th tab"></param>
+          <param name="tab8name" type="text" default="TAB8" label="Title of the 8th Tab" description="Select the title you want to use in the 8th tab"></param>
+          <param name="tab8" type="text" default="user8" label="Module of the 8th Tab" description="Select the module you want to use in the 8th tab"></param>
+          <param name="tab9name" type="text" default="TAB9" label="Title of the 9th Tab" description="Select the title you want to use in the 9th tab"></param>
+          <param name="tab9" type="text" default="user9" label="Module of the 9th Tab" description="Select the module you want to use in the 9th tab"></param>
+          <param name="tab10name" type="text" default="TAB10" label="Title of the 10th Tab" description="Select the title you want to use in the 10th tab"></param>
+          <param name="tab10" type="text" default="user10" label="Module of the 10th Tab" description="Select the module you want to use in the 10th tab"></param>
+          <param name="@spacer" type="spacer" default="" label="" description="" />
+          <param name="1tabopen" type="text" default="1" label="1st Tab to Open" description="Please select the tab you want ot open first"></param>
+	</params>
+</mosinstall>

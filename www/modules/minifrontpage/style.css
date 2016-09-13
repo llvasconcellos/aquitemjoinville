@@ -1,0 +1,49 @@
+.minifp td { padding-right:5px;}
+.minifp td p {
+	margin-top:3px;}
+.minifp td img {
+	border:none;
+	margin-left: 0.5em;
+	margin-right: 0.5em;}
+.minifp-anotherlinks
+{
+	font-weight:bold;
+	font-size:100%;
+	border-bottom:1px solid #ccc;
+	display:block;
+	padding-bottom:5px;
+	margin-bottom:5px;
+	background:url(application_add.gif) no-repeat top left;
+	padding-left:20px;
+}
+.minifp ul li {
+	list-style-image:url(arrow_green.gif);
+	background:none;
+	padding-left:0;
+	margin-left:20px;
+	font-size:94%; 
+}
+.minifp ul li a { 
+
+}
+.minifp-introtitle a {
+	font-size:120%;
+	font-weight:bold;
+	color: #333;
+}
+
+.minifp-introtitle a:hover {
+	text-decoration:underline;	
+}
+.minifp-date {
+	color:#666;
+	font-size:9px;
+	font-weight:normal;
+	height:10px;
+}
+a.minifp-full-link {
+	font-weight:bold;
+}
+a:hover.minifp-full-link {
+	text-decoration:underline;
+}

@@ -1,0 +1,224 @@
+<?xml version="1.0" ?>
+<mosinstall type="component">
+	<name>rssfactory</name>
+	<creationDate>March 2008</creationDate>
+	<author>The Factory</author>
+	<copyright>The Factory</copyright>
+	<authorEmail>contact@thefactory.ro</authorEmail>
+	<authorUrl>http://www.thefactory.ro</authorUrl>
+	<version>v1.1.1 for Joomla 1.0.x</version>
+	<files>
+			<filename>overlib.config.php</filename>
+			<filename>pseudorefresh.php</filename>
+			<filename>rssfactory.class.php</filename>
+			<filename>rssfactory.functions.php</filename>
+			<filename>rssfactory.config.php</filename>
+			<filename>rssfactory.html.php</filename>
+			<filename>rssfactory.php</filename>
+			<filename>rssfactory.js</filename>
+			<filename>version.txt</filename>
+			<filename>css/rss_css.css</filename>
+			<filename>module/mod_rssfactory.php</filename>
+			<filename>module/mod_rssfactory.x</filename>
+			<filename>mambot/rssfactory.searchbot.php</filename>
+			<filename>mambot/rssfactory.searchbot.x</filename>
+			<filename>magpierss/AUTHORS</filename>
+			<filename>magpierss/ChangeLog</filename>
+			<filename>magpierss/CHANGES</filename>
+			<filename>magpierss/cookbook</filename>
+			<filename>magpierss/INSTALL</filename>
+			<filename>magpierss/NEWS</filename>
+			<filename>magpierss/README</filename>
+			<filename>magpierss/rss_cache.inc</filename>
+			<filename>magpierss/rss_fetch.inc</filename>
+			<filename>magpierss/rss_parse.inc</filename>
+			<filename>magpierss/rss_utils.inc</filename>
+			<filename>magpierss/TROUBLESHOOTING</filename>
+			<filename>magpierss/extlib/Snoopy.class.inc</filename>
+			<filename>magpierss/htdocs/cookbook.html</filename>
+			<filename>magpierss/htdocs/index.html</filename>
+			<filename>magpierss/scripts/magpie_debug.php</filename>
+			<filename>magpierss/scripts/magpie_simple.php</filename>
+			<filename>magpierss/scripts/magpie_slashbox.php</filename>
+			<filename>magpierss/scripts/README</filename>
+			<filename>magpierss/scripts/simple_smarty.php</filename>
+			<filename>magpierss/scripts/smarty_plugin/modifier.rss_date_parse.php</filename>
+			<filename>magpierss/scripts/templates/simple.smarty</filename>
+	</files>
+	<images>
+			<filename>images/backup.png</filename>
+			<filename>images/backup_f2.png</filename>
+			<filename>images/default.ico</filename>
+			<filename>images/exp0.gif</filename>
+			<filename>images/exp1.gif</filename>
+			<filename>images/feed-icon-16x16.gif</filename>
+			<filename>images/import.png</filename>
+			<filename>images/refresh.jpg</filename>
+			<filename>images/refresh2.jpg</filename>
+			<filename>images/repository.png</filename>
+			<filename>images/repository_f2.png</filename>
+			<filename>images/tab.png</filename>
+			<filename>images/tab_active.png</filename>
+			<filename>images/tab_hover.png</filename>
+	</images>
+	<install>
+		<queries>
+			<query>DROP TABLE IF EXISTS `#__rssfactory`;</query>
+			<query>CREATE TABLE `#__rssfactory` (
+					  `id` int(11) NOT NULL auto_increment,
+					  `url` text NOT NULL,
+					  `title` text NOT NULL,
+					  `ordering` int(11) NOT NULL default '0',
+					  `published` tinyint(1) NOT NULL default '0',
+					  `nrfeeds` tinyint(1) NOT NULL default '0',
+					  `cat` varchar(250) NOT NULL default '',
+					  `temprss` text,
+					  `date` datetime default NULL,
+					  `rsserror` int(1) default '0',
+					  `encoding` varchar(30) default NULL,
+					  PRIMARY KEY  (`id`)
+				);
+
+			</query>
+			<query>
+				INSERT INTO `#__rssfactory` VALUES (1,'http://www.thefactory.ro/index.php?option=com_rss&feed=ATOM0.3&type=com_frontpage','The Factory',0,1,15,'Joomla News','','2007-01-02 20:41:31',0,'UTF-8');
+			</query>
+			<query>
+				INSERT INTO `#__rssfactory` VALUES (2,'http://feeds.feedburner.com/Techcrunch','TechCrunch',0,1,15,'IT Techhie','','2007-01-02 20:41:31',0,'UTF-8');
+			</query>
+
+			<query>DROP TABLE IF EXISTS `#__rssfactory_cache`;</query>
+			<query>
+				CREATE TABLE `#__rssfactory_cache` (
+				  `id` bigint(20) NOT NULL auto_increment,
+				  `rssid` int(11) default NULL,
+				  `rssurl` varchar(250) default NULL,
+				  `date` datetime NOT NULL default '0000-00-00 00:00:00',
+				  `channel_title` text,
+				  `channel_link` text,
+				  `channel_description` text,
+				  `channel_category` tinytext,
+				  `item_title` text,
+				  `item_description` text,
+				  `item_link` text,
+				  `item_date` datetime default NULL,
+				  `item_source` text,
+				  `item_category` text,
+				  PRIMARY KEY  (`id`),
+				  KEY `rssurl` (`rssurl`)
+				);
+			</query>
+
+			<query>DROP TABLE IF EXISTS `#__rssfactory_user`;</query>
+			<query>
+				CREATE TABLE `#__rssfactory_user` (
+				  `id` int(11) NOT NULL auto_increment,
+				  `sid` varchar(250) NOT NULL default '',
+				  `url` varchar(250) NOT NULL default '',
+				  `date` datetime NOT NULL default '0000-00-00 00:00:00',
+				  `newsid` int(11) default NULL,
+				  PRIMARY KEY  (`id`),
+				  KEY `nid` (`newsid`)
+				);
+			</query>
+			<query>DROP TABLE IF EXISTS `#__rssfactory_config`;</query>
+			<query>
+				CREATE TABLE `#__rssfactory_config` (
+				  `id` int(11) NOT NULL auto_increment,
+				  `nrads` int(11) default '5',
+				  `description` text,
+				  `refresh_password` varchar(50) default NULL,
+				  `showSearch` int(1) default '0',
+				  `unpublisherr` int(1) default '0',
+				  `showcategory` int(1) default '1',
+				  `liststyle` enum('tiled','list','tabbed') default 'tiled',
+				  `limitrss` int(1) default '1',
+				  `showfeeddescription` enum('overlib','table') default 'overlib',
+				  `refreshinterval` int(11) default NULL,
+				  `lastcron` int(3) default NULL,
+				  `use_pseudocron` int(11) default '1',
+				  `use_favicons` int(11) default '1',
+				  `date_format` varchar(50) default NULL,
+                  `hideDate` int(1) NOT NULL default '0',
+                  `hideBullet` int(1) NOT NULL default '0',
+				  `table_view_open` int(1) default NULL,
+				  `cat_previewnr` int(11) default NULL,
+				  `force_charset` varchar(50) default NULL,
+				  `params` text NULL,
+				  PRIMARY KEY  (`id`)
+				);
+			</query>
+
+
+			<query>DROP TABLE IF EXISTS `#__rssfactory_ads`;</query>
+			<query>
+				CREATE TABLE `#__rssfactory_ads` (
+					  `id` int(11) NOT NULL auto_increment,
+					  `title` varchar(250) default NULL,
+					  `Adtext` text,
+					  `published` int(11) default NULL,
+					  PRIMARY KEY  (`id`)
+					);
+			</query>
+		</queries>
+	</install>
+	<uninstall>
+		<queries>
+			<query>DROP TABLE IF EXISTS `#__rssfactory`;</query>
+			<query>DROP TABLE IF EXISTS `#__rssfactory_config`;</query>
+			<query>DROP TABLE IF EXISTS `#__rssfactory_cache`;</query>
+			<query>DROP TABLE IF EXISTS `#__rssfactory_ads`;</query>
+			<query>DROP TABLE IF EXISTS `#__rssfactory_user`;</query>
+		</queries>
+	</uninstall>
+
+	<installfile>
+		<filename>install.rssfactory.php</filename>
+	</installfile>
+
+	<uninstallfile>
+		<filename>uninstall.rssfactory.php</filename>
+	</uninstallfile>
+
+	<administration>
+		<menu>RSS Factory</menu>
+      <submenu>
+         <menu>Manage RSS Sources</menu>
+         <menu task="showads">Ad management</menu>
+         <menu task="showconfig">Configuration</menu>
+         <menu task="catman">Manage Categories</menu>
+         <menu task="about">About RSSFactory</menu>
+      </submenu>
+		<files>
+			<filename>admin.rssfactory.php</filename>
+			<filename>admin.rssfactory.html.php</filename>
+			<filename>color_functions.js</filename>
+			<filename>import_puv.cvs.csv</filename>
+			<filename>import_tab.cvs</filename>
+			<filename>import_v.csv</filename>
+			<filename>js_color_picker_v2.css</filename>
+			<filename>js_color_picker_v2.js</filename>
+			<filename>toolbar.rssfactory.php</filename>
+			<filename>toolbar.rssfactory.html.php</filename>
+			<filename>version_info.php</filename>
+			<filename>xajax/LICENSE.txt</filename>
+			<filename>xajax/README.txt</filename>
+			<filename>xajax/xajax.inc.php</filename>
+			<filename>xajax/xajaxCompress.php</filename>
+			<filename>xajax/xajaxResponse.inc.php</filename>
+			<filename>xajax/xajax_js/xajax.js</filename>
+			<filename>xajax/xajax_js/xajax_uncompressed.js</filename>
+		</files>
+		<images>
+			<image>images/select_arrow.gif</image>
+			<image>images/select_arrow_down.gif</image>
+			<image>images/select_arrow_over.gif</image>
+			<image>images/slider_handle.gif</image>
+			<image>images/tab_center_active.gif</image>
+			<image>images/tab_left_active.gif</image>
+			<image>images/tab_left_inactive.gif</image>
+			<image>images/tab_right_active.gif</image>
+			<image>images/tab_right_inactive.gif</image>
+		</images>
+	</administration>
+</mosinstall>

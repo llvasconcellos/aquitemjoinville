@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="component">
+<name>Forme</name>
+<creationDate>22/05/2007</creationDate>
+<author>www.rsjoomla.com</author>
+<copyright>(C) 2007 www.rsjoomla.com</copyright>
+<authorEmail>alex@pimpmyjoomla.com</authorEmail>
+<authorUrl>www.rsjoomla.com</authorUrl>
+<version>1.0.4</version>
+<description>With RSform! you can add forms.</description>
+
+<files>
+	<filename>forme.php</filename>
+	<filename>forme.html.php</filename>
+	<filename>forme.class.php</filename>
+	<filename>captcha.php</filename>
+	<filename>index.html</filename>
+	<filename>languages/en.php</filename>
+	<filename>languages/index.html</filename>
+	<filename>uploads/index.html</filename>
+	<filename>uploads/nogd.gif</filename>
+	<filename>images/rsform.gif</filename>
+	<filename>images/index.html</filename>
+	<filename>fonts/times.ttf</filename>
+	<filename>fonts/index.html</filename>
+	<filename>calendar/index.html</filename>
+	<filename>calendar/calendar.css</filename>
+	<filename>calendar/calendar.js</filename>
+	<filename>calendar/callt.gif</filename>
+	<filename>calendar/calrt.gif</filename>
+	<filename>calendar/calx.gif</filename>
+	<filename>calendar/dom.js</filename>
+	<filename>calendar/event.js</filename>
+	<filename>calendar/initcal.php</filename>
+	<filename>calendar/yahoo.js</filename>
+</files>
+
+<install>
+<queries>
+	<query>
+	CREATE TABLE `#__forme_config` (
+	  `id` int(11) NOT NULL AUTO_INCREMENT,
+	  `setting_name` varchar(64) NOT NULL default '',
+	  `setting_value` text NOT NULL,
+	  PRIMARY KEY  (`id`)
+	);
+	</query>
+	<query>
+	CREATE TABLE `#__forme_data` (
+	  `id` int(11) unsigned NOT NULL auto_increment,
+	  `form_id` int(11) NOT NULL default '0',
+	  `date_added` datetime NOT NULL default '0000-00-00 00:00:00',
+	  `uip` varchar(15) NOT NULL default '',
+	  `uid` int(11) NOT NULL default '0',
+	  `params` text NOT NULL,
+	  `lang` VARCHAR(10) NOT NULL DEFAULT 'en',
+	  PRIMARY KEY  (`id`)
+	)
+	</query>
+	<query>
+	CREATE TABLE `#__forme_fields` (
+	  `id` int(11) NOT NULL auto_increment,
+	  `form_id` int(11) NOT NULL default '0',
+	  `name` varchar(255) NOT NULL default '',
+	  `title` varchar(255) NOT NULL default '',
+	  `fieldstyle` text NOT NULL,
+	  `description` text NOT NULL,
+	  `inputtype` varchar(255) NOT NULL default 'text',
+	  `default_value` text NOT NULL,
+	  `params` text NOT NULL,
+	  `validation_rule` varchar(50) NOT NULL default '',
+	  `validation_message` varchar(255) NOT NULL default '',
+	  `ordering` tinyint(4) NOT NULL default '0',
+	  `published` tinyint(1) NOT NULL default '0',
+	  `checked_out` int(11) NOT NULL default '0',
+	  `checked_out_time` datetime NOT NULL default '0000-00-00 00:00:00',
+	PRIMARY KEY  (`id`)
+	)
+	</query>
+	<query>
+	CREATE TABLE `#__forme_forms` (
+	  `id` int(11) NOT NULL auto_increment,
+	  `name` varchar(255) NOT NULL default '',
+	  `title` varchar(255) NOT NULL default '',
+	  `formstyle` text NOT NULL,
+	  `fieldstyle` text NOT NULL,
+	  `thankyou` text NOT NULL,
+	  `email` text NOT NULL,
+	  `emailto` text NOT NULL,
+	  `emailfrom` varchar(255) NOT NULL default '',
+	  `emailfromname` varchar(255) NOT NULL default '',
+	  `emailsubject` varchar(255) NOT NULL default '',
+	  `emailmode` tinyint(4) NOT NULL default '1',
+	  `return_url` varchar(255) NOT NULL default '',
+	  `published` tinyint(4) NOT NULL default '0',
+	  `checked_out` int(11) NOT NULL default '0',
+	  `checked_out_time` datetime NOT NULL default '0000-00-00 00:00:00',
+	  `lang` varchar(10) NOT NULL,
+	  `script_process` text NOT NULL,
+	  `script_display` text NOT NULL,
+	  PRIMARY KEY  (`id`)
+	);
+	</query>
+	<query>	INSERT INTO `#__forme_config` ( `id` , `setting_name` , `setting_value` ) VALUES ('', 'global.register.code', '');</query>
+	<query> INSERT INTO `#__forme_config` ( `id` , `setting_name` , `setting_value` ) VALUES ('', 'global.update.check', '0000-00-00');</query>
+</queries>
+</install>
+
+<uninstall>
+<queries>
+	<query>DROP TABLE `#__forme_forms`, `#__forme_fields`, `#__forme_config`, `#__forme_data`</query>
+</queries>
+</uninstall>
+
+<installfile>
+	<filename>install.forme.php</filename>
+</installfile>
+<uninstallfile>
+	<filename>uninstall.forme.php</filename>
+</uninstallfile>
+
+<administration>
+	<menu>RSform!</menu>
+<files>
+	<filename>admin.forme.php</filename>
+	<filename>admin.forme.html.php</filename>
+	<filename>toolbar.forme.php</filename>
+	<filename>toolbar.forme.html.php</filename>
+	<filename>index.html</filename>
+	<filename>forme.xml</filename>
+	<filename>style.css</filename>
+	<filename>images/logo.gif</filename>
+	<filename>images/forms.png</filename>
+	<filename>images/samples.png</filename>
+	<filename>images/support.png</filename>
+	<filename>images/systeminfo.png</filename>
+	<filename>images/viewdata.png</filename>
+	<filename>images/restore.png</filename>
+	<filename>images/backup.png</filename>
+	<filename>images/index.html</filename>
+	<filename>help/index.html</filename>
+	<filename>help/mimetype.html</filename>
+</files>
+</administration>
+</mosinstall>

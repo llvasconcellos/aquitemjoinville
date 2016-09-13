@@ -49,8 +49,8 @@ DEFINE( "ADSMANAGER_RULES_TEXT", "Regras dos classificados<br><br>");
 // List Categories
 
 //   Title of Columns
-DEFINE( "ADSMANAGER_AD", "An&uacute;ncio");
-DEFINE( "ADSMANAGER_PRICE", "Pre	&ccedil;o");
+DEFINE( "ADSMANAGER_AD", "Anúncio");
+DEFINE( "ADSMANAGER_PRICE", "Preço");
 DEFINE( "ADSMANAGER_KINDOF", "Tipo");
 DEFINE( "ADSMANAGER_DATE", "Data");
 DEFINE( "ADSMANAGER_STATE", "Condi&ccedil;&atilde;o");
@@ -85,10 +85,10 @@ DEFINE( "ADSMANAGER_LIST_TEXT", "Todos os An&uacute;ncios");
 DEFINE( "ADSMANAGER_LIST_USER_TEXT", "An&uacute;ncios de");
 
 //Form Verification
-DEFINE( "_REGWARN_EMAIL", "Entre um e-mail v&aacute;lido");
-DEFINE( "_REGWARN_AD_HEADLINE", "Entre com o t&iacute;tulo");
+DEFINE( "_REGWARN_EMAIL", "Entre um e-mail válido");
+DEFINE( "_REGWARN_AD_HEADLINE", "Entre com o título");
 DEFINE( "_REGWARN_AD_TEXT", "Entre com a descri	&ccedil;&atilde;o");
-DEFINE( "_REGWARN_AD_PRICE", "Pre&ccedil;o incorreto. Use apenas n&uacute;meros");
+DEFINE( "_REGWARN_AD_PRICE", "Preço incorreto. Use apenas números");
 DEFINE( "ADSMANAGER_IMAGETOOBIG", "Foto muito grande");
 
 //Profile
@@ -122,7 +122,7 @@ DEFINE( "ADSMANAGER_FORM_EMAIL_TEXT", "");
 DEFINE( "ADSMANAGER_FORM_AD_HEADLINE", "T&iacute;tulo do an&uacute;ncio");
 DEFINE( "ADSMANAGER_FORM_AD_TEXT", "Descri&ccedil;&atilde;o do an&uacute;ncio");
 DEFINE( "ADSMANAGER_FORM_KINDOF", "Tipo de envio");
-DEFINE( "ADSMANAGER_FORM_AD_PRICE", "Pre&ccedil;o");
+DEFINE( "ADSMANAGER_FORM_AD_PRICE", "Preço");
 DEFINE( "ADSMANAGER_FORM_AD_PRICE_TEXT", "R$ (opcional)");
 
 DEFINE( "ADSMANAGER_FORM_SUBMIT_TEXT", "Gravar");
@@ -322,7 +322,7 @@ DEFINE("ADSMANAGER_NOT_USED","N&atilde;o usado");
 DEFINE("ADSMANAGER_POSITION_TOP","");
 DEFINE("ADSMANAGER_POSITION_SUBTITLE","");
 DEFINE("ADSMANAGER_POSITION_DESCRIPTION","");
-DEFINE("ADSMANAGER_POSITION_DESCRIPTION2","Pre&ccedil;o: ");
+DEFINE("ADSMANAGER_POSITION_DESCRIPTION2","Preço: ");
 DEFINE("ADSMANAGER_POSITION_CONTACT","Contato:<br/>");
 
 //add nopic.gif

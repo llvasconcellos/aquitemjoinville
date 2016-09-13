@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mosinstall type="module">
+  <name>Simple RSS Feed Reader</name>
+  <author>JoomlaWorks</author>
+  <creationDate>26/10/2007</creationDate>
+  <copyright>This extension in released under the GNU/GPL License - http://www.gnu.org/copyleft/gpl.html</copyright>
+  <authorEmail>joomlaworks@gmail.com</authorEmail>
+  <authorUrl>http://www.joomlaworks.gr</authorUrl>
+  <version>1.4</version>
+  <description>
+    <![CDATA[<style type="text/css" media="all">
+      <!--
+      #extension_container {padding:0px 0px 4px 0px;}
+      h1 {clear:both;margin:0px 0px 12px 0px;padding:0px 0px 1px 0px;color:#C64934;font-size:17px;border-bottom:1px dotted #505050;}
+      h2 {clear:both;font-size:17px;}
+      .title {margin:4px 0px;font-size:12px;font-weight:bold;}
+      .red {color:#C64934;}
+      #extension_container ul {margin:4px 16px;padding:0px;list-style:square;}
+      #extension_container ul li {margin:2px;padding:0px;}
+      -->
+      </style>
+      <div id="extension_container">
+      <h1><a target="_blank" title="Visit JoomlaWorks!" href="http://www.joomlaworks.gr">JoomlaWorks "Simple RSS Feed Reader" Module v1.4</a></h1>
+      <a title="Visit the official project website!" href="http://www.joomlaworks.gr"><img style="float:right;background:#fff;border:1px solid #ccc;padding:2px;margin:0px 0px 2px 8px;" src="../modules/mod_jw_srfr/srfr_logo.png" border="0" alt="Logo" /></a>Adding RSS syndicated content inside your Joomla! (or Mambo) website is now super-easy and simple with the "<b class="red">Simple RSS Feed Reader</b>" Module from JoomlaWorks. All you have to do is insert the Feed (RSS) URLs of the websites you want to syndicate in the module's settings, publish the module in some position and that's it! You can even publish <b>multiple feeds</b> at the same time (meaning in the same module instance) and even filter the latest X number, which you specify in the module parameters!<br /><br />
+      No messing with the code and no worrying about feed encoding. You can publish right away english along with japanese feeds and have nothing to worry about!<br /><br />
+      The "<b>Simple RSS Feed Reader</b>" module is based on the very popular <b>SimplePie PHP Class</b>, which makes it easy to integrate syndicated content into your Joomla! (or Mambo) website - and you don't even have to worry about what kind of feed it is! The "<b>Simple RSS Feed Reader</b>" module supports everything from the old-school RSS 0.91 and RSS 1.0 formats, to the ever-popular RSS 2.0 format, and also supports the emerging Atom format, in both 0.3 and 1.0 flavors. It has a very fast, very efficient caching system. By caching the processed data, rather than just the raw XML, the module is able to create a feed parser that's really, really quick.<br /><br />
+      The feeds are stored inside Joomla!'s (or Mambo's) <b>cache</b> folder and refreshed in a specific time interval, which you set in the module's parameters.<br /><br />
+      See the "<b>Simple RSS Feed Reader</b>" module in action in our exclusive demo site <a target="_blank" title="Visit the official JoomlaWorks demo website!" href="http://demo.joomlaworks.gr">HERE</a>!<br /><br />
+      So, now, a) you have no reason not to use RSS feeds in your website (cause you thought RSS was difficult to setup), b) you have a module that will bring new content to your website, efficiently and with style and c) you can have multiple feeds display in a single place!
+      <br /><br />
+      <b>Enjoy!</b>
+      <br /><br />
+      <h2>USAGE INSTRUCTIONS</h2>
+      After you install the module, simply adjust the "content (feed) display" settings in the parameters below and add Feed URLs of any encoding. The "<b>Simple RSS Feed Reader</b>" Module will detect your website's encoding and adjust all feeds to that specific encoding.<br /><br />
+      In order for the module to work properly, your server must have the following PHP modules enabled: <b>cURL, iconv, PCRE, Zlib</b>. Don't worry, though, cause most servers have these PHP modules enabled by default. If not, then contact your hosting company to enable them.
+      <br /><br />
+      Please note that some RSS feeds might not display well even if you have the above PHP modules installed (rare occasion, but can happen). That is entirely based on how the server is <b class="red">setup</b> and if the specific language -with which you have issues- is properly <b>defined</b> in the server. In any case, contacting your hosting company is always the safest solution.
+      <br /><br />
+      The module already includes some generic CSS styling, which makes it truely "<b>plug and play</b>" for your Joomla! (or Mambo) website. The output is entirely controlled through <b class="red">CSS</b>, so you can customize it as you like.
+      <br /><br />
+      <h2>CHANGELOG</h2>
+      <div class="title">Version 1.4 Changelog (October 26th, 2007)</div>
+      <ul>
+      <li>Minor bug fix to be able to have multiple "Simple RSS Feed Reader" modules on the same page.</li>
+      </ul>	  
+      <div class="title">Version 1.3 Changelog (October 24th, 2007)</div>
+      <ul>
+      <li>Updated SimplePie to the latest v1.0.1 (better performance and support for international feeds).</li>
+      <li>Added new content display options (show intro/full text, word limit, hide images, strip/cleanup HTML tags).</li>
+      <li>Simplified/extended CSS, gave the module a new cool style.</li>
+      <li>Optimized code.</li>
+      <li>The module is now fully supporting Mambo 4.5.x and 4.6.x.</li>
+      </ul> 	  
+      <div class="title">Version 1.2 Changelog (August 16th, 2007)</div>
+      <ul>
+      <li>Fixed minor php code bug.</li>
+      <li>Fixed the double "bullet issue" occuring in some templates, due to CSS conflicts.</li>
+      </ul>   
+      <div class="title">Version 1.1 Changelog (January 31st, 2007)</div>
+      <ul>
+      <li>Add the "RSS feed timeout" option to eliminate any errors showing when source sites are sluggish or down.</li>
+      <li>Did some minor code fixes.</li>
+      <li>Changed date display format to only use numeric values.</li>
+      </ul>  
+      <div class="title">Version 1.0 Changelog (January 29th, 2007)</div>
+      <ul>
+      <li>Version 1.0 of the module is released.</li>
+      </ul>
+      <br />
+      <h2>CREDITS</h2>
+      The "Simple RSS Feed Reader" Module is based on <a target="_blank" title="SimplePie" href="http://simplepie.org/">SimplePie</a>, a very fast and easy-to-use class, written in PHP, for reading RSS and Atom syndication feeds. <a target="_blank" title="SimplePie" href="http://simplepie.org/">SimplePie</a> is licensed under the GNU Lesser General Public License.<br /><br />
+      <h2>ABOUT JOOMLAWORKS</h2>
+      The <b>"Simple RSS Feed Reader" Module</b> is a <a target="_blank" href="http://www.joomla.org">Joomla!</a> &amp; <a target="_blank" href="http://mambo-foundation.org/">Mambo</a> CMS extension developed by <a target="_blank" title="Visit JoomlaWorks!" href="http://www.joomlaworks.gr">JoomlaWorks (www.joomlaworks.gr)</a> and released under the <a target="_blank" title="GNU General Public License" href="http://www.gnu.org/copyleft/gpl.html">GNU General Public License</a>. <br />
+      <br />
+      <a target="_blank" title="Visit JoomlaWorks!" href="http://www.joomlaworks.gr">JoomlaWorks</a> is a team of web professionals dedicated to delivering high-quality extensions and templates to the Joomla! &amp; Mambo community. We also do custom development for anyone looking for a tailor-made solution to their project, so feel free to <a target="_blank" title="Contact JoomlaWorks!" href="mailto:joomlaworks@gmail.com">contact us</a>. <br />
+      <br />
+      Make sure you visit:
+      <ul>
+      <li><a target="_blank" title="Visit JoomlaWorks!" href="http://www.joomlaworks.gr">www.joomlaworks.gr</a> for all the latest news and updates to our Joomla!/Mambo extensions and templates. The <a target="_blank" title="Visit JoomlaWorks!" href="http://www.joomlaworks.gr">JoomlaWorks</a> website is also <b class="red" style="text-decoration:underline;">the</b> place to read interesting articles or find useful tips/tutorials for Joomla!/Mambo and web design/development in general.</li>
+      <li><a target="_blank" title="Visit JoomlaWorks Demo Site" href="http://demo.joomlaworks.gr">demo.joomlaworks.gr</a> to experience "live" all our extensions.</li>
+      <li><a target="_blank" title="Visit JoomlaWorks Support Forum!" href="http://forum.joomlaworks.gr">forum.joomlaworks.gr</a> to request for help or provide feedback.</li>
+      </ul>
+      <br />
+      Please show your support in our work by rating or commenting on this extension at the official <a target="_blank" href="http://extensions.joomla.org/component/option,com_mtree/task,viewowner/user_id,1596/Itemid,35/">Joomla! Extensions</a> website. <br />
+      <br />
+      <b><span class="red">the JoomlaWorks team</span><br />Fotis Evangelou, George Chouliaras</b><br />
+      <br />
+      Copyright (c) 2006 - 2007 JoomlaWorks.gr - <a href="http://www.joomlaworks.gr" target="_blank">http://www.joomlaworks.gr</a><br />
+      <br />
+      <i>(Last update: October 26th, 2007 - version 1.4)</i><br />
+      <br />  
+      </div>]]>
+  </description>
+  <files>
+    <filename module="mod_jw_srfr">mod_jw_srfr.php</filename>
+    <filename module="mod_jw_srfr">mod_jw_srfr/mod_jw_srfr.css</filename>
+    <filename module="mod_jw_srfr">mod_jw_srfr/simplepie.inc</filename>
+    <filename module="mod_jw_srfr">mod_jw_srfr/srfr_logo.png</filename>
+    <filename module="mod_jw_srfr">mod_jw_srfr/idn/idna_convert.class.php</filename>
+    <filename module="mod_jw_srfr">mod_jw_srfr/idn/license.txt</filename>
+    <filename module="mod_jw_srfr">mod_jw_srfr/idn/npdata.ser</filename>
+    <filename module="mod_jw_srfr">mod_jw_srfr/idn/readme.txt</filename>
+  </files>
+  <params>
+    <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable). This allows individual module styling." />
+    <param name="@spacer" type="spacer" default="" label="" description="" />
+    <param name="srfr_cache" type="text" default="30" label="Cache refresh time (in minutes)" description="Set the cache refresh time (in minutes). Increasing this time maximizes the performance of your website, but RSS feeds are refreshed less often. A time between 15 to 30 minutes is the best choise. In order for the 'cache' to work, your Joomla! (or Mambo) cache folder must be server writable at least." />
+    <param name="srfr_timeout" type="text" default="10" label="RSS Feed timeout" description="Set the time in seconds after which the module will timeout and stop requesting for data from problematic RSS feeds. Such feeds can come from source sites that are either sluggish or down. Choose to set a higher value if your server can sometimes be sluggish as well. Try though not to exceed 30 seconds." />
+    <param name="srfr_fitems" type="text" default="5" label="Items to display per Feed" description="Set the maximum number of items that will be displayed per RSS feed." />
+    <param name="srfr_totalitems" type="text" default="" label="Total items (from all Feeds)" description="Set the total number of items that will be displayed from all feeds. So, even if you have 4 feeds displaying in your website, with 10 items per feed, and you have set 'Total items (from all feeds)' to 15, then no more than the last 15 items from ALL feeds will be displayed. This is a nice option to have, when you don't want the list of feeds to span a mile high in your website!" />
+    <param name="@spacer" type="spacer" default="" label="" description="" />
+    <param name="srfr_fname" type="list" default="0" label="Display Feed name" description="Select whether to show each Feed's name or not. This is usually the source site's name.">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="srfr_fititle" type="list" default="1" label="Display Feed Item title" description="Select whether to show the title of each Feed's item or not. This is usually the syndicated article title.">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="srfr_fitime" type="list" default="1" label="Display Feed Item timestamp" description="Select whether to show the timestamp of each Feed's item or not. This is usually the publication timestamp of each syndicated article, also known as 'article creation timestamp' in CMS terms.">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="srfr_ftimezone" type="radio" default="0" label="Timezone of Feed Item timestamp" description="Select if the dates will be shown in 'Local' or 'GMT' timezones. Use 'GMT' if your site has many international visitors or 'Local' if your visitors mainly come from the same country as you are. The 'Local' option uses Joomla!'s (or Mambo's) server time offset value, so make sure you've set your timezone offset correctly!">
+      <option value="0">Local</option>
+      <option value="1">GMT</option>
+    </param>
+    <param name="srfr_fi_content" type="radio" default="none" label="Choose Feed Item content" description="Select whether to show the intro content (usually the first few words of each syndicated article), the full content or nothing at all from each Feed Item.">
+      <option value="intro">Intro content (description)</option>
+      <option value="full">Full content</option>
+      <option value="none">None</option>
+    </param>
+    <param name="srfr_fi_hideimages" type="radio" default="0" label="Hide images?" description="Select whether to show or hide images contained inside feeds. Useful to keep your layout safe, when big images are displayed within feeds!">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="srfr_fi_words" type="text" default="" label="Force word limit" description="Word limitation for retrieved content. Leave it blank if you DO NOT wish to limit the number of words!" />
+    <param name="striptags" type="radio" default="0" label="HTML cleanup" description="Do some HTML cleanup, especially when you limit the introtext by words or characters. This way you will not get 'unclosed' HTML tags like p (paragraph) that will cause your content to break. Use with caution! Allowed tags are: img, p, br, a, b. Adjust as necessery in the main php file of the module, at line 194.">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="@spacer" type="spacer" default="" label="" description="" />
+    <param name="srfr_url01" type="text" default="http://feeds.feedburner.com/joomlaworks" size="60" label="Feed URL" description="Add an RSS feed URL here!" />
+    <param name="srfr_url02" type="text" default="" size="60" label="Feed URL" description="Add an RSS feed URL here!" />
+    <param name="srfr_url03" type="text" default="" size="60" label="Feed URL" description="Add an RSS feed URL here!" />
+    <param name="srfr_url04" type="text" default="" size="60" label="Feed URL" description="Add an RSS feed URL here!" />
+    <param name="srfr_url05" type="text" default="" size="60" label="Feed URL" description="Add an RSS feed URL here!" />
+    <param name="srfr_url06" type="text" default="" size="60" label="Feed URL" description="Add an RSS feed URL here!" />
+    <param name="srfr_url07" type="text" default="" size="60" label="Feed URL" description="Add an RSS feed URL here!" />
+    <param name="srfr_url08" type="text" default="" size="60" label="Feed URL" description="Add an RSS feed URL here!" />
+    <param name="srfr_url09" type="text" default="" size="60" label="Feed URL" description="Add an RSS feed URL here!" />
+    <param name="srfr_url10" type="text" default="" size="60" label="Feed URL" description="Add an RSS feed URL here!" />
+    <param name="srfr_url11" type="text" default="" size="60" label="Feed URL" description="Add an RSS feed URL here!" />
+    <param name="srfr_url12" type="text" default="" size="60" label="Feed URL" description="Add an RSS feed URL here!" />
+    <param name="srfr_url13" type="text" default="" size="60" label="Feed URL" description="Add an RSS feed URL here!" />
+    <param name="srfr_url14" type="text" default="" size="60" label="Feed URL" description="Add an RSS feed URL here!" />
+    <param name="srfr_url15" type="text" default="" size="60" label="Feed URL" description="Add an RSS feed URL here!" />
+    <param name="srfr_url16" type="text" default="" size="60" label="Feed URL" description="Add an RSS feed URL here!" />
+    <param name="srfr_url17" type="text" default="" size="60" label="Feed URL" description="Add an RSS feed URL here!" />
+    <param name="srfr_url18" type="text" default="" size="60" label="Feed URL" description="Add an RSS feed URL here!" />
+    <param name="srfr_url19" type="text" default="" size="60" label="Feed URL" description="Add an RSS feed URL here!" />
+    <param name="srfr_url20" type="text" default="" size="60" label="Feed URL" description="Add an RSS feed URL here!" />
+    <param name="@spacer" type="spacer" default="" label="" description="" />
+  </params>
+</mosinstall>

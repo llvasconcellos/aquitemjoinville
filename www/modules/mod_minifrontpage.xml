@@ -1,0 +1,152 @@
+<?xml version="1.0" ?>
+<mosinstall type="module">
+<name>MiniFrontPage Module</name>
+<creationDate>July 20th, 2007</creationDate>
+<author>Erwin Ariza + Andy Sikumbang </author>
+<copyright>Released under GNU/GPL License</copyright>
+<authorEmail>webmaster@golfzone.co.id</authorEmail>
+<authorUrl>www.templateplazza.com</authorUrl>
+<version>1.2.4.1</version>
+<description>
+	<![CDATA[
+	  <p /><img src="../modules/minifrontpage/logo_mini.gif" width="106" height="119" hspace="15" align="left" style="padding-bottom:15px" />
+		MiniFrontpage displays mini frontpage articles with Thumbnails, ellaborate some features from mod_section_thumbnails and mod_mostreadrecent
+		<p/>
+		<strong>Changelog Ver 1.2.4</strong>
+		<ul>
+			<li>Add random option for displaying article </li>
+		</ul>
+		<strong>Changelog Ver 1.2.3</strong>
+		<ul>
+			<li>Add ordering option for thumbnail position</li>
+		</ul>
+		<p/>
+		<strong>Changelog Ver 1.2.2</strong>
+		<ul>
+			<li>Add show/hide articles title option</li>
+			<li>Add show/hide articles introtext option</li>
+		</ul>
+		<br />
+		<strong>Changelog Ver 1.2</strong>
+		<ul>
+			<li>Fix png thumbnail generation bug</li>
+			<li>Fix Separator bug</li>
+		</ul>
+		<p/> <strong>Changelog Ver 1.1</strong>
+		<ul>
+			<li>Add <strong>Show/Hide thumbnail</strong> option</li>
+			<li>Add <strong>Show Category Title</strong> option</li>			
+			<li>Now support <strong>non-{mosimage} </strong>images <i>(Minifrontpage now will also generate thumbnail for images that is put into the article using html tags)</i></li>
+			<li>No More generating the thumbnail everytime the page is loaded <i>(the module is loaded faster now)</i></li>
+			<li>Fix aspect ratio calculation</li>
+			
+		</ul>
+	  <p /><strong>Features :</strong>
+	  <br />
+	  <ul>
+	  	<li>Show a list of the currently published Items that have been viewed recently the most - determined by the number of times the page has been viewed</li>
+	  	<li>Number of articles and introtext to be displayed option</li>
+	  	<li>Show or not the articles that published on the frontpage option</li>
+	  	<li>Show or not articles author and date created option</li>
+	  	<li>Show most recent popular items for the last period-of-novelty days option</li>
+	  	<li>Up to 4 columns format display option for large width module wrapper</li>
+	  </ul>
+	  <p>If you found MiniFrontpage useful you may want to rate and comment MiniFrontpage <a href="http://extensions.joomla.org/component/option,com_mtree/task,viewlink/link_id,2751/Itemid,35/"><strong>here </strong></a>at <strong>extensions.joomla.org</strong></p>
+	]]>
+</description>
+<files>
+	<filename module="mod_minifrontpage">mod_minifrontpage.php</filename>
+	<filename module="mod_minifrontpage">minifrontpage/style.css</filename>
+	<filename module="mod_minifrontpage">minifrontpage/application_add.gif</filename>
+	<filename module="mod_minifrontpage">minifrontpage/arrow_green.gif</filename>
+	<filename module="mod_minifrontpage">minifrontpage/default.gif</filename>
+	<filename module="mod_minifrontpage">minifrontpage/default_thumb.gif</filename>
+	<filename module="mod_minifrontpage">minifrontpage/logo_mini.gif</filename>
+	<filename module="mod_minifrontpage">minifrontpage/index.html</filename>
+</files>
+
+<params>
+	<param name="cache" type="radio" default="0" label="Enable Cache" description="Select whether to cache the content of this module">
+		<option value="0">No</option>
+		<option value="1">Yes</option>
+	</param>
+	<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+	
+	<param name="@spacer" type="spacer" default="------------ Article Sources Properties -------------" label="" description="" />
+	<param name="sections" type="text" default="1,2,3" label="Section(s)" description="Section Ids (, separated)"></param>
+	<param name="categories" type="text" default="1,3,7" label="Category(s)" description="Category Ids (, separated)"></param>
+	<param name="order" type="radio" default="0" label="Order by" description="Order content items / articles by most read or created date">
+		<option value="0">Created</option>
+		<option value="1">Most Read</option>
+		<option value="2">Random</option>
+	</param>
+	<param name="period" type="text" default="1200" label="Period of Novelty (Days)" description="Show popular items for the last period-of-novelty days">
+	</param>
+	
+	<param name="loadorder" type="list" default="0" label="Thumbnail Position" description="Thumbnail Position">
+			<option value="1">Before Title / Category</option>
+			<option value="0">After Title / Date</option>
+	</param>
+	
+	<param name="cat_title" type="radio" default="0" label="Show category title" description="Show/Hide Category Title">
+			<option value="1">show</option>
+			<option value="0">hide</option>
+	</param>
+	<param name="show_front" type="radio" default="1" label="Frontpage Items" description="Show/Hide items designated for the Frontpage - only works when in Content Items only mode">
+			<option value="1">show</option>
+			<option value="0">hide</option>
+	</param>
+	
+	<param name="show_title" type="radio" default="1" label="Display Article title" description="whether to show article title or not">
+       	<option value="0">No</option>
+		<option value="1">Yes</option>
+	</param>
+	
+	<param name="title_link" type="radio" default="1" label="Title Link" description="Is title a link tag">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+	</param>
+	
+	<param name="show_author" type="radio" default="1" label="Display author" description="whether to show author name or not">
+       	<option value="0">No</option>
+		<option value="1">Yes</option>
+	</param>
+	<param name="show_date" type="radio" default="1" label="Display date articles created" description="whether to show date of articles created or not">
+       	<option value="0">No</option>
+		<option value="1">Yes</option>
+	</param>
+	
+	<param name="limit" type="text" default="200" label="Limit intro text" description="Limit article intro text to specified number of characters, (default 0 means no limit, 1 means no intro text)">
+	</param>
+		
+	
+
+   	<param name="fulllink" type="text" default="+ Full Story" label="Full story link text " description="if present a full story link will be added"></param>
+   	
+   	<param name="@spacer" type="spacer" default="------------ Display Format -------------" label="" description="" />
+   	<param name="columns" type="text" default="3" label="Number of columns" description="How many columns minifrontpage display articles introtext"></param>
+	
+	<param name="count" type="text" default="10" label="Number of Articles to display" description="Choose how many articles to display"></param>
+	<param name="num_intro" type="text" default="2" label="Number of Introtext / Hide Introtext" description="Number of intro text to display if intro text will be showed up(default 1)- Fill with 0 to hide introtext " />
+	
+	<param name="@spacer" type="spacer" default="------------ Image Thumbnails -------------" label="" description="" />
+	
+	<param name="thumb_embed" type="radio" default="1" label="Show thumbnails" description="Show / Hide thumbnail image in intro text - just like mosimage does">
+		<option value="0">Hide</option>
+		<option value="1">Show</option>
+	</param>
+	<param name="thumb_width" type="text" default="64" label="Thumbnail Image Width" description="thumb image width if embed thumbnail is selected">
+	</param>
+	<param name="thumb_height" type="text" default="64" label="Thumbnail Image height" description="thumb image height  if embed thumbnail is selected">
+	</param>
+	
+	<param name="aspect" type="radio" default="0" label="Preserve Aspect" description="Preserve image aspect ratio, if yes the height param above doesn't matter">
+		<option value="0">No</option>
+		<option value="1">Yes</option>
+	</param>
+
+   	<param name="header_title_links" type="text" default="Another Articles" label="Header Title for another articles link" description="Show header title for another articles link if exist">
+	</param>
+
+</params>
+</mosinstall>

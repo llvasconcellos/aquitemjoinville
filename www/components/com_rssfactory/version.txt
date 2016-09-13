@@ -1,0 +1,56 @@
+rss Factory 1.5.3 released on April 10, 2008.
+	fixed "Save Config" issue
+
+rss Factory 1.5.2 released on March 25, 2008.
+	Redeveloped to be a native Joomla 1.5.X component (only rss Factory versions 1.0.x till 1.1.x will support further Joomla 1.0.X)
+	several major improvements
+
+rss Factory 1.1.1 released on April 10, 2008.
+	fixed "Save Config" issue
+
+rss Factory 1.1.0 released on March 24, 2008.
+	several minor and major improvements
+	fixed issue regarding the pseudocron
+
+rss Factory 1.0.4 released on Sept. 27, 2007. 
+	Tabbed view configurable (background images, width, height of the tabs)
+	Itemid issue solved
+	Module defaults set to better values
+	Admin - feed pagination fixed
+	Module did not fire pseudocron - fixed
+	New charset handling functions - improved display for UTF-8 feeds in ISO pages
+	New display of target feeds in wrappers in your site
+	improved coding style - no more notices if error level E_ALL turned on
+
+rss Factory 1.0.3 released on May 28, 2007. 
+	added better support for UTF-8 feeds; you can now force the charset encoding of the pages (new admin option "force character encoding")
+	added rel="nofollow" + target="_blank" to the external links of all feeds
+	added support for some malformed XML feeds (no encoding attribute)
+	workaround for strange formatted dates
+	incompatibility fix with com_page_cache
+	fixed curl_setopt issue with safe_mode on sites
+	fixed issue with Feeds without date
+	fixed Mambot bug regarding results (bad id in result)
+	fixed link visit now with http header 301 moved permanently.
+
+rss Factory 1.0.2 released on May 2, 2007. 
+	new feature - show/hide date in display
+	new feature - show/hide bullet in display
+	new feature - show/hide icon in display
+	module fix for displaying bullets (image path was corrupt)
+	incompatibility fix with com_page_cache
+	fixed minor admin interface problems in confguration: show feed icon
+	fixed issue: cannot find any feeds (on some installations) in categories with spaces
+	fixed an issue with Ads (display for less then 2) and was added to CSS.
+
+rss Factory 1.0.1 released on Apr 25, 2007. 
+	minor fix in refresh link output for some configurations;
+	fix for sites running in safe_mode (set_time_limit error);
+	added minor change about description being displayed for "show_categories" set to false.
+
+rss Factory 1.0.0 released on Apr 22, 2007.
+
+
+
+
+

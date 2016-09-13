@@ -1,0 +1,45 @@
+/*
+// "Simple RSS Feed Reader" Module for Joomla! 1.0.x & Mambo 4.5.x/4.6.x - Version 1.4
+// License: http://www.gnu.org/copyleft/gpl.html
+// Authors: Fotis Evangelou - George Chouliaras
+// Copyright (c) 2006 - 2007 JoomlaWorks.gr - http://www.joomlaworks.gr
+// Project page at http://www.joomlaworks.gr - Demos at http://demo.joomlaworks.gr
+// ***Last update: October 26th, 2007***
+*/
+
+div#srfr_container {} /* Don't forget the module class suffix, if you've entered one in the module parameters! */
+
+/* generic list styling */
+ul.srfr {margin:4px 2px;padding:0;list-style:none;background:none;}
+ul.srfr li {margin:4px 0;padding:2px 4px;border-bottom:1px dotted #ccc;list-style:none;clear:both;}
+ul.srfr li.srfr-row0 {background:none;} /* List item row styling - odd */
+ul.srfr li.srfr-row1 {background:#ffffdd;} /* List item row styling - even */
+
+/* generic link styling (fill as you see fit or use specific values below) */
+ul.srfr li a {}
+ul.srfr li a:hover {}
+
+/* feed item title */
+a.srfr-feed-title {display:block;color:#555;}
+a.srfr-feed-title:hover {display:block;color:#c30;}
+
+/* feed item timestamp */
+span.srfr-feed-timestamp {color:#909090;margin-right:4px;font-size:11px;}
+
+/* feed name */
+a.srfr-feed-name {}
+a.srfr-feed-name:hover {}
+
+/* feed item intro content */
+p.srfr-feed-intro {margin:0;padding:2px 0;clear:both;}
+p.srfr-feed-intro img {display:block;float:left;margin:0 4px 4px 0;}
+p.srfr-feed-intro a {}
+p.srfr-feed-intro a:hover {}
+
+/* feed item full content */
+p.srfr-feed-full {margin:0;padding:2px 0;clear:both;}
+p.srfr-feed-full img {display:block;float:left;margin:0 4px 4px 0;}
+p.srfr-feed-full a {}
+p.srfr-feed-full a:hover {}
+
+/* --- END --- */

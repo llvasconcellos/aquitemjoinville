@@ -156,9 +156,7 @@ if (!defined( '_JOS_POLL_MODULE' )) {
 		<tr>
 			<td>
 				<div align="center">
-					<input type="button" onclick="submitbutton_Poll<?php echo $z;?>();" name="task_button" class="button" value="<?php echo _BUTTON_VOTE; ?>" />
-					&nbsp;
-					<input type="button" name="option" class="button" value="<?php echo _BUTTON_RESULTS; ?>" onclick="document.location.href='<?php echo sefRelToAbs("index.php?option=com_poll&amp;task=results&amp;id=$poll->id$_Itemid"); ?>';" />
+					<input type="button" onclick="submitbutton_Poll<?php echo $z;?>();" name="task_button" class="button" value="<?php echo _BUTTON_VOTE; ?>" />&nbsp;<input type="button" name="option" class="button" value="<?php echo _BUTTON_RESULTS; ?>" onclick="document.location.href='<?php echo sefRelToAbs("index.php?option=com_poll&amp;task=results&amp;id=$poll->id$_Itemid"); ?>';" />
 				</div>
 			</td>
 		</tr>

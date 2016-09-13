@@ -1,0 +1,215 @@
+<?xml version="1.0" ?>
+<mosinstall version="1.1.0" type="jceplugin" plugin="mediamanager">
+	<name>Media Manager</name>
+	<version>1.1.5</version>
+	<creationDate>06 June 2007</creationDate>
+	<author>Ryan Demmer</author>
+	<authorEmail>ryandemmer@gmail.com</authorEmail>
+	<authorUrl>http://www.cellardoor.za.net</authorUrl>
+	<copyright>Ryan Demmer</copyright>
+	<license>GNU/GPL</license>
+	<description><![CDATA[ 
+	<p>Media Manager 1.1.5</p>
+	<p>Changelog (from 1.1.4)
+		<ul>
+			<li>Fixed: Boolean values on file edit</li>
+			<li>Fixed: Flashvars for flvPlayer</li>
+			<li>Added: Flash version to 7</li>
+		</ul>
+	</p>
+	<p>Changelog (from 1.1.3)
+		<ul>
+			<li>Fixed: Error caused by undefined size index in files.php Bug #4456</li>
+		</ul>
+	</p>
+	<p>Changelog (from 1.1.2)
+		<ul>
+			<li>Fixed align bug.</li>
+			<li>Fixed flv player autostart, repeat bug.</li>
+			<li>Fixed bug with boolean values.</li>
+			<li>Added big play button to flv player if autostart = false.</li>
+		</ul>
+	</p>
+	<p>Changelog (from 1.1.1)
+		<ul>
+			<li>Added SEF fix that should've been in the initial release.</li>
+		</ul>
+	</p>	
+	<p>Changelog (from 1.1.0)
+		<ul>
+			<li>Fixed path bug with FLV player</li>
+			<li>Fixed selection icon highlighting</li>
+			<li>Added GNU/GPL licence blurb to flash source files</li>
+		</ul>
+	</p>
+	]]></description>
+	<icon>mediamanager</icon>
+	<layout_icon>mediamanager</layout_icon>
+	<elements></elements>
+	<files>
+        <filename plugin="mediamanager">editor_plugin.js</filename>
+		<filename>editor_plugin_src.js</filename>
+		<filename>classes/getid3/getid3.lib.php</filename>
+        <filename>classes/getid3/getid3.php</filename>
+        <filename>classes/getid3/index.html</filename>
+        <filename>classes/getid3/license.txt</filename>
+        <filename>classes/getid3/module.audio-video.asf.php</filename>
+        <filename>classes/getid3/module.audio-video.flv.php</filename>
+        <filename>classes/getid3/module.audio-video.mpeg.php</filename>
+        <filename>classes/getid3/module.audio-video.quicktime.php</filename>
+        <filename>classes/getid3/module.audio-video.real.php</filename>
+        <filename>classes/getid3/module.audio-video.riff.php</filename>
+        <filename>classes/getid3/module.audio-video.swf.php</filename>
+        <filename>classes/getid3/module.audio.mp3.php</filename>
+        <filename>classes/getid3/module.tag.apetag.php</filename>
+        <filename>classes/getid3/module.tag.id3v1.php</filename>
+        <filename>classes/getid3/module.tag.id3v2.php</filename>
+        <filename>classes/getid3/module.tag.lyrics3.php</filename>
+        <filename>classes/helperapps/index.html</filename>
+        <filename>classes/index.html</filename>
+        <filename>classes/manager.class.php</filename>
+        <filename>css/content.css</filename>
+        <filename>css/index.html</filename>
+        <filename>css/manager.css</filename>
+        <filename>files.php</filename>
+        <filename>images/flash.gif</filename>
+        <filename>images/index.html</filename>
+        <filename>images/mediamanager.gif</filename>
+        <filename>images/quicktime.gif</filename>
+        <filename>images/realmedia.gif</filename>
+        <filename>images/shockwave.gif</filename>
+        <filename>images/windowsmedia.gif</filename>
+        <filename>index.html</filename>
+        <filename>jscripts/index.html</filename>
+        <filename>jscripts/functions.js</filename>
+		<filename>jscripts/functions_src.js</filename>
+        <filename>langs/en.js</filename>
+        <filename>langs/en.php</filename>
+        <filename>langs/index.html</filename>
+        <filename>manager.php</filename>
+		<filename>actions.as</filename>
+		<filename>flvplayer.fla</filename>
+		<filename>flvplayer.swf</filename>
+		<filename>flv_preview.fla</filename>
+		<filename>flv_preview.swf</filename>	
+    </files>
+	<params>
+        <param name="dir" type="text" default="/images/stories" label="File Directory Path" description="Path to file directory."/>
+        <param name="url" type="text" default="/images/stories" label="File Directory URL" description="URL to file directory."/>
+        <param name="create_folder" type="list" default="1" label="Create File Directory" description="Creates the above File Directory on first load if it does not exist.">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </param>
+		<param name="use_script" type="list" default="0" label="Use Script" description="Convert media html code to javascript to overcome IE6/IE7 active content issue. Requires JCE Embed Mambot or JCE Utilties Mambot.">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </param>
+		<param name="use_tree" type="list" default="1" label="Show Folder Tree" description="Enable/Disable Folder Tree View.">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </param>
+		<param name="max_size" type="text" default="2048" label="Upload Max File Size (Kb)" description="Maximum file size for uploaded files."/>
+		<param name="@spacer" type="spacer" default="" label="FLV Player Options" description="" />
+		<param name="flv_player" type="text" size="100" default="flvplayer.swf" label="FLV Player file name" description="Name of the flv player, including extension."/>
+        <param name="flv_player_path" type="text" size="100" default="mambots/editors/jce/jscripts/tiny_mce/plugins/mediamanager" label="FLV Player Path" description="Relative path to the FLV Player location."/>    
+		<param name="@spacer" type="spacer" default="" label="Media Manager Access" description="" />
+        <param name="upload" type="list" default="18" label="Allow Upload" description="Select access level to allow Uploads">
+            <option value="99">**Disabled**</option>
+			<option value="0">Guest</option>
+			<option value="18">-Registered</option>
+			<option value="19">--Author</option>
+			<option value="20">---Editor</option>
+			<option value="21">----Publisher</option>
+			<option value="23">-----Manager</option>
+			<option value="24">------Administrator</option>
+			<option value="25">-------Super Administrator</option>
+		</param>
+		<param name="folder_new" type="list" default="18" label="Allow Folder Create" description="Select access level to allow Folder Create">
+            <option value="99">**Disabled**</option>
+			<option value="0">Guest</option>
+			<option value="18">-Registered</option>
+			<option value="19">--Author</option>
+			<option value="20">---Editor</option>
+			<option value="21">----Publisher</option>
+			<option value="23">-----Manager</option>
+			<option value="24">------Administrator</option>
+			<option value="25">-------Super Administrator</option>
+		</param>
+		<param name="folder_delete" type="list" default="18" label="Allow Folder Delete" description="Select access level to allow Folder Delete">
+            <option value="99">**Disabled**</option>
+			<option value="0">Guest</option>
+			<option value="18">-Registered</option>
+			<option value="19">--Author</option>
+			<option value="20">---Editor</option>
+			<option value="21">----Publisher</option>
+			<option value="23">-----Manager</option>
+			<option value="24">------Administrator</option>
+			<option value="25">-------Super Administrator</option>
+		</param>
+		<param name="folder_rename" type="list" default="18" label="Allow Folder Rename" description="Select access level to allow Folder Renaming">
+            <option value="99">**Disabled**</option>
+			<option value="0">Guest</option>
+			<option value="18">-Registered</option>
+			<option value="19">--Author</option>
+			<option value="20">---Editor</option>
+			<option value="21">----Publisher</option>
+			<option value="23">-----Manager</option>
+			<option value="24">------Administrator</option>
+			<option value="25">-------Super Administrator</option>
+		</param>
+		<param name="file_delete" type="list" default="18" label="Allow File Deleteing" description="Select access level to allow File Deleting">
+            <option value="99">**Disabled**</option>
+			<option value="0">Guest</option>
+			<option value="18">-Registered</option>
+			<option value="19">--Author</option>
+			<option value="20">---Editor</option>
+			<option value="21">----Publisher</option>
+			<option value="23">-----Manager</option>
+			<option value="24">------Administrator</option>
+			<option value="25">-------Super Administrator</option>
+		</param>
+		<param name="file_rename" type="list" default="18" label="Allow File Renaming" description="Select access level to allow File Renaming">
+            <option value="99">**Disabled**</option>
+			<option value="0">Guest</option>
+			<option value="18">-Registered</option>
+			<option value="19">--Author</option>
+			<option value="20">---Editor</option>
+			<option value="21">----Publisher</option>
+			<option value="23">-----Manager</option>
+			<option value="24">------Administrator</option>
+			<option value="25">-------Super Administrator</option>
+		</param>
+		<param name="file_move" type="list" default="18" label="Allow File Cut/Copy/Paste" description="Select access level to allow File Cut/Copy/Paste">
+            <option value="99">**Disabled**</option>
+			<option value="0">Guest</option>
+			<option value="18">-Registered</option>
+			<option value="19">--Author</option>
+			<option value="20">---Editor</option>
+			<option value="21">----Publisher</option>
+			<option value="23">-----Manager</option>
+			<option value="24">------Administrator</option>
+			<option value="25">-------Super Administrator</option>
+		</param>
+		<param name="user_dir" type="list" default="0" label="Use Usertype/Username Access" description="Restrict users to specific directories based on their access level.">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </param>
+        <param name="dir_type" type="list" default="level" label="Restriction Type" description="Select folder restriction type. 'Usertype' - restrict the user to a directory based on their usertype. 'Username' - restrict the user to a directory based on their username. 'Usertype/Username' - a combination of the former two. 'Folder' - restrict users to a folder named in the field below.">
+            <option value="level">Usertype</option>
+            <option value="name">Username</option>
+            <option value="level_name">Usertype/Username</option>
+			<option value="folder">Folder</option>
+        </param>
+		<param name="user_folder" type="text" default="" label="User Directory" description="Name of user folder if 'folder' option in 'Restriction Type' above is selected."/>
+        <param name="user_dir_level" type="list" default="18" label="Restriction Level" description="Level below which users are assigned a folder based on the selection above.">
+			<option value="0">Guest</option>
+			<option value="18">-Registered</option>
+			<option value="19">--Author</option>
+			<option value="20">---Editor</option>
+			<option value="21">----Publisher</option>
+			<option value="23">-----Manager</option>
+			<option value="24">------Administrator</option>
+			<option value="25">-------Super Administrator</option>
+		</param>		
+    </params>
+</mosinstall>
