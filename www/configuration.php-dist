@@ -1,0 +1,103 @@
+<?php
+/**
+* @version $Id: configuration.php-dist 7424 2007-05-17 15:56:10Z robs $
+* @package Joomla / Tradução idioma pt-br 28-07-2007 /por: Lena - www.facilhost.com.br
+* @copyright Copyright (C) 2005 Open Source Matters. All rights reserved.
+* @license http://www.gnu.org/copyleft/gpl.html GNU/GPL, see LICENSE.php
+* Joomla! is free software and parts of it may contain or be derived from the
+* GNU General Public License or other free or open source software licenses.
+* See COPYRIGHT.php for copyright notices and details.
+*
+* -------------------------------------------------------------------------
+* THIS SHOULD ONLY BE USED AS A LAST RESORT WHEN THE WEB INSTALLER FAILS
+*
+* If you are installing Joomla manually i.e. not using the web installer
+* then rename this file to configuration.php e.g.
+*
+* UNIX -> mv configuration.php-dist configuration.php
+* Windows -> rename configuration.php-dist configuration.php
+*
+* Now edit this file and configure the parameters for your site and
+* database.
+* -------------------------------------------------------------------------
+* Configuração da Base de Dados
+* -------------------------------------------------------------------------
+*/
+$mosConfig_offline = '0';
+$mosConfig_host = 'localhost';	// Normalmente será localhost
+$mosConfig_user = '';			// Nome do Usuário MySQL
+$mosConfig_password = '';		// Senha MySQL
+$mosConfig_db = '';				// Nome da base dados MySQL
+$mosConfig_dbprefix = 'jos_';	// Não altere exceto se for necessário!
+/**
+* -------------------------------------------------------------------------
+* Configuração específica do site
+* -------------------------------------------------------------------------
+*/
+if(!defined('RG_EMULATION')) { define( 'RG_EMULATION', 0 ); }	// Off by default for security
+$mosConfig_lang = 'brazilian_portuguese';				// Idioma do Site
+$mosConfig_absolute_path = '/caminho/para/joomla/install';	// Sem barra final
+$mosConfig_live_site = 'http://seu_site_joomla.com';	// Sem barra final
+$mosConfig_sitename = 'Joomla';				// Nome do site Joomla
+$mosConfig_shownoauth = '0';				// Exibir links e categorias aos quais os usuários não tenham autorização de acesso
+$mosConfig_useractivation = '1';			// Enviar novas senhas por e-mail
+$mosConfig_uniquemail = '1';				// Exige um e-mail único para cada utilizador
+$mosConfig_offline_message = 'Este site está em manutenção.<br /> Volte em breve.';
+$mosConfig_lifetime = '900'; 				// Duração de Sessão de Site Público
+$mosConfig_session_life_admin = '1800';		// Duração de Sessão de Admin
+$mosConfig_MetaDesc = 'Joomla - criação de Portais Dinâmicos e Sistema de Gestão de Conteúdos';
+$mosConfig_MetaKeys = 'joomla';
+$mosConfig_MetaTitle = '1';
+$mosConfig_MetaAuthor = '1';
+$mosConfig_debug = '0';
+$mosConfig_locale = 'pt_BR';
+$mosConfig_offset = '0';				// Hora local de Servidor
+$mosConfig_offset_user = '-3';			// Hora local do utilizador
+$mosConfig_hideAuthor = '0';
+$mosConfig_hideCreateDate = '0';
+$mosConfig_hideModifyDate = '0';
+$mosConfig_hidePdf = '0';
+$mosConfig_hidePrint = '0';
+$mosConfig_hideEmail = '0';
+$mosConfig_enable_log_items = '0';
+$mosConfig_enable_log_searches = '0';
+$mosConfig_enable_stats = '0';
+$mosConfig_sef = '0';
+$mosConfig_vote = '0';
+$mosConfig_gzip = '0';
+$mosConfig_multipage_toc = '0';
+$mosConfig_allowUserRegistration = '1';
+$mosConfig_error_reporting = -1;
+$mosConfig_error_message = 'Site temporariamente indisponível.<br /> Queira informar o administrador do sistema para o seguinte e-mail: [alterar com o seu e-mail].';
+$mosConfig_link_titles = '0';
+$mosConfig_list_limit = '30';
+$mosConfig_caching = '0';
+$mosConfig_cachepath = '/path/to/joomla/install/cache';
+$mosConfig_cachetime = '900';
+$mosConfig_mailer = 'mail';
+$mosConfig_mailfrom = '';
+$mosConfig_fromname = '';
+$mosConfig_sendmail = '/usr/sbin/sendmail';
+$mosConfig_smtpauth = '0';
+$mosConfig_smtpuser = '';
+$mosConfig_smtppass = '';
+$mosConfig_smtphost = 'localhost';
+$mosConfig_back_button = '1';
+$mosConfig_item_navigation = '1';
+$mosConfig_secret = 'FBVtggIk5lAzEU9H'; //Alterar para algo mais seguro
+$mosConfig_pagetitles = '1';
+$mosConfig_readmore = '1';
+$mosConfig_hits = '1';
+$mosConfig_icons = '1';
+$mosConfig_favicon = 'favicon.ico';
+$mosConfig_fileperms = '';
+$mosConfig_dirperms = '';
+$mosConfig_helpurl = 'http://help.joomla.org';
+$mosConfig_mbf_content='0';
+$mosConfig_editor = 'tinymce';
+$mosConfig_admin_expired = '1';
+$mosConfig_frontend_login = '1';
+$mosConfig_frontend_userparams = '1';
+$mosConfig_itemid_compat = '0';
+setlocale (LC_ALL, $mosConfig_locale);			// Configuração de país
+?>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module" version="1.0.0">
+	<name>Módulo Wrapper</name>
+	<author>Joomla! Project</author>
+	<creationDate>October 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<translation>Idioma pt-br / Lena - www.facilhost.com.br</translation>
+	<translationDate>27-07-2007</translationDate>
+    <version>1.0.0</version>
+	<description>Este módulo exibe uma janela IFrame de um local específico</description>
+	<files>
+		<filename module="mod_wrapper">mod_wrapper.php</filename>
+	</files>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Sufixo de Classe da Página" description="Um sufixo para ser aplicado à classe css da página, isto permite um estilo de página individual" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="url" type="text" size="30" default="" label="Url" description="Url para o site/arquivo que deseja ser exibido com Iframe" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="scrolling" type="radio" default="auto" label="Barra de Rolagem" description="Exibir/Ocultar as barras de rolagem horizontal & vertical">
+			<option value="no">Não</option>
+			<option value="yes">Sim</option>
+			<option value="auto">Auto</option>
+		</param>
+		<param name="width" type="text" size="5" default="100%" label="Largura" description="Largura da janela iframe, você pode entrar com um valor absoluto em pixels, ou relativo em %" />
+		<param name="height" type="text" size="5" default="200" label="Altura" description="Altura da janela iframe" />
+		<param name="height_auto" type="radio" default="1" label="Altura Automática" description="A altura será automaticamente configurada para o tamanho da página externa. Isto somente funcionará para páginas em seu próprio domínio.">
+			<option value="0">Não</option>
+			<option value="1">Sim</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="add" type="radio" default="1" label="Adicionar Automático" description="Por padrão http:// será adicionado a não que o detectado seja http:// ou https:// no link que você informou, isto possibilita você desligar esta habilidade">
+			<option value="0">Não</option>
+			<option value="1">Sim</option>
+		</param>
+	</params>
+</mosinstall>

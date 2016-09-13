@@ -1,0 +1,50 @@
+// PT_BR lang variables / pt-BR = Portugues (Brasil)
+/**
+ * Authors : Lena - www.facilhost.com.br <www.biblioteia.com>
+ * Last Updated : 27-07-2007
+ */
+
+tinyMCE.addToLang('advlink',{
+general_tab : 'Geral',
+popup_tab : 'Pop-up',
+events_tab : 'Eventos',
+advanced_tab : 'Avançado',
+general_props : 'Definições gerais',
+popup_props : 'Definições de Popup',
+event_props : 'Eventos',
+advanced_props : 'Definições Avançadas',
+popup_opts : 'Opções',
+anchor_names : 'Âncoras',
+target_same : 'Abrir nesta janela / frame',
+target_parent : 'Abrir na mesma janela / frame',
+target_top : 'Abrir na janela superior (substitui todas as frames)',
+target_blank : 'Abrir numa nova fanela',
+popup : 'Mensagem Javascript pop-up',
+popup_url : 'Pop-up URL',
+popup_name : 'Nome da Janela',
+popup_return : 'Inserir \'return false\'',
+popup_scrollbars : 'Exibir Barras de Rolamento',
+popup_statusbar : 'Exibir Barras de Estado',
+popup_toolbar : 'Exibir Barra de Ferramentas',
+popup_menubar : 'Exibir Barra de Menu',
+popup_location : 'Exibir Barra de Endereço',
+popup_resizable : 'Tornar a janela redimensionável',
+popup_dependent : 'Janela Dependente (apenas Mozilla/Firefox)',
+popup_size : 'Tamanho',
+popup_position : 'Posição (X/Y)',
+id : 'Id',
+style: 'Estilo',
+classes : 'Classes',
+target_name : 'Nome Alvo',
+langdir : 'Direção da escrita',
+target_langcode : 'Idioma de destino',
+langcode : 'Código de Idioma',
+encoding : 'Codificação dos caracteres de destino',
+mime : 'Formato MIME de destino',
+rel : 'Relação página para destino',
+rev : 'Relação destino para página',
+tabindex : 'Índices de Tab',
+accesskey : 'Chave de Acesso',
+ltr : 'Esquerda para a direita',
+rtl : 'Direita para a esquerda'
+});

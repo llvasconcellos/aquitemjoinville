@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module" version="1.0.0">
+	<name>Seletor de Tema</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<translation>Idioma pt-br / Lena - www.facilhost.com.br</translation>
+	<translationDate>27-07-2007</translationDate>
+    <version>1.0.0</version>
+	<description>O módulo Seletor de Tema permite ao usuário (visitante) alterar o tema imediatamente da página principal através de uma caixa de seleção.</description>
+	<files>
+	<filename module="mod_templatechooser">mod_templatechooser.php</filename>
+	</files>
+	<params>
+		<param name="title_length" type="text" default="20" label="Tamanho Max. do Nome" description="Este é o tamanho máximo do nome do tema a ser exibido (o padrão é 20)" />
+		<param name="show_preview" type="radio" default="0" label="Exibir Pré-visualização" description="Pré-visualização do tema será exibido">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="preview_width" type="text" default="140" label="Largura" description="Esta é a largura da imagem de pré-visualização (o padrão é 140)" />
+		<param name="preview_height" type="text" default="90" label="Altura" description="Esta é a altura da imagem de pré-visualização (o padrão é 90)" />
+		<param name="moduleclass_sfx" type="text" default="" label="Sufixo de Classe da Página" description="Um sufixo para ser aplicado à classe css da página, isto permite um estilo de página individual" />
+	</params>
+</mosinstall>

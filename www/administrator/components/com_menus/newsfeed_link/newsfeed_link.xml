@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="menu" version="1.0.0">
+	<name>Link - Notícias Externas</name>
+	<group>Component|Link</group>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<translation>Idioma pt-br / Lena - www.facilhost.com.br</translation>
+	<translationDate>27-07-2007</translationDate>
+    <version>1.0.0</version>
+	<description>Cria um link a uma única Notícia Externa publicada</description>
+	<params>
+		<param name="menu_image" type="imagelist" directory="/images/stories" hide_default="1" default="" label="Imagem do Menu" description="Uma pequena imagem para ser colocada à esquerda ou direita do item de menu. As imagens devem estar no diretório:  images/stories/" />
+		<param name="pageclass_sfx" type="text" size="20" default="" label="Sufixo de Classe da Página" description="Um sufixo para ser aplicado à classe css da página, o que permitirá um estilo personalizado" />
+		<param name="back_button" type="list" default="" label="Botão ` Voltar ´" description="Exibir/Ocultar um botão Voltar, para retornar à página vista anteriormente">
+			<option value="">Usar Global</option>
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="header" type="text" size="30" default="" label="Título da Página" description="Texto a ser exibido no topo da página" />
+		<param name="page_title" type="radio" default="1" label="Título da Página" description="Exibir/Ocultar o Título da Página">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="feed_image" type="radio" default="1" label="Imagem da Fonte" description="Exibir/Ocultar a imagem da fonte">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="feed_descr" type="radio" default="1" label="Descrição da Fonte" description="Exibir/Ocultar a descrição da fonte">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="item_descr" type="radio" default="1" label="Descrição do Item" description="Exibir/Ocultar a descrição ou a introdução de um item">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="word_count" type="text" size="6" default="0" label="Contagem de Palavras" description="Permite-lhe limitar o tamanho do texto de descrição. Indicar zero `0´ exibirá todo o texto" />
+	</params>
+</mosinstall>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="menu" version="1.0.0">
+	<name>Tabela - Categoria de Conteúdo</name>
+	<group>Content</group>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<translation>Idioma pt-br / Lena - www.facilhost.com.br</translation>
+	<translationDate>27-07-2007</translationDate>
+    <version>1.0.0</version>
+	<description>Exibe uma tabela com os Artigos de uma Categoria específica</description>
+	<params>
+		<param name="menu_image" type="imagelist" directory="/images/stories" hide_default="1" default="" label="Imagem de Menu" description="Uma pequena imagem para ser colocada à esquerda ou direita do item de menu. As imagens devem estar no diretório images/stories/" />
+		<param name="page_title" type="radio" default="1" label="Título de página" description="Exibir/Ocultar o título da página">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="pageclass_sfx" type="text" size="20" default="" label="Sufixo de Classe da Página" description="Um sufixo para ser aplicado à classe css da página, o que permitirá um estilo personalizado" />
+		<param name="back_button" type="list" default="" label="Botão ` Voltar ´" description="Exibir/Ocultar um botão Voltar, para retornar à página vista anteriormente">
+			<option value="">Usar Global</option>
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="description_cat" type="radio" default="1" label="Descrição da categoria" description="Exibir/Ocultar a descrição da categoria">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="description_cat_image" type="radio" default="1" label="Imagem de descrição da Categoria" description="Exibir/Ocultar a imagem de descrição da Categoria">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="orderby" type="list" default="" label="Ordenar por" description="Esta opção sobrepõe-se à ordenação dos itens.">	
+			<option value="">Padrão</option>
+			<option value="date">Mais Antigos</option>
+			<option value="rdate">Mais Recentes</option>
+			<option value="alpha">Título por A-Z</option>
+			<option value="ralpha">Título por Z-A</option>
+			<option value="author">Autor por A-Z</option>
+			<option value="rauthor">Autor por Z-A</option>
+			<option value="hits">Mais Acessados</option>
+			<option value="rhits">Menos Acessados</option>
+			<option value="order">nº Ordem</option>
+		</param>
+		<param name="date_format" type="text" size="15" default="" label="Formato de Data" description="O formato de exibição da data, utilizando o formato do comando strftime do PHP. Se ficar em branco, será utilizado o formato de seu arquivo de idioma" />
+		<param name="date" type="list" default="" label="Coluna Data" description="Exibir/Ocultar a coluna Data">
+			<option value="">Usar Global</option>
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="author" type="list" default="" label="Coluna Autor" description="Exibir/Ocultar a coluna de Autor">
+			<option value="">Usar Global</option>
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="hits" type="list" default="" label="Coluna Acessos" description="Exibir/Ocultar a coluna Acessos">
+			<option value="">Usar Global</option>
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="headings" type="radio" default="1" label="Cabeçalhos da Tabela" description="Exibir/Ocultar os cabeçalhos das tabelas">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="navigation" type="radio" default="1" label="Barra de Navegação" description="Exibir/Ocultar a barra de navegação">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="order_select" type="radio" default="1" label="Seletor de Ordem" description="Exibir/Ocultar uma caixa de seleção de ordem">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="display" type="radio" default="1" label="Seletor de visualização" description="Exibir/Ocultar uma caixa de seleção de exibição">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="display_num" type="list" default="50" label="Qtd. a Exibir" description="Número de itens a exibir como padrão">
+			<option value="5">5</option>
+			<option value="10">10</option>
+			<option value="15">15</option>
+			<option value="20">20</option>
+			<option value="25">25</option>
+			<option value="30">30</option>
+			<option value="50">50</option>
+		</param>
+		<param name="filter" type="radio" default="1" label="Filtro" description="Exibir/Ocultar a funcionalidade de filtro">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="filter_type" type="list" default="title" label="Campos de Filtro" description="A que campos o filtro deve ser aplicado">
+			<option value="title">Título</option>
+			<option value="author">Autor</option>
+			<option value="hits">Acessos</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="other_cat" type="radio" default="1" label="Outras Categorias" description="Exibir/Ocultar uma lista de outras Categorias">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="empty_cat" type="radio" default="0" label="Categorias Vazias" description="Exibir/Ocultar categorias vazias (sem artigos)">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="cat_items" type="radio" default="1" label="Qtd. Itens da Categoria" description="Exibir/Ocultar o número de artigos de cada categoria">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="cat_description" type="radio" default="1" label="Descrição da Categoria" description="Exibir/Ocultar a descrição da categoria: aparecerá por baixo do nome da categoria">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+ 		<param name="unpublished" type="radio" default="1" label="Artigos Não Publicados" description="Exibir/Ocultar os artigos não publicados ao grupo de usuários `Publicadores` e inferiores">
+ 			<option value="0">Ocultar</option>
+ 			<option value="1">Exibir</option>
+ 		</param>
+	</params>
+</mosinstall>

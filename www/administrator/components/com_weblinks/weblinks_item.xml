@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="component" version="1.0.0">
+	<name>Weblinks</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<translation>Idioma pt-br / Lena - www.facilhost.com.br</translation>
+	<translationDate>27-07-2007</translationDate>
+    <version>1.0.0</version>
+	<description>Este componente mostra um listando de Weblinks</description>
+	<params>
+		<param name="target" type="list" default="0" label="Alvo" description="Janela alvo quando o link é clicado">
+			<option value="0">Mesma janela com botões de navegação</option>
+			<option value="1">Nova janela com botões de navegação</option>
+			<option value="2">Nova janela sem botões de navegação</option>
+		</param>
+	</params>
+</mosinstall>

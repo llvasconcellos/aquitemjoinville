@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall version="1.0.0" type="mambot" group="content">
+	<name>Inserir Imagens</name>
+	<author>Joomla! Project</author>
+	<creationDate>August 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<translation>Idioma pt-br / Lena - www.facilhost.com.br</translation>
+	<translationDate>27-07-2007</translationDate>
+    <version>1.0.0</version>
+	<description>Substitui, nos artigos, o tag {mosimage} com as imagens especificadas</description>
+	<files>
+		<filename mambot="mosimage">mosimage.php</filename>
+	</files>
+	<params>
+		<param name="margin" type="text" default="5" size="5" label="Margem" description="Margem em px, das Div em volta da Imagem e da Legenda - aplicável apenas se for utilizada uma legenda" />
+		<param name="padding" type="text" default="0" size="5" label="Espaçamento" description="Espaçamento em px, das Div em volta da Imagem e da Legenda - aplicável apenas se for utilizada uma legenda" />
+	</params>
+</mosinstall>

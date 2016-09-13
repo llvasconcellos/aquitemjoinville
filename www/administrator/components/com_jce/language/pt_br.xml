@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" ?>
+<mosinstall version="1.1.0" type="jcelang" lang="pt_br">
+	<name>Brazilian Portuguese</name>
+	<version>1.1.5</version>
+	<creationDate>2007</creationDate>
+	<author>Raul Dias [convertido para iso-8859-1 por Marcelo Oliveira - www.iboletim.com.br]</author>
+	<authorEmail>raul@dias.com.br</authorEmail>
+	<authorUrl>http://www.dias.com.br</authorUrl>
+	<copyright>SWI Servi�os de Internet</copyright>
+	<license>LGPL</license>
+	<description>Brazilian Portuguese Language files for JCE (iso-8859-1)</description>
+	
+	<files>
+		<filename language="pt_br">langs/pt_br.js</filename>
+		<filename>libraries/langs/pt_br.php</filename>
+		
+		<filename>themes/advanced/langs/pt_br.js</filename>
+		<filename>themes/advanced/docs/pt_br/images/insert_anchor_window.gif</filename>
+		<filename>themes/advanced/docs/pt_br/images/insert_image_window.gif</filename>
+		<filename>themes/advanced/docs/pt_br/images/insert_link_window.gif</filename>
+		<filename>themes/advanced/docs/pt_br/images/insert_table_window.gif</filename>		
+		<filename>themes/advanced/docs/pt_br/about.htm</filename>
+		<filename>themes/advanced/docs/pt_br/common_buttons.htm</filename>
+		<filename>themes/advanced/docs/pt_br/create_accessible_content.htm</filename>
+		<filename>themes/advanced/docs/pt_br/index.htm</filename>
+		<filename>themes/advanced/docs/pt_br/insert_anchor_button.htm</filename>
+		<filename>themes/advanced/docs/pt_br/insert_image_button.htm</filename>
+		<filename>themes/advanced/docs/pt_br/insert_link_button.htm</filename>
+		<filename>themes/advanced/docs/pt_br/insert_table_button.htm</filename>
+		<filename>themes/advanced/docs/pt_br/style.css</filename>
+        	
+	        <filename>plugins/advimage/langs/pt_br.js</filename>
+		<filename>plugins/advlink/langs/pt_br.js</filename>
+		<filename>plugins/advlink/langs/pt_br.php</filename>
+		<filename>plugins/advlink_ext/langs/pt_br.js</filename>
+		<filename>plugins/advlink_ext/langs/pt_br.php</filename>
+		<filename>plugins/caption/langs/pt_br.js</filename>
+		<filename>plugins/caption/langs/pt_br.php</filename>
+        	<filename>plugins/directionality/langs/pt_br.js</filename>
+		<filename>plugins/doclink/langs/pt_br.js</filename>
+		<filename>plugins/doclink/langs/pt_br.php</filename>
+		<filename>plugins/editarea/langs/pt_br.js</filename>
+		<filename>plugins/editarea/langs/pt_br.php</filename>
+	        <filename>plugins/emotions/langs/pt_br.js</filename>
+		<filename>plugins/filemanager/langs/pt_br.js</filename>
+		<filename>plugins/filemanager/langs/pt_br.php</filename>
+		<filename>plugins/fireboard/langs/pt_br.js</filename>
+		<filename>plugins/fireboard/langs/pt_br.php</filename>
+        	<filename>plugins/fullscreen/langs/pt_br.js</filename>
+	        <filename>plugins/htmltemplate/langs/pt_br.js</filename>
+		<filename>plugins/iframe/langs/pt_br.js</filename>
+        	<filename>plugins/imgmanager/langs/pt_br.js</filename>
+	        <filename>plugins/imgmanager/langs/pt_br.php</filename>
+		<filename>plugins/imgmanager_ext/langs/pt_br.js</filename>
+	        <filename>plugins/imgmanager_ext/langs/pt_br.php</filename>
+		<filename>plugins/joomla/langs/pt_br.js</filename>
+		<filename>plugins/joomlaboard/langs/pt_br.js</filename>
+		<filename>plugins/joomlaboard/langs/pt_br.php</filename>
+		<filename>plugins/layer/langs/pt_br.js</filename>
+        	<filename>plugins/mediamanager/langs/pt_br.js</filename>
+	        <filename>plugins/mediamanager/langs/pt_br.php</filename>
+        	<filename>plugins/nonbreaking/langs/pt_br.js</filename>
+		<filename>plugins/paste/langs/pt_br.js</filename>
+	        <filename>plugins/preview/langs/pt_br.js</filename>
+        	<filename>plugins/print/langs/pt_br.js</filename>
+	        <filename>plugins/searchreplace/langs/pt_br.js</filename>
+		<filename>plugins/spellchecker/langs/pt_br.js</filename>
+		<filename>plugins/style/langs/pt_br.js</filename>
+        	<filename>plugins/table/langs/pt_br.js</filename>
+		<filename>plugins/templates/langs/pt_br.js</filename>
+		<filename>plugins/templates/langs/pt_br.php</filename>
+		<filename>plugins/templatemanager/langs/pt_br.js</filename>
+		<filename>plugins/templatemanager/langs/pt_br.php</filename>
+		<filename>plugins/visualchars/langs/pt_br.js</filename>
+		<filename>plugins/xhtmlxtras/langs/pt_br.js</filename>
+	</files>
+	<administration>
+		<files>
+        		<filename>pt_br.php</filename>
+		</files>
+	</administration>
+</mosinstall>

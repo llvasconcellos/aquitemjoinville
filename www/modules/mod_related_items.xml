@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module" version="1.0.0">
+	<name>Artigos relacionados</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<translation>Idioma pt-br / Lena - www.facilhost.com.br</translation>
+	<translationDate>27-07-2007</translationDate>
+    <version>1.0.0</version>
+	<description>Este módulo exibe outros Itens de Conteúdo que estão relacionados aos Item atualmente exibido. Este são baseados no critério de palavras-chave dos Metadados. Todas as palavras-chave do Item de Conteúdo atual são procuradas contra todas as palavras-chaves do outros itens publicados. Por exemplo, se você tem um Item sobre 'Instalando Joomla' e você tem outro sobre 'Configurando Joomla'. Se você incluir a palavra-chave 'Joomla' nos dois itens, então o Módulo de Itens Relacionados listará o item 'Instalando Joomla' quando exibindo 'Configurando Joomla' e vice-versa.</description>
+	<files>
+	<filename module="mod_related_items">mod_related_items.php</filename>
+	</files>
+	<params>
+		<param name="cache" type="radio" default="0" label="Habilitar Cache" description="Selecione se deseja realizar cache do conteúdo para este módulo">
+			<option value="0">Não</option>
+			<option value="1">Sim</option>
+		</param>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+	</params>
+</mosinstall>

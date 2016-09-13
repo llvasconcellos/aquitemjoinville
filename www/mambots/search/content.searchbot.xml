@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall version="1.0.0" type="mambot" group="search">
+	<name>Pesquisador de Artigos</name>
+	<author>Joomla! Project</author>
+	<creationDate>August 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	    <version>1.0.0</version>
+    <translation>Idioma pt-br / Lena - www.facilhost.com.br</translation>
+    <translationDate>27-07-2007</translationDate>
+	<description>Permite a pesquisa em todos os Artigos</description>
+	<files>
+		<filename mambot="content.searchbot">content.searchbot.php</filename>
+	</files>
+	<params>
+		<param name="search_limit" type="text" size="5" default="50" label="Limite de Pesquisa" description="Número de resultados a exibir"/>		
+		<param name="nonmenu" type="radio" default="1" label="Artigo estático fora de menus" description="Pesquisar Artigos estáticos não ligados a menus?">
+			<option value="0">Não</option>
+			<option value="1">Sim</option>
+		</param>
+	</params>
+</mosinstall>

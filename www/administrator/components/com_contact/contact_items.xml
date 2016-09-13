@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="component" version="1.0.0">
+	<name>Contact Items</name>
+	<author>Joomla! Project</author>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Parameters for individual Contact Items</description>
+	<params>
+		<param name="menu_image" type="imagelist" directory="/images/stories" hide_default="1" default="" label="Imagem do Menu" description="Uma pequena imagem para ser colocada à esquerda ou direita de seu item de menu, imagens devem estar em images/stories/" />
+		<param name="pageclass_sfx" type="text" size="20" default="" label="Sufixo de Classe da Página" description="Um sufixo para ser aplicado à classe css da página, isto permite um estilo de página individual" />
+		<param name="print" type="list" default="" label="Ícone da Impressora" description="Exibir/Ocultar o botão da impressora - afeta somente esta página">
+			<option value="">Usar Global</option>
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="back_button" type="list" default="" label="Botão Voltar" description="Exibir/Ocultar um botão Voltar, que te retorna à página vista anteriormente">
+			<option value="">Usar Global</option>
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="name" type="radio" default="1" label="Nome" description="Exibir/Ocultar a exibição do nome">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="position" type="radio" default="1" label="Cargo" description="Exibir/Ocultar a exibição do cargo">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="email" type="radio" default="0" label="E-mail" description="Exibir/Ocultar a exibição do e-mail, se configurar para exibir o endereço será protegido de spambots através de ocultação via javascript">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="street_address" type="radio" default="1" label="Endereço da Rua" description="Exibir/Ocultar a exibição do endereço da rua">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="suburb" type="radio" default="1" label="Cidade/Bairro" description="Exibir/Ocultar a exibição do bairro">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="state" type="radio" default="1" label="Estado" description="Exibir/Ocultar a exibição do estado">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="country" type="radio" default="1" label="País" description="Exibir/Ocultar a exibição do país">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="postcode" type="radio" default="1" label="CEP" description="Exibir/Ocultar a exibição do cep">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="telephone" type="radio" default="1" label="Telefone" description="Exibir/Ocultar a exibição do telefone">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="fax" type="radio" default="1" label="Fax" description="Exibir/Ocultar a exibição do fax">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="misc" type="radio" default="1" label="Outras Informações" description="Exibir/Ocultar a exibição de outras informações">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="image" type="radio" default="1" label="Imagem" description="Exibir/Ocular a imagem">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="vcard" type="radio" default="0" label="VCard" description="Exibir/Ocular VCard">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="email_description" type="radio" default="1" label="Descrição do Email" description="Exibir/Ocultar a descrição abaixo">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="email_description_text" type="text" size="30" default="" label="Descrição" description="A descrição para o formulário de email, se deixado em branco será usado o _EMAIL_DESCRIPTION do seu arquivo de idioma" />
+		<param name="email_form" type="radio" default="1" label="Email Form" description="Show/Hide the email to form">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="email_copy" type="radio" default="1" label="Cópia de e-mail" description="Exibir/Ocultar a caixa de seleção para enviar uma cópia do e-mail para o remetente">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="drop_down" type="radio" default="0" label="Caixa de Seleção" description="Exibir/Ocultar a caixa de seleção na visualização do contato">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="contact_icons" type="list" default="0" label="Ícones/Texto" description="Usar ícones, texto ou nada próximo à informação exibida">
+			<option value="0">Ícones</option>
+			<option value="1">Texto</option>
+			<option value="2">Nenhum</option>
+		</param>
+		<param name="icon_address" type="imagelist" directory="/images/M_images" hide_none="1" default="" label="Ícone de Endereço" description="Ícone a exibição do endereço" />
+		<param name="icon_email" type="imagelist" directory="/images/M_images" hide_none="1" default="" label="Ícone de E-mail" description="Ícone para a exibição do e-mail" />
+		<param name="icon_telephone" type="imagelist" directory="/images/M_images" hide_none="1" default="" label="Ícone do Telefone" description="Ícone a exibição do telefone" />
+		<param name="icon_fax" type="imagelist" directory="/images/M_images" hide_none="1" default="" label="Ícone do Fax" description="Ícone a exibição do fax" />
+		<param name="icon_misc" type="imagelist" directory="/images/M_images" hide_none="1" default="" label="Ícone de Outras" description="Ícone a exibição de outras informações" />
+	</params>
+</mosinstall>

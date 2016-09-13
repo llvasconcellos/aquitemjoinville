@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="component" version="1.0.0">
+	<name>Search</name>
+	<author>Joomla! Project</author>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>This component manages the Search functionality.</description>
+	<params>
+		<param name="menu_image" type="imagelist" directory="/images/stories" default="" label="Imagem do Menu" description="Uma pequena imagem para ser colocada à esquerda ou direita de seu item de menu, imagens devem estar em images/stories/"/>
+		<param name="pageclass_sfx" type="text" size="20" default="" label="Sufixo de Classe da Página" description="Um sufixo para ser aplicado à classe css da página, isto permite um estilo de página individual"/>
+		<param name="back_button" type="list" default="" label="Botão Voltar" description="Exibir/Ocultar um botão Voltar, que te retorna à página vista anteriormente">
+			<option value="">Usar Global</option>
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="page_title" type="radio" default="1" label="Título da Página" description="Exibir/Ocultar o Título da Página">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="header" type="text" size="30" default="" label="Título da Página" description="Texto a ser exibido topo da página. Se deixado em branco, o nome no menu será usado no lugar"/>
+	</params>
+</mosinstall>

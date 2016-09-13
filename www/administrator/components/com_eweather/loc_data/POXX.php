@@ -1,0 +1,93 @@
+<?php
+
+// City package for Portugal
+
+$city_name = 'Portugal';
+$city_version = '1.0.2';
+$city_data = array();
+
+
+$city_data[] = array('accid' => 'POXX0001', 'name' => 'Almada');
+$city_data[] = array('accid' => 'POXX0002', 'name' => 'Alverca');
+$city_data[] = array('accid' => 'POXX0003', 'name' => 'Amadora');
+$city_data[] = array('accid' => 'POXX0004', 'name' => 'Ancora');
+$city_data[] = array('accid' => 'POXX0005', 'name' => 'Anha');
+$city_data[] = array('accid' => 'POXX0006', 'name' => 'Aveiro');
+$city_data[] = array('accid' => 'POXX0007', 'name' => 'Barreiro');
+$city_data[] = array('accid' => 'POXX0008', 'name' => 'Braga');
+$city_data[] = array('accid' => 'POXX0009', 'name' => 'Caminha');
+$city_data[] = array('accid' => 'POXX0010', 'name' => 'Cascais');
+$city_data[] = array('accid' => 'POXX0011', 'name' => 'Espinho');
+$city_data[] = array('accid' => 'POXX0012', 'name' => 'Esposende');
+$city_data[] = array('accid' => 'POXX0013', 'name' => 'Faro');
+$city_data[] = array('accid' => 'POXX0014', 'name' => 'Funchal');
+$city_data[] = array('accid' => 'POXX0015', 'name' => 'Gondomar');
+$city_data[] = array('accid' => 'POXX0016', 'name' => 'Lisbon');
+$city_data[] = array('accid' => 'POXX0017', 'name' => 'Matosinhos');
+$city_data[] = array('accid' => 'POXX0018', 'name' => 'Montijo');
+$city_data[] = array('accid' => 'POXX0019', 'name' => 'Olhao');
+$city_data[] = array('accid' => 'POXX0020', 'name' => 'Ponta Delgada');
+$city_data[] = array('accid' => 'POXX0021', 'name' => 'Portimao');
+$city_data[] = array('accid' => 'POXX0022', 'name' => 'Porto');
+$city_data[] = array('accid' => 'POXX0023', 'name' => 'Povoacao');
+$city_data[] = array('accid' => 'POXX0024', 'name' => 'Sao Joao da Madeira');
+$city_data[] = array('accid' => 'POXX0025', 'name' => 'Sesimbra');
+$city_data[] = array('accid' => 'POXX0026', 'name' => 'Setubal');
+$city_data[] = array('accid' => 'POXX0027', 'name' => 'Tavira');
+$city_data[] = array('accid' => 'POXX0028', 'name' => 'Viana do Castelo');
+$city_data[] = array('accid' => 'POXX0029', 'name' => 'Vila Nova de Gaia');
+$city_data[] = array('accid' => 'POXX0030', 'name' => 'Flores Acores');
+$city_data[] = array('accid' => 'POXX0031', 'name' => 'Lajes Acores');
+$city_data[] = array('accid' => 'POXX0032', 'name' => 'Santa Maria Acores');
+$city_data[] = array('accid' => 'POXX0033', 'name' => 'Porto Santo');
+$city_data[] = array('accid' => 'POXX0034', 'name' => 'Sagres');
+$city_data[] = array('accid' => 'POXX0035', 'name' => 'Coimbra/Cernache');
+$city_data[] = array('accid' => 'POXX0036', 'name' => 'Evora/C. Coord');
+$city_data[] = array('accid' => 'POXX0037', 'name' => 'Castelo Branco');
+$city_data[] = array('accid' => 'POXX0038', 'name' => 'Braganca');
+$city_data[] = array('accid' => 'POXX0039', 'name' => 'Lisboa/Gago Coutinho');
+$city_data[] = array('accid' => 'POXX0040', 'name' => 'Alvalade');
+$city_data[] = array('accid' => 'POXX0041', 'name' => 'Algoso');
+$city_data[] = array('accid' => 'POXX0042', 'name' => 'Alcacer do Sal');
+$city_data[] = array('accid' => 'POXX0043', 'name' => 'Alvares');
+$city_data[] = array('accid' => 'POXX0044', 'name' => 'Barca D\'alva');
+$city_data[] = array('accid' => 'POXX0045', 'name' => 'Beja');
+$city_data[] = array('accid' => 'POXX0046', 'name' => 'Castro Daire');
+$city_data[] = array('accid' => 'POXX0047', 'name' => 'Chaves');
+$city_data[] = array('accid' => 'POXX0048', 'name' => 'Covilha');
+$city_data[] = array('accid' => 'POXX0049', 'name' => 'Calheta');
+$city_data[] = array('accid' => 'POXX0050', 'name' => 'Caldar Da Rainha');
+$city_data[] = array('accid' => 'POXX0051', 'name' => 'Castro Verd');
+$city_data[] = array('accid' => 'POXX0052', 'name' => 'Estremoz');
+$city_data[] = array('accid' => 'POXX0053', 'name' => 'Fafe');
+$city_data[] = array('accid' => 'POXX0054', 'name' => 'Figueira Da Foz');
+$city_data[] = array('accid' => 'POXX0055', 'name' => 'Guarda');
+$city_data[] = array('accid' => 'POXX0056', 'name' => 'Gaviao');
+$city_data[] = array('accid' => 'POXX0057', 'name' => 'Horta');
+$city_data[] = array('accid' => 'POXX0058', 'name' => 'Leiria');
+$city_data[] = array('accid' => 'POXX0059', 'name' => 'Monfortinho');
+$city_data[] = array('accid' => 'POXX0060', 'name' => 'Mora');
+$city_data[] = array('accid' => 'POXX0061', 'name' => 'Misterio Da Prai');
+$city_data[] = array('accid' => 'POXX0062', 'name' => 'Mirandela');
+$city_data[] = array('accid' => 'POXX0063', 'name' => 'Mertola');
+$city_data[] = array('accid' => 'POXX0064', 'name' => 'Moura');
+$city_data[] = array('accid' => 'POXX0065', 'name' => 'Odemira');
+$city_data[] = array('accid' => 'POXX0066', 'name' => 'Portalegre');
+$city_data[] = array('accid' => 'POXX0067', 'name' => 'Portel');
+$city_data[] = array('accid' => 'POXX0068', 'name' => 'Porto Moniz');
+$city_data[] = array('accid' => 'POXX0069', 'name' => 'Ribeira Brava');
+$city_data[] = array('accid' => 'POXX0070', 'name' => 'Vila Real De San');
+$city_data[] = array('accid' => 'POXX0071', 'name' => 'Santa Cruz Da Gr');
+$city_data[] = array('accid' => 'POXX0072', 'name' => 'Sines');
+$city_data[] = array('accid' => 'POXX0073', 'name' => 'Sao Marcos Da Se');
+$city_data[] = array('accid' => 'POXX0074', 'name' => 'Santarem');
+$city_data[] = array('accid' => 'POXX0075', 'name' => 'Sao Vicente');
+$city_data[] = array('accid' => 'POXX0076', 'name' => 'Tomar');
+$city_data[] = array('accid' => 'POXX0077', 'name' => 'Torrao');
+$city_data[] = array('accid' => 'POXX0078', 'name' => 'Vendas Novas');
+$city_data[] = array('accid' => 'POXX0079', 'name' => 'Vila Real');
+$city_data[] = array('accid' => 'POXX0080', 'name' => 'Viseu');
+$city_data[] = array('accid' => 'POXX0081', 'name' => 'Western Madeira');
+$city_data[] = array('accid' => 'POXX0082', 'name' => 'Estoril');
+
+?>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jpconfig type="installpack">
+	<name>JoomlaPack Installer 1.0 (derived from standard Joomla! installer)</name>
+	<package>jpi.jpa</package>
+	<filelist>
+		<filename>CJConfigManager.php</filename>
+		<filename>ajaxtool.php</filename>
+		<filename>common.php</filename>
+		<filename>configuration-1.0.x.php</filename>
+		<filename>configuration-1.5.php</filename>
+		<filename>gpl.html</filename>
+		<filename>header_bg.png</filename>
+		<filename>header_install.png</filename>
+		<filename>header_version.png</filename>
+		<filename>index.php</filename>
+		<filename>install.css</filename>
+		<filename>install.js</filename>
+		<filename>install.php</filename>
+		<filename>install1.php</filename>
+		<filename>install2.php</filename>
+		<filename>install3.php</filename>
+		<filename>install4.php</filename>
+		<filename>install_logo.png</filename>
+		<filename>sajax.php</filename>
+	</filelist>
+	<sqldump mode="single" >
+		<basedump>joomla.sql</basedump>
+	</sqldump>
+</jpconfig>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module" version="1.0.0">
+	<name>Módulo Personalizado</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<translation>Idioma pt-br / Lena - www.facilhost.com.br</translation>
+	<translationDate>27-07-2007</translationDate>
+    <version>1.0.0</version>
+	<description>Módulo personalizado</description>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Sufixo de Classe da Página" description="Um sufixo para ser aplicado à classe css da página, isto permite um estilo de página individual" />
+		<param name="cache" type="radio" default="0" label="Habilitar Cache" description="Selecione se deseja realizar cache do conteúdo para este módulo">
+			<option value="0">Não</option>
+			<option value="1">Sim</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="firebots" type="radio" default="1" label="Plugins" description="Selecione se deseja permitir que os Plugins atuem sobre este módulo">
+			<option value="0">Não</option>
+			<option value="1">Sim</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="rssurl" type="text" size="50" default="" label="RSS URL" description="Informe a URL da fonte de notícias RSS/RDF" />
+		<param name="rsstitle" type="radio" default="1" label="Feed Title" description="Exibir a descrição da fonte de notícias">
+			<option value="1">Sim</option>
+			<option value="0">Não</option>
+		</param>
+		<param name="rssdesc" type="radio" default="1" label="Descrição da Fonte" description="Exibir a descrição da fonte de notícias">
+			<option value="1">Sim</option>
+			<option value="0">Não</option>
+		</param>
+		<param name="rssimage" type="radio" default="1" label="Imagem da Fonte" description="Exibir a imagem associada à fonte de notícias">
+			<option value="1">Sim</option>
+			<option value="0">Não</option>
+		</param>
+		<param name="rssitems" type="text" default="3" label="Itens" description="Entre com número de itens RSS a exibir" />
+		<param name="rssitemdesc" type="radio" default="1" label="Descrição Item" description="Exibir a descrição ou a introdução de itens de notícias">
+			<option value="1">Sim</option>
+			<option value="0">Não</option>
+		</param>
+		<param name="word_count" type="text" size="6" default="0" label="Contagem de Palavras" description="Permite a você limitar o tamanho do texto de descrição. 0 exibirá todo o texto" />
+		<param name="rsscache" type="text" size="6" default="3600" label="RSS tempo Cache" description="Fixe o tempo de cache da alimentação RSS" />
+	</params>
+</mosinstall>

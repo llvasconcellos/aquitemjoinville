@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="component" version="1.0.0">
+	<name>Login</name>
+	<author>Joomla! Project</author>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Parameters for Login Component</description>
+	<params>
+		<param name="menu_image" type="imagelist" directory="/images/stories" hide_default="1" default="" label="Imagem do Menu" description="Uma pequena imagem para ser colocada à esquerda ou direita de seu item de menu, imagens devem estar em images/stories/" />
+		<param name="pageclass_sfx" type="text" default="" label="Sufixo de Classe da Página" description="Um sufixo para ser aplicado à classe css da página, isto permite um estilo de página individual" />
+		<param name="back_button" type="list" default="" label="Botão Voltar" description="Exibir/Ocultar um botão Voltar, que te retorna à página vista anteriormente">
+			<option value="">Usar Global</option>
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="page_title" type="radio" default="1" label="Título da Página" description="Exibir/Ocultar o Título da Página">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="header_login" type="text" size="30" default="" label="Título da Página de Login" description="Texto a ser exibido topo da página. Se deixado em branco, o nome no menu será usado no lugar" />
+		<param name="login" type="text" size="30"  default="" label="URL de Redirecionamento do Login" description="Que página o login redirecionará após efetuar login, se deixado em branco será carregada a página principal" />
+		<param name="login_message" type="radio" default="0" label="Mensagem JS de Login" description="Exibir/Ocultar um pop-up javascript indicando o sucesso do login">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="description_login" type="radio" default="0" label="Descrição do Login" description="Exibir/Ocultar a descrição abaixo para o login">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="description_login_text" type="textarea" cols="30" rows="5" default="" label="Descrição do Login" description="Texto para exibir na página de login, se deixado em branco será usado _LOGIN_DESCRIPTION do seu arquivo de idioma" />
+		<param name="image_login" type="imagelist" directory="/images/stories" default="" label="Imagem de Login" description="Imagem para a página do login" />
+		<param name="image_login_align" type="radio" default="right" label="Alinh. da Imagem de Login" description="Alinhamento para a imagem de login">
+			<option value="left">Esquerda</option>
+			<option value="right">Direita</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="header_logout" type="text" size="30" default="" label="Título da Página de Logout" description="Texto a ser exibido topo da página. Se deixado em branco, o nome no menu será usado no lugar" />
+		<param name="logout" type="text" size="30"  default="" label="URL de Redirecionamento do Logout" description="Que página o login redirecionará após efetuar logout, se deixado em branco será carregada a página principal" />
+		<param name="logout_message" type="radio" default="1" label="Mensagem JS de Logout" description="Exibir/Ocultar um pop-up javascript indicando o sucesso do logout">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="description_logout" type="radio" default="1" label="Descrição do Logout" description="Exibir/Ocultar a descrição abaixo para o logout">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="description_logout_text" type="textarea" cols="30" rows="5" default="" label="Título da Página de Logout" description="TTexto para exibir na página de logout, se deixado em branco será usado _LOGOUT_DESCRIPTION do seu arquivo de idioma" />
+		<param name="image_logout" type="imagelist" directory="/images/stories" default="" label="Imagem de Logout" description="Imagem para a página do logout" />
+		<param name="image_logout_align" type="radio" default="1" label="Alinh. da Imagem de Logout" description="Alinhamento para a imagem de logout">
+			<option value="left">Esquerda</option>
+			<option value="right">Direita</option>
+		</param>
+	</params>
+</mosinstall>

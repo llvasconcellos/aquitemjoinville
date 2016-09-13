@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module" version="1.0.0">
+	<name>Estatísticas</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<translation>Idioma pt-br / Lena - www.facilhost.com.br</translation>
+	<translationDate>27-07-2007</translationDate>
+    <version>1.0.0</version>
+	<description>O módulo de estatísticas exibe informações sobre seu servidor e estatísticas de usuários do site, número de conteúdos em seu banco de dados, e número de links que você tem.</description>
+	<files>
+		<filename module="mod_stats">mod_stats.php</filename>
+	</files>
+	<params>
+		<param name="serverinfo" type="radio" default="0" label="Informação do Servidor" description="Exibir informações do servidor">
+			<option value="1">Sim</option>
+			<option value="0">Não</option>
+		</param>
+		<param name="siteinfo" type="radio" default="0" label="Informação do Site" description="Exibir informações do site">
+			<option value="1">Sim</option>
+			<option value="0">Não</option>
+		</param>
+		<param name="counter" type="radio" default="0" label="Contador" description="Exibir o contador de acesso">
+			<option value="1">Sim</option>
+			<option value="0">Não</option>
+		</param>
+		<param name="increase" type="text" default="0" label="Incrementar Contador" description="Informe a quantidade de acessos para acrescentadar ao contador" />
+		<param name="moduleclass_sfx" type="text" default="" label="Sufixo de Classe da Página" description="Um sufixo para ser aplicado à classe css da página, isto permite um estilo de página individual" />
+	</params>
+</mosinstall>

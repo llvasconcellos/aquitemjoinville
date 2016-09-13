@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="component" version="1.0.0">
+	<name>Newsfeeds</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<translation>Idioma pt-br / Lena - www.facilhost.com.br</translation>
+	<translationDate>27-07-2007</translationDate>
+    <version>1.0.0</version>
+	<description>Este componente administra notícias externas de RSS/RDF</description>
+	<params>
+		<param name="menu_image" type="imagelist" directory="/images/stories" hide_default="1" default="" label="Imagem do Menu" description="Uma pequena imagem para ser colocada à esquerda ou direita de seu item de menu, imagens devem estar em images/stories/" />
+		<param name="pageclass_sfx" type="text" size="20" default="" label="Sufixo de Classe da Página" description="Um sufixo para ser aplicado à classe css da página, isto permite um estilo de página individual" />
+		<param name="back_button" type="list" default="" label="Botão Voltar" description="Exibir/Ocultar um botão Voltar, que te retorna à página vista anteriormente">
+			<option value="">Usar Global</option>
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="page_title" type="radio" default="1" label="Título da Página" description="Exibir/Ocultar o Título da Página">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="header" type="text" size="30" default="" label="Título da Página" description="Texto a ser exibido topo da página. Se deixado em branco, o nome no menu será usado no lugar" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="other_cat_section" type="radio" default="1" label="Lista Categoria - Seção" description="Exibir/Ocultar a lista de categorias em página do tipo lista visualizadas">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="other_cat" type="radio" default="1" label="Lista Categoria - Categoria" description="Exibir/Ocultar a lista de categorias em página do tipo tabela visualizadas">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="cat_description" type="radio" default="1" label="Descrição da Categoria" description="Exibir/Ocultar a descrição para a lista de outras categorias">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="cat_items" type="radio" default="1" label="# Itens da Categoria" description="Exibir/Ocultar o número de itens de cada categoria">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="description" type="radio" default="1" label="Descrição" description="Exibir/Ocultar a descrição abaixo">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="description_text" type="textarea" default="" label="Texto de Descrição" rows="5" cols="30" description="Description for page"/>
+		<param name="image" type="imagelist" directory="/images/stories" hide_default="1" default="-1" label="Imagem" description="Imagem para a página, deve estar localizada na pasta /images/stories. Por padrão será carregada web_links.jpg, Nenhuma Imagem significa que nenhuma imagem será carregada" />
+		<param name="image_align" type="radio" default="right" label="Alinh. da Imagem" description="Alinhamento da imagem">
+			<option value="left">Esquerda</option>
+			<option value="right">Direita</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="headings" type="radio" default="1" label="Cabeçalho da Tabela" description="Exibir/Ocultar o Cabeçalho da Tabela">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="name" type="radio" default="1" label="Coluna do Nome" description="Exibir/Ocultar a coluna do Nome da Fonte">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="articles" type="radio" default="1" label="# Coluna de Artigos" description="Exibir/Ocultar a coluna de # artigos da Fonte">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="link" type="radio" default="1" label="Coluna URL" description="Exibir/Ocultar a coluna do URL da Fonte">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="feed_image" type="radio" default="1" label="Imagem da Fonte" description="Exibir/Ocultar a coluna da imagem da fonte">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="feed_descr" type="radio" default="1" label="Descrição da Fonte" description="Exibir/Ocultar a descrição da fonte">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="item_descr" type="radio" default="1" label="Descrição do Item" description="Exibir/Ocultar a descrição ou a introdução de um item">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="word_count" type="text" size="6" default="0" label="Limite de Palavras" description="Permite limitar o tamanho do texto de descrição. Indicar zero `0´ exibirá todo o texto" />
+	</params>
+</mosinstall>

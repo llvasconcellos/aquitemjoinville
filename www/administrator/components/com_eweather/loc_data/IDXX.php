@@ -1,0 +1,98 @@
+<?php
+
+// City package for Indonesia 
+
+$city_name = 'Indonesia';
+$city_version = '1.0.2';
+$city_data = array();
+
+
+$city_data[] = array('accid' => 'IDXX0001', 'name' => 'Amahai');
+$city_data[] = array('accid' => 'IDXX0002', 'name' => 'Ambon');
+$city_data[] = array('accid' => 'IDXX0003', 'name' => 'Amurang');
+$city_data[] = array('accid' => 'IDXX0004', 'name' => 'Baa');
+$city_data[] = array('accid' => 'IDXX0005', 'name' => 'Bali');
+$city_data[] = array('accid' => 'IDXX0006', 'name' => 'Balikpapan');
+$city_data[] = array('accid' => 'IDXX0007', 'name' => 'Bandung');
+$city_data[] = array('accid' => 'IDXX0008', 'name' => 'Bangil');
+$city_data[] = array('accid' => 'IDXX0009', 'name' => 'Banjarmasin');
+$city_data[] = array('accid' => 'IDXX0010', 'name' => 'Banyuwangi');
+$city_data[] = array('accid' => 'IDXX0011', 'name' => 'Batang');
+$city_data[] = array('accid' => 'IDXX0012', 'name' => 'Bengkulu');
+$city_data[] = array('accid' => 'IDXX0013', 'name' => 'Binjai');
+$city_data[] = array('accid' => 'IDXX0014', 'name' => 'Bogor');
+$city_data[] = array('accid' => 'IDXX0015', 'name' => 'Cibatu');
+$city_data[] = array('accid' => 'IDXX0016', 'name' => 'Cikampek');
+$city_data[] = array('accid' => 'IDXX0017', 'name' => 'Cirebon');
+$city_data[] = array('accid' => 'IDXX0018', 'name' => 'Delitua');
+$city_data[] = array('accid' => 'IDXX0019', 'name' => 'Denpasar');
+$city_data[] = array('accid' => 'IDXX0020', 'name' => 'Gresik');
+$city_data[] = array('accid' => 'IDXX0021', 'name' => 'Indramayu');
+$city_data[] = array('accid' => 'IDXX0022', 'name' => 'Jakarta');
+$city_data[] = array('accid' => 'IDXX0023', 'name' => 'Jepara');
+$city_data[] = array('accid' => 'IDXX0024', 'name' => 'Karawang');
+$city_data[] = array('accid' => 'IDXX0025', 'name' => 'Kayuagung');
+$city_data[] = array('accid' => 'IDXX0026', 'name' => 'Klaten');
+$city_data[] = array('accid' => 'IDXX0027', 'name' => 'Kretek');
+$city_data[] = array('accid' => 'IDXX0028', 'name' => 'Kupang');
+$city_data[] = array('accid' => 'IDXX0029', 'name' => 'Lais');
+$city_data[] = array('accid' => 'IDXX0030', 'name' => 'Langsa');
+$city_data[] = array('accid' => 'IDXX0031', 'name' => 'Manado');
+$city_data[] = array('accid' => 'IDXX0032', 'name' => 'Mataram');
+$city_data[] = array('accid' => 'IDXX0033', 'name' => 'Medan');
+$city_data[] = array('accid' => 'IDXX0034', 'name' => 'Natal');
+$city_data[] = array('accid' => 'IDXX0035', 'name' => 'Padang');
+$city_data[] = array('accid' => 'IDXX0036', 'name' => 'Palembang');
+$city_data[] = array('accid' => 'IDXX0037', 'name' => 'Pamekasan');
+$city_data[] = array('accid' => 'IDXX0038', 'name' => 'Pasuruan');
+$city_data[] = array('accid' => 'IDXX0039', 'name' => 'Pedjongkoran');
+$city_data[] = array('accid' => 'IDXX0040', 'name' => 'Pekalongan');
+$city_data[] = array('accid' => 'IDXX0041', 'name' => 'Piru');
+$city_data[] = array('accid' => 'IDXX0042', 'name' => 'Probolinggo');
+$city_data[] = array('accid' => 'IDXX0043', 'name' => 'Purwakarta');
+$city_data[] = array('accid' => 'IDXX0044', 'name' => 'Rangkasbitung');
+$city_data[] = array('accid' => 'IDXX0045', 'name' => 'Samarinda');
+$city_data[] = array('accid' => 'IDXX0046', 'name' => 'Semarang');
+$city_data[] = array('accid' => 'IDXX0047', 'name' => 'Serang');
+$city_data[] = array('accid' => 'IDXX0048', 'name' => 'Singaraja');
+$city_data[] = array('accid' => 'IDXX0049', 'name' => 'Situbondo');
+$city_data[] = array('accid' => 'IDXX0050', 'name' => 'Subang');
+$city_data[] = array('accid' => 'IDXX0051', 'name' => 'Sungaigerong');
+$city_data[] = array('accid' => 'IDXX0052', 'name' => 'Surabaya');
+$city_data[] = array('accid' => 'IDXX0053', 'name' => 'Tanjungbalai');
+$city_data[] = array('accid' => 'IDXX0054', 'name' => 'Tanjungkarang-Tel');
+$city_data[] = array('accid' => 'IDXX0055', 'name' => 'Tanjungpinang');
+$city_data[] = array('accid' => 'IDXX0056', 'name' => 'Tebingtinggi');
+$city_data[] = array('accid' => 'IDXX0057', 'name' => 'Tegal');
+$city_data[] = array('accid' => 'IDXX0058', 'name' => 'Yogyakarta');
+$city_data[] = array('accid' => 'IDXX0059', 'name' => 'Sibolga/Pinangsor');
+$city_data[] = array('accid' => 'IDXX0060', 'name' => 'Tarempa');
+$city_data[] = array('accid' => 'IDXX0061', 'name' => 'Rengat/Japura');
+$city_data[] = array('accid' => 'IDXX0062', 'name' => 'Pangkalpinang');
+$city_data[] = array('accid' => 'IDXX0063', 'name' => 'Tanjungpandan/Bul');
+$city_data[] = array('accid' => 'IDXX0064', 'name' => 'Pontianak/Supadio');
+$city_data[] = array('accid' => 'IDXX0065', 'name' => 'Muaratewe/Beringi');
+$city_data[] = array('accid' => 'IDXX0066', 'name' => 'Palangkaraya/Pana');
+$city_data[] = array('accid' => 'IDXX0067', 'name' => 'Kotabaru');
+$city_data[] = array('accid' => 'IDXX0068', 'name' => 'Curug/Budiarto');
+$city_data[] = array('accid' => 'IDXX0069', 'name' => 'Jakarta/Soekarno-');
+$city_data[] = array('accid' => 'IDXX0072', 'name' => 'Cilacap');
+$city_data[] = array('accid' => 'IDXX0073', 'name' => 'Sangkapura Bawean');
+$city_data[] = array('accid' => 'IDXX0074', 'name' => 'Surabaya/Perak');
+$city_data[] = array('accid' => 'IDXX0075', 'name' => 'Kalianget Madura ');
+$city_data[] = array('accid' => 'IDXX0077', 'name' => 'Gorontalo/Jalalud');
+$city_data[] = array('accid' => 'IDXX0078', 'name' => 'Palu/Mutiara');
+$city_data[] = array('accid' => 'IDXX0079', 'name' => 'Ujung Pandang/Has');
+$city_data[] = array('accid' => 'IDXX0080', 'name' => 'Ampenan/Selaparan');
+$city_data[] = array('accid' => 'IDXX0081', 'name' => 'Sumbawa Besar');
+$city_data[] = array('accid' => 'IDXX0082', 'name' => 'Bima');
+$city_data[] = array('accid' => 'IDXX0083', 'name' => 'Maumere/Wai Oti');
+$city_data[] = array('accid' => 'IDXX0084', 'name' => 'Waingapu/Mau Hau');
+$city_data[] = array('accid' => 'IDXX0085', 'name' => 'Biak/Mokmer');
+$city_data[] = array('accid' => 'IDXX0086', 'name' => 'Fak-Fak/Torea');
+$city_data[] = array('accid' => 'IDXX0087', 'name' => 'Nabire');
+$city_data[] = array('accid' => 'IDXX0088', 'name' => 'Wamena/Wamena');
+$city_data[] = array('accid' => 'IDXX0089', 'name' => 'Jayapura/Sentani');
+$city_data[] = array('accid' => 'IDXX0090', 'name' => 'Kokonao/Timuka');
+
+?>

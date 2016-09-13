@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall version="1.0.0" type="mambot" group="content">
+	<name>Paginação</name>
+	<author>Joomla! Project</author>
+	<creationDate>August 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<translation>Idioma pt-br / Lena - www.facilhost.com.br</translation>
+	<translationDate>27-07-2007</translationDate>
+    <version>1.0.0</version>
+	<description>Adiciona a funcionalidade de Índice a um artigo paginado. Sintaxe: {mospagebreak} ou {mospagebreak title=Título da página} ou {mospagebreak heading=Primeira página} ou {mospagebreak title=Título da página&heading=Primeira página} ou {mospagebreak heading=Primeira página&title=Título da página}</description>
+	<files>
+		<filename mambot="mospaging">mospaging.php</filename>
+	</files>
+	<params>
+		<param name="title" type="radio" default="1" label="Site Title" description="title and heading attibutes from mambot added to Site Title tag">
+			<option value="0">Não</option>
+			<option value="1">Sim</option>
+		</param>
+	</params>
+</mosinstall>

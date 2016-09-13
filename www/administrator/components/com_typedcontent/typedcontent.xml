@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="component" version="1.0.0">
+	<name>Página de conteúdo estático</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<translation>Idioma pt-br / Lena - www.facilhost.com.br</translation>
+	<translationDate>27-07-2007</translationDate>
+    <version>1.0.0</version>
+	<description>Isto mostra os parâmetros página estática</description>
+	<params>
+		<param name="menu_image" type="imagelist" directory="/images/stories" hide_default="1" default="" label="Imagem do Menu" description="Uma pequena imagem para ser colocada à esquerda ou direita de seu item de menu, imagens devem estar em images/stories/" />
+		<param name="item_title" type="radio" default="1" label="Título da Página" description="Exibir/Ocultar o Título da Página">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="pageclass_sfx" type="text" size="20" default="" label="Sufixo de Classe da Página" description="Um sufixo para ser aplicado à classe css da página, isto permite um estilo de página individual" />
+		<param name="back_button" type="list" default="" label="Botão Voltar" description="Exibir/Ocultar um botão Voltar, que te retorna à página vista anteriormente">
+			<option value="">Usar Global</option>
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="rating" type="list" default="" label="Avaliação do Item" description="Exibir/Ocultar a avaliação do item - afeta somente esta página">
+			<option value="">Usar Global</option>
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="author" type="list" default="" label="Nome do Autor" description="Exibir/Ocultar o autor do item - afeta somente esta página">
+			<option value="">Usar Global</option>
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="createdate" type="list" default="" label="Data e Hora da Criação" description="Exibir/Ocultar a data de criação do item - afeta somente esta página">
+			<option value="">Usar Global</option>
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="modifydate" type="list" default="" label="Data e Hora da Modificação" description="Exibir/Ocultar a data de modificação do item - afeta somente esta página">
+			<option value="">Usar Global</option>
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="pdf" type="list" default="" label="Ícone do PDF" description="Exibir/Ocultar o botão do pdf - afeta somente esta página">
+			<option value="">Usar Global</option>
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="print" type="list" default="" label="Ícone da Impressora" description="Exibir/Ocultar o botão da impressora - afeta somente esta página">
+			<option value="">Usar Global</option>
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="email" type="list" default="" label="Ícone de E-mail" description="Exibir/Ocultar o botão do e-mail - afeta somente esta página">
+			<option value="">Usar Global</option>
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+	</params>
+</mosinstall>

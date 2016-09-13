@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="component" version="1.0.0">
+	<name>Contact</name>
+	<author>Joomla! Project</author>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>This component shows a listing of Contact Information</description>
+	<params>
+		<param name="menu_image" type="imagelist" directory="/images/stories" hide_default="1" default="" label="Imagem do Menu" description="Uma pequena imagem para ser colocada à esquerda ou direita de seu item de menu, imagens devem estar em images/stories/" />
+		<param name="pageclass_sfx" type="text" default="" label="Sufixo de Classe da Página" description="Um sufixo para ser aplicado à classe css da página, isto permite um estilo de página individual" />
+		<param name="back_button" type="list" default="" label="Botão Voltar" description="Exibir/Ocultar um botão Voltar, que te retorna à página vista anteriormente">
+			<option value="">Usar Geral</option>
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="page_title" type="radio" default="1" label="Título da Página" description="Exibir/Ocultar o Título da Página">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="header" type="text" size="30" default="" label="Título da Página" description="Texto a ser exibido topo da página. Se deixado em branco, o nome no menu será usado no lugar" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="catid" type="mos_category" default="0" scope="com_contact_details" label="Categoria definida como especial" description="Exibe só contatos da categoria selecionada" />
+		<param name="other_cat_section" type="radio" default="1" label="Lista Categoria - Seção" description="Exibir/Ocultar a lista de categorias em página do tipo lista visualizadas">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="other_cat" type="radio" default="1" label="Lista Categoria - Categoria" description="Exibir/Ocultar a lista de categorias em página do tipo tabela visualizadas">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="cat_description" type="radio" default="1" label="Descrição da Categoria" description="Exibir/Ocultar a descrição para a lista de outras categorias">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="cat_items" type="radio" default="1" label="Qtd. Itens da Categoria" description="Exibir/Ocultar o número de itens em cada categoria">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="description" type="radio" default="1" label="Descrição" description="Exibir/Ocultar a descrição">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="description_text" type="textarea" default="" label="Texto de Descrição" rows="5" cols="30" description="Descrição para a página, se deixada em branco será usado _WEBLINKS_DESC do seu arquivo de idioma"/>
+		<param name="image" type="imagelist" directory="/images/stories" hide_default="1" default="-1" label="Imagem" description="Imagem para a página, deve estar localizada na pasta /images/stories. Por padrão será carregada web_links.jpg, Nenhuma Imagem significa que nenhuma imagem será carregada" />
+		<param name="image_align" type="radio" default="right" label="Alinh. da Imagem" description="Alinhamento da imagem">
+			<option value="left">Esquerda</option>
+			<option value="right">Direita</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="headings" type="radio" default="1" label="Cabeçalho da Tabela" description="Exibir/Ocultar o Cabeçalho da Tabela">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="position" type="radio" default="1" label="Posicionamento da Coluna" description="Exibir/Ocultar o Posicionamento da Coluna">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="email" type="radio" default="0" label="Posicionamento da Coluna" description="Exibir/Ocultar o Posicionamento da Coluna">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="telephone" type="radio" default="1" label="Coluna do Telefone" description="Exibir/Ocultar a coluna do Telefone">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="fax" type="radio" default="1" label="Coluna do Fax" description="Exibir/Ocultar a coluna do Fax">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="bannedEmail" type="text" default="" label="E-mail proibido" size="40" description="Serão proibidos e-mails que contenham qualquer palavra a seguir, separe palavras diferentes com ponto e vígula por exemplo ban;text;etc" />
+		<param name="bannedSubject" type="text" default="" label="Assunto proibido" size="40" description="Serão proibidos assunto que contenham qualquer palavra a seguir, separe palavras diferentes com ponto e vígula por exemplo ban;text;etc" />
+		<param name="bannedText" type="text" default="" label="Mensagem proibido" size="40" description="Serão proibidos textos que contenham qualquer palavra a seguir, separe palavras diferentes com ponto e vígula por exemplo ban;text;etc" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="sessionCheck" type="radio" default="1" label="Checar a sessão" description="Verifique que a sessão de cookie esta em desabilitado, usuários com cookie desabilitado não poderão enviar e-mails.">
+			<option value="0">Desligar</option>
+			<option value="1">Ligar</option>
+		</param>
+	</params>
+</mosinstall>

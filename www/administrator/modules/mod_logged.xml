@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module">
+	<name>Logged in Users</name>
+	<author>Joomla! Project</author>
+	<creationDate>January 2005</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<translation>Idioma pt-br / Lena - www.facilhost.com.br</translation>
+	<translationDate>27-07-2007</translationDate>
+    <version>1.0.0</version>
+	<description>Este módulo exibe uma lista dos usuários atualmente logados</description>
+	<files>
+		<filename module="mod_logged">mod_logged.php</filename>
+	</files>
+	<params/>
+</mosinstall>

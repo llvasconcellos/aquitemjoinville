@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module" version="1.0.0">
+	<name>Artigos arquivados</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<translation>Idioma pt-br / Lena - www.facilhost.com.br</translation>
+	<translationDate>27-07-2007</translationDate>
+    <version>1.0.0</version>
+	<description>Este módulo exibe uma lista de meses do calendário, que contém os itens Arquivados. Após ter alterado o estado do Item de Conteúdo para 'Arquivado' esta lista será automaticamente gerada.</description>
+	<files>
+		<filename module="mod_archive">mod_archive.php</filename>
+	</files>
+	<params>
+		<param name="count" type="text" default="10" label="Contador" description="O número de itens a exibir (o padrão é 10)" />
+		<param name="cache" type="radio" default="0" label="Habilitar Cache" description="Selecione se deseja realizar cache do conteúdo para este módulo">
+			<option value="0">Não</option>
+			<option value="1">Sim</option>
+		</param>
+		<param name="moduleclass_sfx" type="text" default="" label="Sufixo de Classe da Página" description="Um sufixo para ser aplicado à classe css da página, isto permite um estilo de página individual" />
+	</params>
+</mosinstall>

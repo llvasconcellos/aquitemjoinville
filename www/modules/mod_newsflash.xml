@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module" version="1.0.0">
+	<name>Flash de Notícias</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<translation>Idioma pt-br / Lena - www.facilhost.com.br</translation>
+	<translationDate>27-07-2007</translationDate>
+    <version>1.0.0</version>
+	<description>O módulo Flash de Notícias seleciona aleatoriamente um dos itens publicados de uma categoria a cada página carregada. É possível exibir múltiplos itens na configuração horizontal ou vertical.</description>
+	<files>
+		<filename module="mod_newsflash">mod_newsflash.php</filename>
+	</files>
+	<params>
+		<param name="catid" type="mos_category" default="0" label="Categoria" description="Uma categoria de conteúdo" />
+		<param name="style" type="list" default="random" label="Estilo" description="O estilo para exibição da categoria">
+		    <option value="random">Selecionada aleatoriamente</option>
+			<option value="horiz">Horizontal</option>
+			<option value="vert">Vertical</option>
+		</param>
+		<param name="image" type="radio" default="0" label="Exibir Imagens" description="Exibir imagens de itens de conteúdo">
+			<option value="1">Sim</option>
+			<option value="0">Não</option>
+		</param>
+		<param name="link_titles" type="list" default="" label="Títulos como Link" description="Transforma títulos de Artigo em links">
+			<option value="">Use Global</option>
+			<option value="0">Não</option>
+			<option value="1">Sim</option>
+		</param>
+        <param name="readmore" type="radio" default="0" label="Leia Mais" description="Exibir/Ocultar a botão Leia Mais">
+            <option value="0">Ocultar</option>
+            <option value="1">Exibir</option>
+        </param>
+        <param name="item_title" type="list" default="0" label="Título do Item" description="Exibir título do Item">
+                <option value="0">Não</option>
+                <option value="1">Sim</option>
+        </param>
+		<param name="items" type="text" default="" label="Nº. de Itens" description="Número de itens a exibir" />
+		<param name="cache" type="radio" default="0" label="Habilitar Cache" description="Selecione se deseja realizar cache do conteúdo para este módulo">
+			<option value="0">Não</option>
+			<option value="1">Sim</option>
+		</param>
+		<param name="moduleclass_sfx" type="text" default="" label="Sufixo de Classe da Página" description="Um sufixo para ser aplicado à classe css da página, isto permite um estilo de página individual" />
+	</params>
+</mosinstall>

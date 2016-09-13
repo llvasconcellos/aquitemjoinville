@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<mosinstall version="1.0.0" type="mambot" group="editors">
+    <name>Nenhum editor</name>
+    <version></version>
+    <creationDate>August 2004</creationDate>
+    <author></author>
+    <authorEmail>N/A</authorEmail>
+    <authorUrl></authorUrl>
+    <copyright>http://www.gnu.org/copyleft/gpl.html GNU/GPL</copyright>
+    <license>LGPL</license>    <translation>Idioma pt-br / Lena - www.facilhost.com.br</translation>
+	<translationDate>27-07-2007</translationDate>
+<description>Carrega uma simples caixa de entrada de texto sem qualquer comando de edição</description>
+	<files>
+		<filename mambot="none">none.php</filename>
+	</files>
+	<params/>
+</mosinstall>

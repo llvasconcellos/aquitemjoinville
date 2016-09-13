@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="menu" version="1.0.0">
+	<name>Wrapper</name>
+	<group>Other</group>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<translation>Idioma pt-br / Lena - www.facilhost.com.br</translation>
+	<translationDate>27-07-2007</translationDate>
+    <version>1.0.0</version>
+	<description>Cria um Iframe com página/site dentro do Joomla</description>
+	<params>
+		<param name="menu_image" type="imagelist" directory="/images/stories" hide_default="1" default="" label="Imagem do Menu" description="Uma pequena imagem para ser colocada à esquerda ou direita do item de menu. As imagens devem estar no diretório:  images/stories/" />
+		<param name="pageclass_sfx" type="text" size="20" default="" label="Sufixo de Classe da Página" description="Um sufixo para ser aplicado à classe css da página, o que permitirá um estilo personalizado" />
+		<param name="back_button" type="list" default="" label="Botão ` Voltar ´" description="Exibir/Ocultar um botão Voltar, para retornar à página vista anteriormente">
+			<option value="">Usar Global</option>
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="page_title" type="radio" default="1" label="Título da Página" description="Exibir/Ocultar o título da página">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="header" type="text" size="30" default="" label="Título da Página" description="Texto a ser exibido no topo da página. Se estiver em branco, será utilizado o nome do menu" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="scrolling" type="radio" default="auto" label="Barras de Rolamento" description="Exibir/Ocultar as barras de rolamento horizontal & vertical da janela da frame interna">
+			<option value="no">Não</option>
+			<option value="yes">Sim</option>
+			<option value="auto">Auto</option>
+		</param>
+		<param name="width" type="text" size="5" default="100%" label="Largura" description="Largura da janela iframe: pode indicar um valor absoluto em pixels, ou relativo em %" />
+		<param name="height" type="text" size="5" default="500" label="Altura" description="Altura da janela iframe" />
+		<param name="height_auto" type="radio" default="1" label="Altura Automática" description="A altura será automaticamente configurada para o tamanho da página externa. Isto só funcionará para páginas dentro do seu próprio domínio.">
+			<option value="0">Não</option>
+			<option value="1">Sim</option>
+		</param>
+		<param name="add" type="radio" default="1" label="Adicionar Automático" description="Por padrão http:// será adicionado a não ser que seja detectado  http:// ou https:// no link que indicou, isto possibilita-lhe desligar esta funcionalidade">
+			<option value="0">Não</option>
+			<option value="1">Sim</option>
+		</param>
+	</params>
+</mosinstall>

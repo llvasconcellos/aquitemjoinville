@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module" version="1.0.0">
+	<name>Autenticação</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<translation>Idioma pt-br / Lena - www.facilhost.com.br</translation>
+	<translationDate>27-07-2007</translationDate>
+    <version>1.0.0</version>
+	<description>Este módulo exibe um formulário de Nome de Usuário e Senha. Que também exibe um link para recuperação de senhas esquecidas. Se o registro de usuário está habilidado, (consulte as configurações Globais), então outro link será exibido convidando os usuários a se auto-registrarem.</description>
+	<files>
+		<filename module="mod_login">mod_login.php</filename>
+	</files>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Sufixo de Classe da Página" description="Um sufixo para ser aplicado à classe css da página, isto permite um estilo de página individual" />
+		<param name="pretext" type="textarea" cols="20" rows="5" default="" label="Pré-texto" description="Este é o texto ou html que é exibido acima do formulário de login" />
+		<param name="posttext" type="textarea" cols="20" rows="5" label="Pós-texto" description="Este é o texto ou html que é exibido abaixo do formulário de login" />
+		<param name="login" type="text" default="" label="URL de Redirecionamento do Login" description="Que página o login redirecionará após efetuar login, se deixado em branco será carregada a página principal" />
+		<param name="logout" type="text" default="" label="URL de Redirecionamento do Logout" description="Que página o logout redirecionará após efetuar logout, se deixado em branco será carregada a página principal" />
+		<param name="login_message" type="radio" default="0" label="Mensagem de Login" description="Exibir/Ocultar o pop-up javascript indicando login com sucesso">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="logout_message" type="radio" default="0" label="Mensagem de Logout" description="Exibir/Ocultar o pop-up javascript indicando logout com sucesso">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="greeting" type="radio" default="1" label="Saudação" description="Exibir/Ocultar o texto de saudação">
+			<option value="0">Não</option>
+			<option value="1">Sim</option>
+		</param>
+		<param name="name" type="list" default="0" label="Nome/Nome de Usuário">
+			<option value="0">Nome de Usuário</option>
+			<option value="1">Nome</option>
+		</param>
+	</params>
+</mosinstall>

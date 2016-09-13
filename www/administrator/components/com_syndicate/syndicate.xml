@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="component" version="1.0.0">
+	<name>Difusor de Notícias</name>
+	<author>Joomla! Project</author>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<translation>Idioma pt-br / Lena - www.facilhost.com.br</translation>
+	<translationDate>27-07-2007</translationDate>
+    <version>1.0.0</version>
+	<description>Este componente controla as colocações de Syndication</description>
+	<params>
+		<param name="check" type="radio" default="1" label="Checar Segurança" description="Se habilitou então a funcionalidade de syndication ele só trabalhará se o módulo de mod_rssfeed estiver publicado">
+			<option value="0">Não</option>
+			<option value="1">Sim</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="cache" type="radio" default="1" label="Cache" description="Cache das Fonte de Notícias">
+			<option value="0">Não</option>
+			<option value="1">Sim</option>
+		</param>
+		<param name="cache_time" type="text" size="8" default="3600" label="Tempo de Cache" description="Cache de arquivos será atualizado a cada x segundos" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="count" type="text" size="4" default="5" label="Itens" description="Número de Itens a publicar" />
+		<param name="title" type="text" size="40" default="Fornecido por Joomla 1.0.8 BR" label="Título" description="Título da Publicação" />
+		<param name="description" type="textarea" rows="5" cols="30" default="Publicação do Site Joomla" label="Descrição" description="Publicação do Mambo" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="image_file" type="imagelist" directory="/images/M_images" default="" label="Imagem" description="Imagem a ser incluída na publicação" />
+		<param name="image_alt" type="text" size="30" default="Por Joomla 1.0.8 BR" label="Alt da Imagem" description="Texto Alt da imagem" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="limit_text" type="radio" default="1" label="Limite de Texto" description="Limitar o texto do artigo para o valor indicado abaixo">
+			<option value="0">Não</option>
+			<option value="1">Sim</option>
+		</param>
+		<param name="text_length" type="text" size="4" default="20" label="Tamanho do Text" description="O tamanho do texto do artigo - 0 não exibirá texto algum" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="rss091" type="radio" default="1" label="RSS 0.91" description="Ativa/Desativa alimento RSS 0.91 de syndication">
+			<option value="0">Desativa</option>
+			<option value="1">Ativa</option>
+		</param>
+		<param name="rss10" type="radio" default="1" label="RSS 1.0" description="Ativa/Desativa alimento RSS 1.0 de syndication">
+			<option value="0">Desativa</option>
+			<option value="1">Ativa</option>
+		</param>
+		<param name="rss20" type="radio" default="1" label="RSS 2.0" description="Ativa/Desativa alimento RSS 2.0 de syndication">
+			<option value="0">Desativa</option>
+			<option value="1">Ativa</option>
+		</param>
+		<param name="atom03" type="radio" default="1" label="ATOM 0.3" description="Ativa/Desativa alimento ATOM 0.3 de syndication">
+			<option value="0">Desativa</option>
+			<option value="1">Ativa</option>
+		</param>
+		<param name="opml" type="radio" default="1" label="OPML" description="Ativa/Desativa alimento OPML de syndication">
+			<option value="0">Desativa</option>
+			<option value="1">Ativa</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="orderby" type="list" default="front" label="Ordem" description="Ordem que os itens serão exibidos">
+			<option value="front">Padrão</option>
+			<option value="front">Ordem da página principal</option>
+			<option value="date">Antigos primeiro</option>
+			<option value="rdate">Recentes primeiro</option>
+			<option value="alpha">Alfabética do título</option>
+			<option value="ralpha">Inversa da alfabética do título</option>
+			<option value="author">Alfabética do autor</option>
+			<option value="rauthor">Inversa da alfabética do autor</option>
+			<option value="hits">Mais lidos</option>
+			<option value="rhits">Menos lidos</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="live_bookmark" type="list" default="0" label="Favoritos Firefox" description="Ativa o suporte para a funcionalidade dos Favoritos RSS/Atom do Firefox">
+			<option value="0">Desligado</option>
+			<option value="RSS0.91">RSS 0.91</option>
+			<option value="RSS1.0">RSS 1.0</option>
+			<option value="RSS2.0">RSS 2.0</option>
+			<option value="ATOM0.3">ATOM 0.3</option>
+		</param>
+	</params>
+</mosinstall>

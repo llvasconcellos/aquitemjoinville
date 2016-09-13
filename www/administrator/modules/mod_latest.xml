@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module">
+	<name>Latest News</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<translation>Idioma pt-br / Lena - www.facilhost.com.br</translation>
+	<translationDate>27-07-2007</translationDate>
+    <version>1.0.0</version>
+	<description>Este módulo mostra uma lista dos artigos mais recentemente publicados que ainda são atuais (alguns podem ter expirado embora eles sejam os mais recentes). Não são incluídos artigos que são exibidos na primeira página.</description>
+	<files>
+		<filename module="mod_latest">mod_latest.php</filename>
+	</files>
+	<params/>
+</mosinstall>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module" version="1.0.0">
+	<name>hwdRecommend</name>
+	<author>David Horsfall</author>
+	<authorUrl>www.highwooddesign.co.uk</authorUrl>
+	<authorEmail>info@highwoodddesign.co.uk</authorEmail>
+	<creationDate>16-12-2007</creationDate>
+  	<copyright>Highwood Design</copyright>
+  	<license>GNU General Public License</license>
+  	<version>1.1.3</version>
+	<description>Joomla 1.0 module to allow your Joomla! users to recommend the current page to a friend.</description>
+	<files>
+		<filename module="mod_hwdrecommend">mod_hwdrecommend.php</filename>
+		<filename module="mod_hwdrecommend">mod_hwdrecommend/mod_hwdrecommend.js</filename>
+		<filename module="mod_hwdrecommend">mod_hwdrecommend/mod_hwdrecommend.css</filename>
+		<filename module="mod_hwdrecommend">mod_hwdrecommend/rounded.js</filename>
+		<filename module="mod_hwdrecommend">mod_hwdrecommend/lang/english.php</filename>
+		<filename module="mod_hwdrecommend">mod_hwdrecommend/lang/french.php</filename>
+  	</files>
+	<params>
+		<param name="mod_width" type="text" default="100%" size="20" label="Module Width" description="The width of the module in pixels (300px) or percent (75%)" />
+		<param name="mod_bgcolor" type="text" default="333333" size="20" label="Background Color" description="The color of the module background in hexidecimal format without preceding # (eg 333333)" />
+		<param name="mod_fontcolor" type="text" default="ffffff" size="20" label="Font Color" description="The color of the module font in hexidecimal format without preceding # (eg ffffff)" />
+		<param name="mod_fonttitlesize" type="text" default="100%" size="20" label="Title Font Size" description="The size of the title font in percent (100%) or pixels (12px)" />
+		<param name="mod_fontbodysize" type="text" default="85%" size="20" label="Body Font Size" description="The size of the body font in percent (80%) or pixels (10px)" />
+		<param name="roundradius" type="list" default="6" label="Corner Radius" description="The radius of the rounded corners in pixels (e.g. 6 pixels)">
+		  <option value="1">0</option>
+		  <option value="1">1</option>
+		  <option value="2">2</option>
+		  <option value="3">3</option>
+		  <option value="4">4</option>
+		  <option value="5">5</option>
+		  <option value="6">6</option>
+		  <option value="7">7</option>
+		  <option value="8">8</option>
+		  <option value="9">9</option>
+		  <option value="10">10</option>
+		  <option value="11">11</option>
+		  <option value="12">12</option>
+		  <option value="13">13</option>
+		  <option value="14">14</option>
+		  <option value="15">15</option>
+		</param>
+		<param name="toogle_text" type="text" size="20" label="Form Title" description="The text that appears above the form which is used to show/hide the recommend form." />
+		<param name="show_form" type="list" default="none" label="Show/Hide Form Onload" description="Show or hide the recommend form when the page loads?">
+		  <option value="none">Hide</option>
+		  <option value="block">Show</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<param name="form_orientation" type="list" default="vertical" label="Recommend Form Orientation" description="Choose the orientation layout for your form.">
+		  <option value="vertical">Vertical</option>
+		  <option value="horizontal">Horizontal</option>
+		</param>
+		<param name="personal_message" type="list" default="0" label="Allow Peronsal Message?" description="Can users send a personal message with their page recommendation?">
+		  <option value="0">No</option>
+		  <option value="1">Yes</option>
+		</param>
+		<param name="from_address" type="list" default="user" label="From Email Address" description="Should the email be send from the user or the website webmaster?">
+		  <option value="user">User</option>
+		  <option value="webmaster">Webmaster</option>
+		</param>
+		<param name="show_copyright" type="list" default="0" label="Show/Hide Copyright" description="Do you want to show the small Highwood Design copyright notice?">
+		  <option value="1">Show</option>
+		  <option value="0">Hide</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable). this allows individual module styling." />
+	</params>
+</mosinstall>

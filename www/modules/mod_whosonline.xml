@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module" version="1.0.0">
+	<name>Quem está on-line</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<translation>Idioma pt-br / Lena - www.facilhost.com.br</translation>
+	<translationDate>27-07-2007</translationDate>
+    <version>1.0.0</version>
+	<description>O módulo 'Quem está On-line' exibe o número de usuários visitantes (isto é, anônimos) e usuários Membros, (isto é, os que se autenticaram) que estiverem a aceder ao site no momento.</description>
+	<files>
+		<filename module="mod_whosonline">mod_whosonline.php</filename>
+	</files>
+	<params>
+	  <param name="showmode" type="radio" default="0" label="Display" description="Selecione o que deve ser exibido">
+		<option value="0">nº de Visitantes/Membros&lt;br&gt;</option>
+		<option value="1">Nome dos Membros&lt;br&gt;</option>
+		<option value="2">Ambos</option>
+	  </param>
+	  <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="Um sufixo para ser aplicado à classe css da página, isto permite um estilo de página individual" />
+	</params>
+</mosinstall>

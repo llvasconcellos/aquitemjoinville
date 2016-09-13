@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module" version="1.0.0">
+	<name>JB Login v1.03</name>
+	<author>Joomla! Project</author>
+	<creationDate>May 2008</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>design@joomlabamboo.com</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.3</version>
+	<description>This module displays a Username and Password login form. It also displays a link to retrieve a forgotten password. If user registration is enabled, (refer to the Configuration settings), then another link will be shown to invite users to self-register. We've has also hacked out the tables and made it thin and horizontal.</description>
+	<files>
+		<filename module="mod_jb_login">mod_jb_login.php</filename>
+	</files>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+		<param name="login" type="text" default="" label="Login Redirection URL" description="What page will the login redirect to after login, if let blank will load front page" />
+		<param name="logout" type="text" default="" label="Logout Redirection URL" description="What page will the login redirect to after login, if let blank will load front page" />
+		<param name="br1" type="list" default="no" label="Line break after name" description="Line break after name field">			<option value="yes">Yes</option>			<option value="no">No</option>		</param>
+		<param name="br2" type="list" default="no" label="Line break after name field" description="Line break after name field">			<option value="yes">Yes</option>			<option value="no">No</option>		</param>
+		<param name="br3" type="list" default="no" label="Line break after password field" description="Line break after password field">			<option value="yes">Yes</option>			<option value="no">No</option>		</param>
+		<param name="br4" type="list" default="no" label="Line break after submit button" description="Line break after submit button">			<option value="yes">Yes</option>			<option value="no">No</option>		</param>
+		<param name="br5" type="list" default="no" label="Line break after remember me" description="Line break after remember me">			<option value="yes">Yes</option>			<option value="no">No</option>		</param>
+		<param name="login_message" type="radio" default="0" label="Login Message" description="Show/Hide the javascript Pop-up indicating Login Success">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="logout_message" type="radio" default="0" label="Logout Message" description="Show/Hide the javascript Pop-up indicating Logout Success">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="greeting" type="radio" default="1" label="Greeting" description="Show/Hide the simple greeting text">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="name" type="list" default="0" label="Name/Username">
+			<option value="0">Username</option>
+			<option value="1">Name</option>
+		</param>
+	</params>
+</mosinstall>

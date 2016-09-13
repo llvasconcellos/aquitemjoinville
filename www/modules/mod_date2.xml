@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module" version="1.0.0">
+	<name>Date2</name>
+	<author>Ryan Rhode</author>
+	<creationDate>25 Oct 2007</creationDate>
+	<copyright>(C) 2007 Ryan Rhode</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@ty2u.com</authorEmail>
+	<authorUrl>www.ty2u.com</authorUrl>
+	<version>2.1.3</version>
+	<description>
+<![CDATA[
+This module shows the current time and date.<br /><b>Be sure to configure the module parameters to your liking.</b><br /><div class="quote">Tip: You can use html too!  For example: &#38;nbsp&#59; entered in a text box or as a separator will become a space.</div>
+<div><b>Information:</b></div>
+<div>Daylight Saving Time / Summer Time: <a href="http://en.wikipedia.org/wiki/Daylight_saving_time" target="_blank">http://en.wikipedia.org/wiki/Daylight_saving_time</a></div>
+<div>ISO 8601 Format: <a href="http://en.wikipedia.org/wiki/ISO_8601" target="_blank">http://en.wikipedia.org/wiki/ISO_8601</a></div> 
+]]>
+	</description>
+	<files>
+		<filename module="mod_date2">mod_date2.php</filename>
+	</files>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling." />
+		<param name="pretext" type="textarea" cols="20" rows="5" default="" label="Pre-text" description="This is the Text or HTML that is displayed before the module." />
+		<param name="posttext" type="textarea" cols="20" rows="5" label="Post-text" description="This is the Text or HTML that is displayed after the module." />
+		<param name="align" type="list" default="0" label="Alignment" description="The alignment of the date and time.">
+			<option value="0">None</option>
+			<option value="1">Left</option>
+			<option value="2">Center</option>
+			<option value="3">Right</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label=" " description="" />
+		<param name="method" type="list" default="0" label="Use PHP or Javascript method to generate date and time" description="Javascript will generate the date and time using Javascript and will update in realtime.&lt;br /&gt;&lt;br /&gt;PHP will generate the date and time using PHP.">
+			<option value="0">Javascript</option>
+			<option value="1">PHP</option>
+		</param>
+		<param name="showdate" type="list" default="0" label="Display Date?" description="Do you wish to display the date?">
+			<option value="0">Yes</option>
+			<option value="1">No</option>
+		</param>
+		<param name="predate" type="text" default="" label="Date prefix" description="Text displayed before the date.&lt;br /&gt;i.e. Date: 02/24/2007&lt;br /&gt;Leave blank to display nothing." />
+		<param name="postdate" type="text" default="" label="Date suffix" description="Text displayed after the date.&lt;br /&gt;i.e. 02/24/2007 Date&lt;br /&gt;Leave blank to display nothing." />
+		<param name="showtime" type="list" default="0" label="Display Time?" description="Do you wish to display the time?">
+			<option value="0">Yes</option>
+			<option value="1">No</option>
+		</param>
+		<param name="pretime" type="text" default="" label="Time prefix" description="Text displayed before the time.&lt;br /&gt;i.e. Time: 4:49pm&lt;br /&gt;Leave blank to display nothing." />
+		<param name="posttime" type="text" default="" label="Time suffix" description="Text displayed after the time.&lt;br /&gt;i.e. 05:00 hours&lt;br /&gt;Leave blank to display nothing." />
+		<param name="order" type="list" default="0" label="Display order of date and time" description="Which to display first, the date or the time?">
+			<option value="0">Display Date First</option>
+			<option value="1">Display Time First</option>
+		</param>
+		<param name="seplines" type="list" default="0" label="Show on separate lines or on the same line?" description="Choose to display the date and time on two separate lines or on the same line.">
+			<option value="0">Separate lines</option>
+			<option value="1">Same line</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label=" " description="" />
+		<param name="dateorder" type="text" default="w,d,m,y" label="Display order of date" description="Order of the parts of the date.&lt;br /&gt;&lt;br /&gt;w=day of the week&lt;br /&gt;(Monday, Tuesday, etc.)&lt;br /&gt;&lt;br /&gt;d=day of the month&lt;br /&gt;(21st, 22nd, etc.)&lt;br /&gt;&lt;br /&gt;m=month&lt;br /&gt;(March, April, etc.)&lt;br /&gt;&lt;br /&gt;y=year&lt;br /&gt;(2007, 2008, etc.)&lt;br /&gt;&lt;br /&gt;Simply leave a part out if you don't wish to display it.&lt;br /&gt;&lt;br /&gt;Example:&lt;br /&gt;Entering [w,d,m,y] will display [Monday, 4th June 2007] but entering only [d,m,y] will display [4th June 2007].&lt;br /&gt;&lt;br /&gt;Hint: Don't use the brackets [ ] just the letters and commas." />
+		<param name="@spacer" type="spacer" default="" label=" " description="" />
+		<param name="ISO8601" type="list" default="0" label="Use ISO 8601 date format" description="Disregard most options and output date in ISO 8601 format. (requires PHP5 if using PHP method) For more information see module description above for URL.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="zone" type="text" default="-5" label="Time zone offset" description="Time zone offset in hours. Only enter a number of hours here.  For example -5 or +3 works fine.&lt;br /&gt;&lt;br /&gt;When using PHP method this is only an offset of hours from the server and does not relate to your time zone." />
+		<param name="dst" type="list" default="0" label="Automatic switching of DST / Summer Time" description="Automatically compensate for Daylight Saving Time / Summer Time. For more information see module description above for URL.&lt;br /&gt;&lt;br /&gt;Javascript uses the times below to determine when to adjust the time.&lt;br /&gt;&lt;br /&gt;PHP automatically detects this from the server and does not use those dates. You will usually want to shut this off when using PHP method if your server adjusts its time automatically.">
+			<option value="0">Off</option>
+			<option value="1">On</option>
+		</param>
+		<param name="dston" type="text" default="March 14, 1999 2:59:59" label="DST / Summer Time Begins" description="Date and time Daylight Saving Time / Summer Time begins. You can enter any year but the format must match this exactly: [March 14, 1999 2:59:59] For more information see module description above for URL.&lt;br /&gt;&lt;br /&gt;PHP method automatically detects Daylight Savings Time / Summer Time." />
+		<param name="dstoff" type="text" default="November 7, 1999 2:59:59" label="DST / Summer Time Ends" description="Date and time Daylight Saving Time / Summer Time ends. You can enter any year but the format must match this exactly: [November 7, 1999 2:59:59] For more information see module description above for URL.&lt;br /&gt;&lt;br /&gt;PHP method automatically detects Daylight Savings Time / Summer Time." />
+		<param name="military" type="list" default="1" label="Use 24 hour time?" description="Choose whether to use 24 hour time or not. i.e. 04:30:11 or 19:31:13">
+			<option value="0">Yes</option>
+			<option value="1">No</option>
+		</param>
+		<param name="hours" type="list" default="0" label="Display hours?" description="Choose whether to display hours or not.">
+			<option value="0">Yes</option>
+			<option value="1">No</option>
+		</param>
+		<param name="minutes" type="list" default="0" label="Display minutes?" description="Choose whether to display minutes or not.">
+			<option value="0">Yes</option>
+			<option value="1">No</option>
+		</param>
+		<param name="seconds" type="list" default="0" label="Display seconds?" description="Choose whether to display seconds or not.">
+			<option value="0">Yes</option>
+			<option value="1">No</option>
+		</param>
+		<param name="ampm" type="list" default="0" label="Show am / pm?" description="Choose whether to display am/pm or not.">
+			<option value="0">Yes</option>
+			<option value="1">No</option>
+		</param>
+		<param name="amtext" type="text" default="am" label="Text to use for A.M." description="Displays this text for A.M." />
+		<param name="pmtext" type="text" default="pm" label="Text to use for P.M." description="Displays this text for P.M." />
+		<param name="@spacer" type="spacer" default="" label=" " description="" />
+		<param name="sepweek1" type="text" default="" label="Separator to display before the day of the week" description="Displays this text or symbol before the day of the week" />
+		<param name="sepweek2" type="text" default="," label="Separator to display after the day of the week" description="Displays this text or symbol after the day of the week" />
+		<param name="sepday1" type="text" default="&#38;nbsp&#59;" label="Separator to display before the day of the month" description="Displays this text or symbol before the day of the month" />
+		<param name="sepday2" type="text" default="&#38;nbsp&#59;" label="Separator to display after the day of the month" description="Displays this text or symbol after the day of the month" />
+		<param name="sepmonth1" type="text" default="" label="Separator to display before the month of the year" description="Displays this text or symbol before the month of the year" />
+		<param name="sepmonth2" type="text" default="" label="Separator to display after the month of the year" description="Displays this text or symbol after the month of the year" />
+		<param name="sepyear1" type="text" default="&#38;nbsp&#59;" label="Separator to display before the year" description="Displays this text or symbol before the year" />
+		<param name="sepyear2" type="text" default="" label="Separator to display after the year" description="Displays this text or symbol after the year" />
+		<param name="sephour1" type="text" default="" label="Separator to display before the hour" description="Displays this text or symbol before the hours" />
+		<param name="sephour2" type="text" default="" label="Separator to display after the hour" description="Displays this text or symbol after the hours" />
+		<param name="sepminute1" type="text" default=":" label="Separator to display before the minute" description="Displays this text or symbol before the minutes" />
+		<param name="sepminute2" type="text" default=":" label="Separator to display after the minute" description="Displays this text or symbol after the minutes" />
+		<param name="sepsecond1" type="text" default="" label="Separator to display before the second" description="Displays this text or symbol before the seconds" />
+		<param name="sepsecond2" type="text" default="" label="Separator to display after the second" description="Displays this text or symbol after the seconds" />
+		<param name="sepampm1" type="text" default="" label="Separator to display before am / pm" description="Displays this text or symbol before the am / pm text" />
+		<param name="sepampm2" type="text" default="" label="Separator to display after am / pm" description="Displays this text or symbol after the am / pm text" />
+		<param name="@spacer" type="spacer" default="" label=" " description="" />
+		<param name="suntext" type="text" default="Sunday" label="Text to use for Sunday" description="Displays this text for Sunday" />
+		<param name="montext" type="text" default="Monday" label="Text to use for Monday" description="Displays this text for Monday" />
+		<param name="tuetext" type="text" default="Tuesday" label="Text to use for Tuesday" description="Displays this text for Tuesday" />
+		<param name="wedtext" type="text" default="Wednesday" label="Text to use for Wednesday" description="Displays this text for Wednesday" />
+		<param name="thutext" type="text" default="Thursday" label="Text to use for Thursday" description="Displays this text for Thursday" />
+		<param name="fritext" type="text" default="Friday" label="Text to use for Friday" description="Displays this text for Friday" />
+		<param name="sattext" type="text" default="Saturday" label="Text to use for Saturday" description="Displays this text for Saturday" />
+		<param name="@spacer" type="spacer" default="" label=" " description="" />
+		<param name="monthformat" type="list" default="0" label="Display the month as" description="Text = use parameters below.&lt;br /&gt;Number = 03, 04, 05, etc.">
+			<option value="0">Text</option>
+			<option value="1">Number</option>
+		</param>
+		<param name="jantext" type="text" default="January" label="Text to use for January" description="Displays this text for January" />
+		<param name="febtext" type="text" default="February" label="Text to use for February" description="Displays this text for February" />
+		<param name="martext" type="text" default="March" label="Text to use for March" description="Displays this text for March" />
+		<param name="aprtext" type="text" default="April" label="Text to use for April" description="Displays this text for April" />
+		<param name="maytext" type="text" default="May" label="Text to use for May" description="Displays this text for May" />
+		<param name="juntext" type="text" default="June" label="Text to use for June" description="Displays this text for June" />
+		<param name="jultext" type="text" default="July" label="Text to use for July" description="Displays this text for July" />
+		<param name="augtext" type="text" default="August" label="Text to use for August" description="Displays this text for August" />
+		<param name="septext" type="text" default="September" label="Text to use for September" description="Displays this text for September" />
+		<param name="octtext" type="text" default="October" label="Text to use for October" description="Displays this text for October" />
+		<param name="novtext" type="text" default="November" label="Text to use for November" description="Displays this text for November" />
+		<param name="dectext" type="text" default="December" label="Text to use for December" description="Displays this text for December" />
+		<param name="@spacer" type="spacer" default="" label=" " description="" />
+		<param name="suffixes" type="list" default="0" label="Display days of the month as" description="Text = user parameters below.&lt;br /&gt;Number = 1, 2, 3, 4, etc.">
+			<option value="0">Text</option>
+			<option value="1">Number</option>
+		</param>
+		<param name="d1" type="text" default="1st" label="1st day of the month" description="Displays this text for 1st day of the month" />
+		<param name="d2" type="text" default="2nd" label="2nd day of the month" description="Displays this text for 2nd day of the month" />
+		<param name="d3" type="text" default="3rd" label="3rd day of the month" description="Displays this text for 3rd day of the month" />
+		<param name="d4" type="text" default="4th" label="4th day of the month" description="Displays this text for 4th day of the month" />
+		<param name="d5" type="text" default="5th" label="5th day of the month" description="Displays this text for 5th day of the month" />
+		<param name="d6" type="text" default="6th" label="6th day of the month" description="Displays this text for 6th day of the month" />
+		<param name="d7" type="text" default="7th" label="7th day of the month" description="Displays this text for 7th day of the month" />
+		<param name="d8" type="text" default="8th" label="8th day of the month" description="Displays this text for 8th day of the month" />
+		<param name="d9" type="text" default="9th" label="9th day of the month" description="Displays this text for 9th day of the month" />
+		<param name="d10" type="text" default="10th" label="10th day of the month" description="Displays this text for 10th day of the month" />
+		<param name="d11" type="text" default="11th" label="11th day of the month" description="Displays this text for 11th day of the month" />
+		<param name="d12" type="text" default="12th" label="12th day of the month" description="Displays this text for 12th day of the month" />
+		<param name="d13" type="text" default="13th" label="13th day of the month" description="Displays this text for 13th day of the month" />
+		<param name="d14" type="text" default="14th" label="14th day of the month" description="Displays this text for 14th day of the month" />
+		<param name="d15" type="text" default="15th" label="15th day of the month" description="Displays this text for 15th day of the month" />
+		<param name="d16" type="text" default="16th" label="16th day of the month" description="Displays this text for 16th day of the month" />
+		<param name="d17" type="text" default="17th" label="17th day of the month" description="Displays this text for 17th day of the month" />
+		<param name="d18" type="text" default="18th" label="18th day of the month" description="Displays this text for 18th day of the month" />
+		<param name="d19" type="text" default="19th" label="19th day of the month" description="Displays this text for 19th day of the month" />
+		<param name="d20" type="text" default="20th" label="20th day of the month" description="Displays this text for 20th day of the month" />
+		<param name="d21" type="text" default="21st" label="21st day of the month" description="Displays this text for 21st day of the month" />
+		<param name="d22" type="text" default="22nd" label="22nd day of the month" description="Displays this text for 22nd day of the month" />
+		<param name="d23" type="text" default="23rd" label="23rd day of the month" description="Displays this text for 23rd day of the month" />
+		<param name="d24" type="text" default="24th" label="24th day of the month" description="Displays this text for 24th day of the month" />
+		<param name="d25" type="text" default="25th" label="25th day of the month" description="Displays this text for 25th day of the month" />
+		<param name="d26" type="text" default="26th" label="26th day of the month" description="Displays this text for 26th day of the month" />
+		<param name="d27" type="text" default="27th" label="27th day of the month" description="Displays this text for 27th day of the month" />
+		<param name="d28" type="text" default="28th" label="28th day of the month" description="Displays this text for 28th day of the month" />
+		<param name="d29" type="text" default="29th" label="29th day of the month" description="Displays this text for 29th day of the month" />
+		<param name="d30" type="text" default="30th" label="30th day of the month" description="Displays this text for 30th day of the month" />
+		<param name="d31" type="text" default="31st" label="31st day of the month" description="Displays this text for 31st day of the month" />
+	</params>
+</mosinstall>

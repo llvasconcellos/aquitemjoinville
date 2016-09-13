@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall version="1.0.0" type="mambot" group="content">
+	<name>Proteção de e-mails</name>
+	<author>Joomla! Project</author>
+	<creationDate>August 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<translation>Idioma pt-br / Lena - www.facilhost.com.br</translation>
+	<translationDate>27-07-2007</translationDate>
+    <version>1.0.0</version>
+	<description>Protege, utilizando encapsulamento javascript, os endereços de e-mail presentes em artigos evitando ataques por spambots</description>
+	<files>
+		<filename mambot="mosemailcloak">mosemailcloak.php</filename>
+	</files>
+	<params>
+		<param name="mode" type="list" default="1" label="Modo" description="Escolher como exibir os endereços de e-mail">
+			<option value="0">Texto não-clicável</option>
+			<option value="1">Clicável como endereço MAIL TO</option>
+		</param>
+	</params>
+</mosinstall>

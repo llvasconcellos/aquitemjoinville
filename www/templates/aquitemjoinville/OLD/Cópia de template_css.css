@@ -1,0 +1,149 @@
+body{
+	margin: 0px 0px 0px 0px;
+	background-color:#1c1916;
+	color:#FFFFFF;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+#logo{
+	margin-left:40px;
+	background-image:url(../images/logo.png);
+	width:154px;
+	height:70px;
+}
+#conteudo{
+	color:#FFFFFF;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	border-top:solid 1px #2d2a28;
+	border-left: solid 1px #2d2a28;
+	/*color:#87817A;*/
+}
+#conteudo td{
+	color:#FFFFFF;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+}
+#footer td{
+	color:#989898;
+	background-color:#1d1d1d;
+	height:30px;
+	line-height:30px;
+	width:1100px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	text-align:center;
+}
+#footer a{
+	color:#989898;
+	background-color:#1d1d1d;
+	height:30px;
+	line-height:30px;
+	width:1100px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	text-align:center;
+	text-decoration:none;
+}
+/*joomlaCSS */
+a{
+text-decoration:none;
+}
+
+.contentheading td{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#999999;
+	font-weight:bold;
+}
+
+.contentpaneopen{
+	font-size:10px;
+}
+.inputbox{
+	background-color:#3C3C3C;
+	border:solid 1px #3C3C3C;
+	color:#FFFFFF;
+}
+.pathway{
+	visibility:hidden;
+	display:none;
+}
+
+
+
+
+
+/*
+#active_menu
+#blockrandom
+#contact_email_copy
+#contact_text
+#emailForm
+#mod_login_password
+#mod_login_remember
+#mod_login_username
+#poll
+#search_ordering
+#search_searchword
+#searchphraseall
+#searchphraseany
+#searchphraseexact
+#voteid1,#voteid2....
+.adminform
+.article_seperator
+.back_button
+.blog
+.blog_more
+.blogsection
+.button
+.buttonheading
+.category
+.clr
+.componentheading
+.contact_email
+.content_rating
+.content_vote
+.contentdescription
+.contentpagetitle
+.contentpane
+.contenttoc   
+.createdate   
+.fase4rdf   
+.footer   
+.frontpageheader   
+.latestnews   
+.mainlevel   
+.message   
+.modifydate   
+.module   
+.moduletable   
+.mostread   
+.newsfeed   
+.newsfeeddate
+.newsfeedheading
+.pagenav
+.pagenav_next
+.pagenav_prev
+.pagenavbar
+.pagenavcounter
+.polls
+.pollsborder
+.pollstableborder
+.readon
+.search
+.searchintro
+.sectionentry1
+.sectionentry2
+.sectionheader
+.sitetitle
+.small
+.smalldark
+.sublevel
+.syndicate
+.syndicate_text
+.text_area
+.toclink
+.weblinks
+.wrapper
+*/

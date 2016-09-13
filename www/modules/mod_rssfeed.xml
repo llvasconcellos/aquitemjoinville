@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module" version="1.0.0">
+	<name>Difusão de Notícias</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<translation>Idioma pt-br / Lena - www.facilhost.com.br</translation>
+	<translationDate>27-07-2007</translationDate>
+    <version>1.0.0</version>
+	<description>O módulo Syndicate exibirá um link por meio do qual as pessoas acessar as últimas notícias de seu site. Quando você clicar no ícone RSS, você será redirecionado a uma nova página que listará todas as notícis recentes em formato XML. Para ser usado em outro site Joomla como Notícia Externa ou através de agregador de RSS, você precisa copiar e colar a URL fornecida.</description>
+	<files>
+		<filename module="mod_rssfeed">mod_rssfeed.php</filename>
+	</files>
+	<params>
+		<param name="text" type="text" default="" label="Texto" description="Informe o texto para ser exibido junto com os links RSS" />
+		<param name="cache" type="radio" default="0" label="Habilitar Cache" description="Selecione se deseja realizar cache do conteúdo para este módulo">
+			<option value="0">Não</option>
+			<option value="1">Sim</option>
+		</param>
+		<param name="moduleclass_sfx" type="text" default="" label="Sufixo de Classe da Página" description="Um sufixo para ser aplicado à classe css da página, isto permite um estilo de página individual" />
+		<param name="rss091" type="radio" default="1" label="RSS 0.91" description="Exibir/Ocultar Link RSS 0.91">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="rss10" type="radio" default="1" label="RSS 1.0" description="Exibir/Ocultar Link RSS 1.0">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="rss20" type="radio" default="1" label="RSS 2.0" description="Exibir/Ocultar Link RSS 2.0">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="atom" type="radio" default="1" label="Atom" description="Exibir/Ocultar Link Atom 0.3">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="opml" type="radio" default="1" label="OPML" description="Exibir/Ocultar Link OPML">
+			<option value="0">Ocultar</option>
+			<option value="1">Exibir</option>
+		</param>
+		<param name="rss091_image" type="imagelist" directory="/images/M_images" hide_none="1" default="" label="Imagem RSS 0.91" description="Selecione a imagem a ser usada" />
+		<param name="rss10_image" type="imagelist" directory="/images/M_images" hide_none="1" default="" label="Imagem RSS 1.0" description="Selecione a imagem a ser usada" />
+		<param name="rss20_image" type="imagelist" directory="/images/M_images" hide_none="1" default="" label="Imagem RSS 2.0" description="Selecione a imagem a ser usada" />
+		<param name="atom_image" type="imagelist" directory="/images/M_images" hide_none="1" default="" label="Imagem Atom" description="Selecione a imagem a ser usada" />
+		<param name="opml_image" type="imagelist" directory="/images/M_images" hide_none="1" default="" label="Imagem OPML" description="Selecione a imagem a ser usada" />
+	</params>
+</mosinstall>

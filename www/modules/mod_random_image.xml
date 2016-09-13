@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module" version="1.0.0">
+	<name>Imagem Aleatória</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<translation>Idioma pt-br / Lena - www.facilhost.com.br</translation>
+	<translationDate>27-07-2007</translationDate>
+    <version>1.0.0</version>
+	<description>Este módulo exibe uma imagem aleatória de um diretório escolhido</description>
+	<files>
+	<filename module="mod_random_image">mod_random_image.php</filename>
+	</files>
+	<params>
+		<param name="type" type="text" default="jpg" label="Tipo da Imagem" description="Padrão da imagem PNG/GIF/JPG etc. (o padrão é PNG)" />
+		<param name="folder" type="text" default="" label="Pasta da Imagem" description="Caminho para a pasta das imagens, ex.: images/stories" />
+		<param name="link" type="text" default="" label="Link" description="URL para redirecionar se a imagem for clicada, ex.: http://www.joomla.org" />
+		<param name="width" type="text" default="" label="Largura (px)" description="Largura da Imagem (todas as imagens serão exibidas com esta largura)" />
+		<param name="height" type="text" default="" label="Altura (px)" description="Altura da Imagem (todas as imagens serão exibidas com esta altura)" />
+		<param name="moduleclass_sfx" type="text" default="" label="Sufixo da Classe da Página" description="Um sufixo para ser aplicado à classe css do módulo (tabela.moduletable), isto permite um estilo de página individual" />
+	</params>
+</mosinstall>

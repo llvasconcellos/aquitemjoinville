@@ -1,0 +1,127 @@
+<?xml version="1.0" ?>
+<mosinstall version="1.0.0" type="mambot" group="editors">
+	<name>TinyMCE</name>
+	<version>2.0.8</version>
+	<creationDate>2005</creationDate>
+	<author>Moxiecode Systems AB</author>
+	<authorEmail>N/A</authorEmail>
+	<authorUrl>tinymce.moxiecode.com/</authorUrl>
+	<copyright>Moxiecode Systems AB</copyright>    <translation>Idioma pt-br / Lena - www.facilhost.com.br</translation>
+	<translationDate>27-07-2007</translationDate>
+<license>LGPL</license>
+	<description>TinyMCE é um editor WYSIWYG executável na Web, em Javascript e HTML, e independente de plataformas.</description>
+	<params>
+		<param name="theme" type="list" default="advanced" label="Modo de funcionamento" description="Escolher Funcionalidades">
+			<option value="simple">Simples</option>
+			<option value="advanced">Avançado</option>
+		</param>
+ 		<param name="@spacer" type="spacer" default="" label="" description="" />
+ 		<param name="cleanup" type="radio" default="1" label="Limpeza de Código" description="Por padrão, o TinyMCE irá limpar o seu código de certos elementos html, como os tags de script e center, por questões de segurança e conformidade XHTML.  Recomendamos que não desative esta funcionalidade">
+ 			<option value="0">Desligado</option>
+ 			<option value="1">Ligado</option>
+ 		</param>
+		<!--
+		Currently disabled due to bugs in TinyMCE
+		<param name="cleanup_startup" type="radio" default="0" label="Limpeza de Código ao Iniciar" description="Limpa o código ao carregar o editor">
+			<option value="0">Desligado</option>
+ 			<option value="1">Ligado</option>
+ 		</param>
+		-->
+ 		<param name="autosave" type="radio" default="0" label="Aviso para Salvar" description="Aviso para Salvar - emite um aviso caso cancele sem salvar as alterações">
+ 			<option value="0">Desligado</option>
+ 			<option value="1">Ligado</option>
+ 		</param>
+ 		<param name="compressed" type="radio" default="0" label="Versão Compata" description="Tiny pode correr em modo compacto, resultando em velocidades de carregamento ligeiramente superiores.  Contudo, este modo nem sempre funciona, especialmente no IE, pelo que o padrão é Desligado.  Tenha cuidado ao ativar esta função certificando-se que ela funcionará no seu sistema">
+ 			<option value="0">Desligado</option>
+ 			<option value="1">Ligado</option>
+ 		</param>
+ 		<param name="@spacer" type="spacer" default="" label="" description="" />
+ 		<param name="text_direction" type="list" default="ltr" label="Direção do Texto" description="Funcionalidade para alterar a direção do texto">
+ 			<option value="ltr">Esquerda para Direita</option>
+ 			<option value="rtl">Direita para Esquerda</option>
+ 		</param>
+  		<param name="relative_urls" type="list" default="0" label="Urls" description="Comportamento do URL">
+ 			<option value="0">Absoluto</option>
+ 			<option value="1">Relativo</option>
+ 		</param>
+ 		<param name="invalid_elements" type="text" default="applet" label="Elementos Proibidos" description="Elements que serão limpos do texto"/>
+ 		<param name="content_css" type="radio" default="1" label="Classes CSS do Tema" description="Por padrão o editor procura utilizar um arquivo editor_content.css.  Caso não seja encontrado carrega o arquivo template_css.css.  Contudo, se pretender forçar a utilização do arquivo template_css.css então escolha `Sim`">
+ 			<option value="0">Não</option>
+ 			<option value="1">Sim</option>
+ 		</param>
+ 		<param name="content_css_custom" type="text" default="" label="Classes CSS Personalizadas" description="Pode especificar a utilização de um arquivo CSS personalizado - bastará indicar o URL COMPLETO para o arquivo CSS que pretende utilizar.  Se indicar um valor neste campo, anulará o parâmetro `Classes CSS do Tema` "/>
+  		<param name="newlines" type="list" default="0" label="Mudança de Linha" description="As novas linhas serão criadas com a opção escolhida">
+ 			<option value="1">Elemento BR</option>
+ 			<option value="0">Elemento P</option>
+ 		</param>
+ 		<param name="@spacer" type="spacer" default="" label="" description="" />
+ 		<param name="toolbar" type="list" default="top" label="Barra de Ferramentas" description="Posição da barra de ferramentas">
+ 			<option value="top">Por cima</option>
+ 			<option value="bottom">Por baixo</option>
+ 		</param>
+ 		<param name="@spacer" type="spacer" default="" label="" description="" />
+ 		<param name="smilies" type="radio" default="1" label="Emoções" description="Ocultar/Exibir Os botões de Smilies. Apenas funciona no modo `Avançado`">
+ 			<option value="0">Ocultar</option>
+ 			<option value="1">Exibir</option>
+ 		</param>
+ 		<param name="table" type="radio" default="1" label="Tabela" description="Ocultar/Exibir os botões de controle da tabela. Apenas funciona no modo `Avançado`">
+ 			<option value="0">Ocultar</option>
+ 			<option value="1">Exibir</option>
+ 		</param>
+ 		<param name="flash" type="radio" default="1" label="Flash" description="Ocultar/Exibir o botão Flash. Apenas funciona no modo `Avançado`">
+ 			<option value="0">Ocultar</option>
+ 			<option value="1">Exibir</option>
+ 		</param>
+ 		<param name="media" type="radio" default="1" label="Mídia" description="Ocultar/Exibir o botão Média. Permite inserir arquivos de mídia como QuickTime, Flash, ShockWave, RealPlayer e Windows Media Player. Apenas funciona no modo `Avançado`">
+ 			<option value="0">Ocultar</option>
+ 			<option value="1">Exibir</option>
+ 		</param>
+ 		<param name="hr" type="radio" default="1" label="Régua Horizontal" description="Ocultar/Exibir o botão da Régua Horizontal">
+ 			<option value="0">Ocultar</option>
+ 			<option value="1">Exibir</option>
+ 		</param>
+ 		<param name="style" type="radio" default="1" label="Estilos" description="Ocultar/Exibir o botão de controle de estilos CSS. Apenas funciona no modo `Avançado`">
+ 			<option value="0">Ocultar</option>
+ 			<option value="1">Exibir</option>
+ 		</param>
+ 		<param name="layer" type="radio" default="1" label="Camadas" description="Ocultar/Exibir o botão de controle das Camadas. Apenas funciona no modo `Avançado`">
+ 			<option value="0">Ocultar</option>
+ 			<option value="1">Exibir</option>
+		</param>
+ 		<param name="visualchars" type="radio" default="1" label="Ver Caracteres Invisíveis" description="Ocultar/Exibir o botão Ver Caracteres Invisíveis. Permite tornar invisíveis caracteres como o Espaço Inquebrável. Apenas funciona no modo `Avançado`">
+ 			<option value="0">Ocultar</option>
+ 			<option value="1">Exibir</option>
+ 		</param>
+ 		<param name="nonbreaking" type="radio" default="1" label="Espaço Inquebrável" description="Ocultar/Exibir o botão de Espaço Inquebrável. Insere um Espaço Inquebrável na localização atual. Apenas funciona no modo `Avançado`">
+ 			<option value="0">Ocultar</option>
+ 			<option value="1">Exibir</option>
+ 		</param>
+ 		<param name="@spacer" type="spacer" default="" label="" description="" />
+ 		<param name="fullscreen" type="radio" default="1" label="Exibir tela inteira" description="Ocultar/Exibir o botão de Exibição completa. Apenas funciona no modo `Avançado`">
+ 			<option value="0">Ocultar</option>
+ 			<option value="1">Exibir</option>
+ 		</param>
+ 		<param name="html_height" type="text" default="550" label="Altura HTML" description="Altura da janela pop-up para modo HTML. Apenas funciona no modo `Avançado`"/>
+ 		<param name="html_width" type="text" default="750" label="Largura HTML" description="Largura da janela pop-up para modo HTML. Apenas funciona no modo `Avançado`"/>
+ 		<param name="preview" type="radio" default="1" label="Pré-visualizar" description="Ocultar/Exibir o botão de pré-visualização. Apenas funciona no modo `Avançado`">
+ 			<option value="0">Ocultar</option>
+ 			<option value="1">Exibir</option>
+ 		</param>
+ 		<param name="preview_height" type="text" default="550" label="Altura da Pré-visualização" description="Altura da janela pop-up para modo de pré-visualização. Apenas funciona no modo `Avançado`"/>
+ 		<param name="preview_width" type="text" default="750" label="Largura da Pré-visualização" description="Largura da janela pop-up para modo de pré-visualização. Apenas funciona no modo `Avançado`"/>
+ 		<param name="searchreplace" type="radio" default="1" label="Pesquisar &amp; Substituir" description="Ocultar/Exibir o botão de Pesquisar &amp; Substituir. Apenas funciona no modo `Avançado`">
+ 			<option value="0">Ocultar</option>
+ 			<option value="1">Exibir</option>
+ 		</param>
+ 		<param name="insertdate" type="radio" default="1" label="Inserir Data" description="Ocultar/Exibir o botão de Inserir Data. Apenas funciona no modo `Avançado`">
+ 			<option value="0">Ocultar</option>
+ 			<option value="1">Exibir</option>
+ 		</param>
+  		<param name="format_date" type="text" default="%Y-%m-%d" label="Formato de Data" description="Formato da data inserida. Apenas funciona no modo `Avançado`"/>
+		<param name="inserttime" type="radio" default="1" label="Inserir Hora" description="Ocultar/Exibir o botão de Inserir Hora. Apenas funciona no modo `Avançado`">
+ 			<option value="0">Ocultar</option>
+ 			<option value="1">Exibir</option>
+ 		</param>
+  		<param name="format_time" type="text" default="%H:%M:%S" label="Formato da Hora" description="Formato da hora inserida. Apenas funciona no modo `Avançado`"/>
+   	</params>
+</mosinstall>
