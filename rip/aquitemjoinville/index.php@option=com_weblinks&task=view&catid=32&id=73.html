@@ -1,0 +1,99 @@
+<html>
+<script Language="JavaScript"><!--
+
+	function submeter(){
+			if (document.form1.placa.value.length == 0) {
+				alert('Informe a placa.');
+				document.form1.placa.focus();
+				return false;
+			}
+
+			if (document.form1.placa.value.length != 7) {
+				alert('Valor inválido para placa.');
+				document.form1.placa.focus();
+				return false;
+			}
+			var wPlaca = document.form1.placa.value;
+			if (document.form1.renavam.value.length == 0) {
+				alert('Informe o renavam.');
+				document.form1.renavam.focus();
+				return false;
+			}
+
+			if (document.form1.renavam.value.length != 9) {
+				alert('Valor inválido para renavam.');
+				document.form1.renavam.focus();
+				return false;
+			}
+			var wRenavam = document.form1.renavam.value;
+			//document.form1.action = 'http://consultas.ciasc.gov.br/dossieveiculo/consulta.asp?op=1'
+			document.form1.action = 'http://www.detrannet.sc.gov.br/servicos/consultaveiculo.asp?placa=' + wPlaca + '&renavam=' + wRenavam;
+			document.form1.submit();
+	}
+
+//--></script>
+<head><title>duvidas mais frequentes</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+<body vLink="#000000" aLink="#000000" link="#000000" bgColor="#ffffff"><font face="Arial MT Black" size="5">
+<p align="center">&nbsp;</p>
+<center>
+<table width="680" border="0" style="border-collapse: collapse" bordercolor="#111111" cellpadding="2" height="223">
+  <tbody>
+  <tr>
+    <td width="64" height="36" style="border-left-style: solid; border-left-width: 1; border-top-style: solid; border-top-width: 1; border-bottom-style: none; border-bottom-width: medium"><font face="Arial MT Black" size="5">
+			<img height="54" alt="brasao.gif (3820 bytes)" src="http://consultas.ciasc.gov.br/ipva/images/brasao.gif" width="55"></font></td>
+    <td width="612" height="36" style="border-right-style: solid; border-right-width: 1; border-top-style: solid; border-top-width: 1"><font face="Arial MT Black" size="5">
+			<b><font face="Arial" color="#008000" size="2">
+			Governo do Estado de Santa Catarina<br>Secretaria de Estado da Fazenda
+			</font></b>
+		</font>
+    </td>
+  </tr>
+  <tr>
+    <td width="676" colSpan="2" height="36" bgcolor="#E6E6E6" style="border-left-style: solid; border-left-width: 1; border-right-style: solid; border-right-width: 1"><font face="Arial MT Black" size="5">
+      <p align="center"><font face="Arial" color="#008000" size="3"><b>
+      <span lang="pt-br">&nbsp;</span>IPVA - Imposto 
+      <span lang="pt-br">s</span>obre <span lang="pt-br">a Propriedade de </span>Veículos Automotores</b></font></p></font>
+    </td>
+  </tr></font>
+  <tr>
+    <td align="left" width="668" height="140" colspan="2" style="border-left-style: solid; border-left-width: 1; border-right-style: solid; border-right-width: 1" valign="top">
+      <p align="center"><font face="Arial MT Black" size="5">
+      <font face="Arial" color="#000000" size="1"><br>
+      </font></font><font face="Arial MT Black" size="2" color="#000000">
+      Consultas dos débitos </font>
+      <font face="Arial" color="#000000" size="2">do IPVA.<br>
+      <br>
+      <br>
+                  <div align="center">
+                    <center>
+				 <FORM method=POST id=form1 name=form1>
+                  <p align="center"><big>
+  				<font face="Arial"><font face="Arial" size="2">I</font><big><font face="Arial" size="2">nform</font></big><font face="Arial" size="2">e a </font>
+	<font size="2"><strong>
+					PLACA:</strong>&nbsp;</font> 
+                                <input type=textbox size=5 maxlength=7 class=inputhome id=placa name=placa>
+              &nbsp;&nbsp;<strong> 
+					<font size="2" face="Arial, Helvetica, sans-serif">
+	e RENAVAM</span>:</font></strong><font size="2" face="Arial, Helvetica, sans-serif">&nbsp;</font></font><font size="2" face="Arial, Helvetica, sans-serif">
+					</font><font face="Arial"> 
+              <input type=textbox size=7 maxlength=9 class=inputhome id=renavam name=renavam>&nbsp;
+				<button class=buttonhome name=btn_ok1 
+						onclick="submeter();" style="width: 28; height: 25">OK</button>
+
+			&nbsp;</font></big></p>
+				</form>
+
+                    </center>
+      </div>
+
+</font></td>
+  </tr>
+  <center></center>
+  <tr>
+    <td align="left" width="668" height="35" bgcolor="#E6E6E6" colspan="2" style="border-left-style: solid; border-left-width: 1; border-right-style: solid; border-right-width: 1; border-bottom-style: solid; border-bottom-width: 1">
+      <p align="center"><font face="Arial MT Black" size="5">
+      <!--input language="JavaScript" onclick="window.close()" type="button" value="Fechar" name="B1"--></font></td>
+  </tr>
+  </tbody></table></center></font></body></html>

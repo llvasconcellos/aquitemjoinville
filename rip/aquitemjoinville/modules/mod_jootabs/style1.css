@@ -1,0 +1,53 @@
+.jootab {
+	color:#fff; 
+	border-bottom:4px solid #FF8000; 
+	height:23px;
+	width:auto;
+}
+.jootab ul {
+	margin:0px; 
+	padding:0px; 
+	list-style:none; 
+	text-align:center;
+}
+.jootab li{
+	display:inline; 
+	line-height:23px; 
+	background-color: #4F729A;
+	padding:0; 
+	font-size:11px;
+	font-family:arial,verdana,tahoma;
+	padding:4px 5px 6px 5px;
+	cursor:default; 
+}
+
+.jootab li.tabactive {
+	color:#fff; 
+	text-decoration:none; 
+	padding:4px 5px 6px 5px; 
+	font-size:11px;
+	font-family:arial,verdana,tahoma; 
+	font-weight:bold;  
+	position:relative; 
+	background-color: #FF8000;
+	font-size:11px;
+	color:#FFFFFF;
+	font-family:arial,verdana,tahoma;
+}
+
+
+
+#tabcontent1,#tabcontent2,#tabcontent3,#tabcontent4,#tabcontent5,#tabcontent6,#tabcontent7,#tabcontent8,#tabcontent9,#tabcontent10
+ {
+	background:#FFFFFF;
+	width: auto; 
+	text-align:left;
+	padding:6px 0px; 
+	font-size:12px; 
+	margin-bottom:5px;
+}
+  
+#tabcontent1 div.moduletable,#tabcontent2 div.moduletable,#tabcontent3 div.moduletable,#tabcontent4 div.moduletable,#tabcontent5 div.moduletable,#tabcontent6 div.moduletable,#tabcontent7 div.moduletable,#tabcontent8 div.moduletable,#tabcontent9 div.moduletable,#tabcontent10 div.moduletable
+{
+margin:5px;
+}

@@ -1,0 +1,1175 @@
+<!doctype HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es" >
+    <head>
+        <link href="http://www.jogos10.com/main/estilos/estilos.css?x=6" rel="stylesheet" media="screen" title="design" type="text/css" />
+        <script src="http://www.jogos10.com/main/javascripts/utils.js" type="text/javascript"></script>
+        <script src="http://code.jquery.com/jquery-1.7.js" type="text/javascript"></script>
+        <!--Aquí llamaremos a la ClaseMeta correspondiente-->
+                    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+            				<title>Jogos10.com</title>
+                        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+            <META NAME="REVISIT-AFTER" CONTENT="3 DAYS">
+            <meta name="language" content="pt,portugal">
+            <meta name="robots" content="index,follow">
+            <META NAME="DESCRIPTION" CONTENT="Em Jogos 10.com podes jogar online e gratis a mais de 8.000 jogos friv. Advertimos-te: os jogos online viciam tremendamente! E são gratis! :D">
+            <META NAME="KEYWORDS" CONTENT="jogos,gratis,online,">
+            <META NAME="CLASSIFICATION" CONTENT="jogos,gratis,flash,online,jogos">
+            <META content="1 days" name=revisit>
+            <META content="index, follow" name=robots>
+			<meta name="google-site-verification" content="xJ6MqBiKy6tXterF1AGw6F2Z6qvzs3ueGg_AOwoqVfo" />
+
+        <script type="text/javascript">
+            sas_tmstp=Math.round(Math.random()*10000000000);sas_masterflag=1;
+            function SmartAdServer(sas_pageid,sas_formatid,sas_target) {
+                if (sas_masterflag==1) {sas_masterflag=0;sas_master='M';} else {sas_master='S';};
+                document.write('<scr'+'ipt src="http://ads.publicidad.net/call/pubj/' + sas_pageid + '/' + sas_formatid + '/' + sas_master + '/' + sas_tmstp + '/' + escape(sas_target) + '?"></scr'+'ipt>');
+            }
+        </script>
+        <!--Aquí introducimos los scripts generales-->
+        <link href="http://www.jogos10.com/main/estilos/estilos.css?x=2" rel="stylesheet" type="text/css">
+<script language="javascript" src="http://www.jogos10.com/main/javascripts/ajax.js" type="text/javascript"></script>
+<script language="javascript" src="http://www.jogos10.com/main/javascripts/descarga.js" type="text/javascript"></script>
+<script language="javascript" src="http://www.jogos10.com/main/javascripts/javascript.js" type="text/javascript"></script>
+<script language="javascript" src="http://www.jogos10.com/main/javascripts/inicio_favoritos.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+    function m(str, is_binary)
+    {
+        var result = "";
+        var i = 0;
+        var x;
+        var shiftreg = 0;
+        var count = -1;
+
+
+        for (i=0; i < str.length; i++) {
+            c = str.charAt(i);
+            if ('A' <= c && c <= 'Z')
+                x = str.charCodeAt(i) - 65;
+            else if ('a' <= c && c <= 'z')
+                x = str.charCodeAt(i) - 97 + 26;
+            else if ('0' <= c && c <= '9')
+                x = str.charCodeAt(i) - 48 + 52;
+            else if (c == '+')
+                x = 62;
+            else if (c == '/')
+                x = 63;
+            else
+                continue;
+
+            count++;
+
+            switch (count % 4)
+            {
+                case 0:
+                    shiftreg = x;
+                    continue;
+                case 1:
+                    v = (shiftreg<<2) | (x >> 4);
+                    shiftreg = x & 0x0F;
+                    break;
+                case 2:
+                    v = (shiftreg<<4) | (x >> 2);
+                    shiftreg = x & 0x03;
+                    break;
+                case 3:
+                    v = (shiftreg<<6) | (x >> 0);
+                    shiftreg = x & 0x00;
+                    break;
+                }
+
+                if (!is_binary && (v < 32 || v > 126) && (v != 0x0d) && (v != 0x0a)) { result = result + "<"; result = result + "0123456789ABCDEF".charAt((v/16)&0x0F); result = result + "0123456789ABCDEF".charAt((v/1)&0x0F); result = result + ">"; }  else result = result + String.fromCharCode(v);
+
+            }
+            return result.toString();
+        }
+</script>
+<script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'>
+</script>
+<script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'></script>
+
+<script type='text/javascript'>
+       GS_googleAddAdSenseService("ca-pub-4242958444998560");
+       GS_googleEnableAllServices();
+</script>
+
+<script type='text/javascript'>
+       GA_googleAddSlot("ca-pub-4242958444998560", "Jogos10_Portada_MIP_centerhabbo_300x250");
+       GA_googleAddSlot("ca-pub-4242958444998560", "Jogos10_Portada_MIP_centerHarren_300x250");
+       GA_googleAddSlot("ca-pub-4242958444998560", "Jogos10_Portada_MIP_center3_300x250");
+       GA_googleAddSlot("ca-pub-4242958444998560", "Jogos10_Portada_MSP_top_728x90");
+       GA_googleAddSlot("ca-pub-4242958444998560", "Jogos10_Portada_MSP_center1_300x250");
+       GA_googleAddSlot("ca-pub-4242958444998560", "Jogos10_Juego_MSP_top_728x90");
+       GA_googleAddSlot("ca-pub-4242958444998560", "Jogos10_Juego_MSP_juegoright_160x600");
+       GA_googleAddSlot("ca-pub-4242958444998560", "Jogos10_Juego_MSP_juegobottom_728x90");
+       GA_googleAddSlot("ca-pub-4242958444998560", "Jogos10_Juego_MIP_relacionadosright_300x250");
+       GA_googleAddSlot("ca-pub-4242958444998560", "Jogos10_Juego_MIP_relacionadosleft_300x250");
+       GA_googleAddSlot("ca-pub-4242958444998560", "Jogos10_Portada_MSP_center2_300x250");
+</script>
+
+<script type='text/javascript'>
+       GA_googleFetchAds();
+</script>    </head>
+    <body leftmargin="0" topmargin="0" marginwidth="0" bottommargin="0">
+                    <script type="text/javascript">
+                function SetCookie(c_name,value,expiredays)
+                {
+                    var exdate=new Date()
+                    exdate.setDate(exdate.getDate()+expiredays)
+                    document.cookie=c_name+ "=" +escape(value)+";path=/"+((expiredays==null) ? "" : ";expires="+exdate.toGMTString())
+                }
+            </script>
+            <link href="http://www.jogos10.com/main/estilos/estilos_cookies.css" rel="stylesheet" type="text/css" />
+            <div id="eucookielaw" class="clearfix">
+                <a id="removecookie" class="button">X</a>
+                <p>
+                    Las cookies de este sitio se usan para personalizar el contenido y los anuncios, para ofrecer funciones de medios sociales y para analizar el tráfico. Además, compartimos información sobre el uso que haga del sitio web con nuestros partners de medios sociales, de publicidad y de análisis web. Al utilizar nuestros servicios, aceptas el uso que hacemos de las cookies.
+                    <a href="http://www.jogos10.com/cookies.php" target="_blank">Más información.</a>
+                </p>
+            </div>
+            <script type="text/javascript">
+                if( document.cookie.indexOf("eucookie") ===-1 ){
+                    $("#eucookielaw").show();
+                }
+                $("#removecookie").click(function () {
+                    SetCookie('eucookie','eucookie',365*10)
+                  $("#eucookielaw").remove();
+                });
+            </script>
+                    
+        <script src="http://ae.spublicidad.net/generic/jogos10/"></script>
+        <center>
+
+            <!--Cabezal-->
+            <!--Pestañita superior-->	
+            	
+
+            <table border="0"cellpadding="0" cellspacing="1" bgcolor="#B9B7B8">
+                <tr><td bgcolor="white" valign="top">
+                        <table border="0" cellpadding="0" cellspacing="0">
+                            <tr><td>
+                                    <!--Aquí llamamos a la cabecera-->
+                                            <div id="cabecera_nueva">
+
+                <a class="cabecera_logo" href="index.php@option=com_weblinks&amp;task=view&amp;catid=30&amp;id=60.html"><img src="http://contenido.jogos10.com/imagenes/jogos10/cabeceras/logo-jogos10.png" width="345" height="66" /></a>
+                <iframe src="http://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FJogos10com%2F129605320452490&amp;send=false&amp;layout=button_count&amp;width=150&amp;show_faces=true&amp;font=verdana&amp;colorscheme=light&amp;action=like&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:120px; height:21px;position:absolute;right:0;bottom:25px;" allowTransparency="true"></iframe>
+                
+                <div class="titulo-home-nuevo">
+                    <h1 class="texto_azul_10"><a href="index.php@option=com_weblinks&amp;task=view&amp;catid=30&amp;id=60.html" target="_blank">jogos</a>, jogos online, jogos gratis, friv</h1>
+                </div>
+            
+        </div>
+                                        </td></tr>
+                            <tr><td width="989">
+                                    
+                                                <div id="bloqueNewTags" class="box"> 
+                                                    <div id="bloqueImagenesNewTags" > 
+                                                        
+<ul id="bloque_new_tags" > 
+    <li>
+        <a href='http://www.jogos10.com/jogos_de_acao.php' title='Jogos de açao' target="_blank">
+            <img src='http://thumbs.jogos10.com/thumbs_tags/124x86_jogos10/jogos_de_acao.jpg' width="123" height="86" alt='Jogos de açao'/>
+        </a>
+    </li>
+    <li>
+        <a href='http://www.jogos10.com/jogos/jogos-de-guerra.php' title='Jogos de guerra' target="_blank">
+            <img src='http://thumbs.jogos10.com/thumbs_tags/124x86_jogos10/jogos-de-guerra.jpg' width="124" height="86" alt='Jogos de guerra'/>
+        </a>
+    </li>
+    <li>
+        <a href='http://www.jogos10.com/jogos_de_luta.php' title='Jogos de luta' target="_blank">
+            <img src='http://thumbs.jogos10.com/thumbs_tags/124x86_jogos10/jogos_de_luta.jpg' width="124" height="86" alt='Jogos de luta'/>
+        </a>
+    </li>
+    <li>
+        <a href='http://www.jogos10.com/jogos_de_carros.php' title='Jogos de carros' target="_blank">
+            <img src='http://thumbs.jogos10.com/thumbs_tags/124x86_jogos10/jogos_de_carros.jpg' width="124" height="86" alt='Jogos de carros'/>
+        </a>
+    </li>
+    <li>
+        <a href='http://www.jogos10.com/jogos/jogos-de-motos.php' title='Jogos de motos' target="_blank">
+            <img src='http://thumbs.jogos10.com/thumbs_tags/124x86_jogos10/jogos-de-motos.jpg' width="124" height="86" alt='Jogos de motos'/>
+        </a>
+    </li>
+    <li>
+        <a href='http://www.jogos10.com/jogos_de_desporto.php' title='Jogos de deporto' target="_blank">
+            <img src='http://thumbs.jogos10.com/thumbs_tags/124x86_jogos10/jogos_de_desporto.jpg' width="124" height="86" alt='Jogos de deporto'/>
+        </a>
+    </li>
+    <li>
+        <a href='http://www.jogos10.com/jogos/jogos-de-futebol.php' title='Jogos de futebol' target="_blank">
+            <img src='http://thumbs.jogos10.com/thumbs_tags/124x86_jogos10/jogos-de-futebol.jpg' width="124" height="86" alt='Jogos de futebol'/>
+        </a>
+    </li>
+    <li>
+        <a href='http://www.jogos10.com/jogos_de_habilidade.php' title='Jogos de habilidade' target="_blank">
+            <img src='http://thumbs.jogos10.com/thumbs_tags/124x86_jogos10/jogos_de_habilidade.jpg' width="122" height="86" alt='Jogos de habilidade'/>
+        </a>
+    </li>
+    <li>
+        <a href='http://www.jogos10.com/jogos/jogos-do-mario.php' title='Jogos do Mario Bros' target="_blank">
+            <img src='http://thumbs.jogos10.com/thumbs_tags/124x86_jogos10/jogos-do-mario.jpg' width="123" height="86" alt='Jogos do Mario Bros'/>
+        </a>
+    </li>
+    <li>
+        <a href='http://www.jogos10.com/jogos_de_plataformas.php' title='Jogos do plataformas' target="_blank">
+            <img src='http://thumbs.jogos10.com/thumbs_tags/124x86_jogos10/jogos_de_plataformas.jpg' width="124" height="86" alt='Jogos do plataformas'/>
+        </a>
+    </li>
+    <li>
+        <a href='http://www.jogos10.com/jogos/jogos-de-pensar.php' title='Jogos de pensar' target="_blank">
+            <img src='http://thumbs.jogos10.com/thumbs_tags/124x86_jogos10/jogos-de-pensar.jpg' width="124" height="86" alt='Jogos de pensar'/>
+        </a>
+    </li>
+    <li>
+        <a href='http://www.jogos10.com/jogos/quebra-cabeca.php' title='Jogos de quebra cabeça' target="_blank">
+            <img src='http://thumbs.jogos10.com/thumbs_tags/124x86_jogos10/quebra-cabeca.jpg' width="124" height="86" alt='Jogos de quebra cabeça'/>
+        </a>
+    </li>
+    <li>
+        <a href='http://www.jogos10.com/jogos/jogos-de-meninas.php' title='Jogos de meninas' target="_blank">
+            <img src='http://thumbs.jogos10.com/thumbs_tags/124x86_jogos10/jogos-de-meninas.jpg' width="124" height="86" alt='Jogos de meninas'/>
+        </a>
+    </li>
+    <li>
+        <a href='http://www.jogos10.com/jogos/jogos-de-vestir.php' title='Jogos de vestir' target="_blank">
+            <img src='http://thumbs.jogos10.com/thumbs_tags/124x86_jogos10/jogos-de-vestir.jpg' width="124" height="86" alt='Jogos de vestir'/>
+        </a>
+    </li>
+    <li>
+        <a href='http://www.jogos10.com/jogos/jogos-de-culinaria.php' title='Jogos de culinaria' target="_blank">
+            <img src='http://thumbs.jogos10.com/thumbs_tags/124x86_jogos10/jogos-de-culinaria.jpg' width="124" height="86" alt='Jogos de culinaria'/>
+        </a>
+    </li>
+    <li>
+        <a href='http://www.jogos10.com/jogos/mais_jogos.php' title='Mais jogos' >
+            <img src='http://thumbs.jogos10.com/thumbs_tags/124x86_jogos10/mais_jogos.jpg' width="122" height="86" alt='Mais jogos'/>
+        </a>
+    </li>
+</ul> 
+                                                    </div>
+                                                </div>
+                                    <!--Este div contiene toda la estructura excepto cabecera y cierre-->
+                                    <div style='margin:30px 0px 0px 0px;text-align:center;'>
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <!--<td valign="top" width="163">-->
+                                                    <!--                                                </td>
+                                                <td width="9"></td> separador columnas -->
+                                                <td valign="top" >
+                                                    	
+        <!--Table principal columna izquierda-->
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#fff1da">
+            
+            <tr>
+                <td>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <td height="25" class="header_seccion" bgcolor="#F27E07" style="padding-left:20px;text-align: left">
+                    <span id="prueba" class="texto_prueba">
+                        <div style="float:left;"><img src="http://contenido.jogos10.com/imagenes/jogos10/Logito-Jogos10-nuevo.jpg" border="0"  height="33" width="168" align="top"></div>
+                        <div class="titulo_seccion"><strong>Página inicial</strong></div>
+                    </span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <!-- INICIO LISTADO DE JUEGOS -->
+                    <table id="tablaListadoJuegos" cellpadding="0" cellspacing="0" align="center">
+                                                <tr height="20"><td></td></tr>
+                        <tr>
+                        
+                            
+
+                                <td class="juego_listado">
+                                    
+        <a class="juegoScreen" style="text-decoration: none;" href="http://www.jogos10.com/jogos/masha-and-the-bear-puzzle_21488.php" target="_blank">
+            <img border="0" src="http://contenido.jogos10.com/thumbs_juegos/180x146/mashaandthebearpuzzle.jpg" border="0" width="100%">
+        </a>
+        <div class="divDescripcion">
+            <div class="ddheader">
+                <span><b>Masha and the Bear Puzzle</b></span>
+            </div>
+            <div class="ddbody">
+                <span>Resolve estes puzzles cronometrados da Masha e seu amigo o urso.</span>
+            </div>
+        </div>
+        <span>
+            <a class="link_azul_11 link_titulo_juego_listado" href="http://www.jogos10.com/jogos/masha-and-the-bear-puzzle_21488.php" target="_blank">
+        Masha and the Bear Puzzle            </a>   
+        </span>
+
+                                        </td>
+
+                            <td class="separador_juego_listado" >&nbsp;</td>
+                            
+
+                                <td class="juego_listado">
+                                    
+        <a class="juegoScreen" style="text-decoration: none;" href="http://www.jogos10.com/jogos/banana-bonanza_21485.php" target="_blank">
+            <img border="0" src="http://contenido.jogos10.com/thumbs_juegos/180x146/bananabonanza.jpg" border="0" width="100%">
+        </a>
+        <div class="divDescripcion">
+            <div class="ddheader">
+                <span><b>Banana Bonanza</b></span>
+            </div>
+            <div class="ddbody">
+                <span>Jogo retro no que somos um chimpanz&eacute; na selva.</span>
+            </div>
+        </div>
+        <span>
+            <a class="link_azul_11 link_titulo_juego_listado" href="http://www.jogos10.com/jogos/banana-bonanza_21485.php" target="_blank">
+        Banana Bonanza            </a>   
+        </span>
+
+                                        </td>
+
+                            <td class="separador_juego_listado" >&nbsp;</td>
+                            
+
+                                <td class="juego_listado">
+                                    
+        <a class="juegoScreen" style="text-decoration: none;" href="http://www.jogos10.com/jogos/breaking-the-bank_21487.php" target="_blank">
+            <img border="0" src="http://contenido.jogos10.com/thumbs_juegos/180x146/breakingthebank.jpg" border="0" width="100%">
+        </a>
+        <div class="divDescripcion">
+            <div class="ddheader">
+                <span><b>Breaking The Bank</b></span>
+            </div>
+            <div class="ddbody">
+                <span>Entra na sede do banco para roubar um mont&atilde;o de dinheiro.</span>
+            </div>
+        </div>
+        <span>
+            <a class="link_azul_11 link_titulo_juego_listado" href="http://www.jogos10.com/jogos/breaking-the-bank_21487.php" target="_blank">
+        Breaking The Bank            </a>   
+        </span>
+
+                                        </td>
+
+                            <td class="separador_juego_listado" >&nbsp;</td>
+                            
+
+                                <td class="juego_listado">
+                                    
+        <a class="juegoScreen" style="text-decoration: none;" href="http://www.jogos10.com/jogos/the-ironic-zombie_21484.php" target="_blank">
+            <img border="0" src="http://contenido.jogos10.com/thumbs_juegos/180x146/theironiczombie.jpg" border="0" width="100%">
+        </a>
+        <div class="divDescripcion">
+            <div class="ddheader">
+                <span><b>The Ironic Zombie</b></span>
+            </div>
+            <div class="ddbody">
+                <span>O nunca visto: um ser humano e um zumbi colaborando.</span>
+            </div>
+        </div>
+        <span>
+            <a class="link_azul_11 link_titulo_juego_listado" href="http://www.jogos10.com/jogos/the-ironic-zombie_21484.php" target="_blank">
+        The Ironic Zombie            </a>   
+        </span>
+
+                                        </td>
+
+                            <td class="separador_juego_listado" >&nbsp;</td>
+                            
+
+                                <td class="juego_listado">
+                                    
+        <a class="juegoScreen" style="text-decoration: none;" href="http://www.jogos10.com/jogos/wedding-photo-dress-up_21483.php" target="_blank">
+            <img border="0" src="http://contenido.jogos10.com/thumbs_juegos/180x146/elsaweddingphotodressup.jpg" border="0" width="100%">
+        </a>
+        <div class="divDescripcion">
+            <div class="ddheader">
+                <span><b>Wedding Photo Dress Up</b></span>
+            </div>
+            <div class="ddbody">
+                <span>Veste &agrave; Elsa a as suas damas de honor.</span>
+            </div>
+        </div>
+        <span>
+            <a class="link_azul_11 link_titulo_juego_listado" href="http://www.jogos10.com/jogos/wedding-photo-dress-up_21483.php" target="_blank">
+        Wedding Photo Dress Up            </a>   
+        </span>
+
+                                        </td>
+
+                            </tr><tr height="12"><td></td></tr><tr>
+                            
+
+                                <td class="juego_listado">
+                                    
+        <a class="juegoScreen" style="text-decoration: none;" href="http://www.jogos10.com/jogos/concussion_21474.php" target="_blank">
+            <img border="0" src="http://contenido.jogos10.com/thumbs_juegos/180x146/concussion.jpg" border="0" width="100%">
+        </a>
+        <div class="divDescripcion">
+            <div class="ddheader">
+                <span><b>Concussion</b></span>
+            </div>
+            <div class="ddbody">
+                <span>Est&aacute;s numa mina para atrapar um mont&atilde;o de pedras preciosas. Ajuda dos explosivos para saltar mais alto.</span>
+            </div>
+        </div>
+        <span>
+            <a class="link_azul_11 link_titulo_juego_listado" href="http://www.jogos10.com/jogos/concussion_21474.php" target="_blank">
+        Concussion            </a>   
+        </span>
+
+                                        </td>
+
+                            <td class="separador_juego_listado" >&nbsp;</td>
+                            
+
+                                <td class="juego_listado">
+                                    
+        <a class="juegoScreen" style="text-decoration: none;" href="http://www.jogos10.com/jogos/back-in-time-part-2_17525.php" target="_blank">
+            <img border="0" src="http://contenido.jogos10.com/thumbs_juegos/180x146/backintimepart2.jpg" border="0" width="100%">
+        </a>
+        <div class="divDescripcion">
+            <div class="ddheader">
+                <span><b>Back in Time Part 2</b></span>
+            </div>
+            <div class="ddbody">
+                <span>Roubas a m&aacute;quina do tempo para viajar at&eacute; 1994. Que tempos aqueles!</span>
+            </div>
+        </div>
+        <span>
+            <a class="link_azul_11 link_titulo_juego_listado" href="http://www.jogos10.com/jogos/back-in-time-part-2_17525.php" target="_blank">
+        Back in Time Part 2            </a>   
+        </span>
+
+                                        </td>
+
+                            <td class="separador_juego_listado" >&nbsp;</td>
+                            
+
+                                <td class="juego_listado">
+                                    
+        <a class="juegoScreen" style="text-decoration: none;" href="http://www.jogos10.com/jogos/stick-concussion_21475.php" target="_blank">
+            <img border="0" src="http://contenido.jogos10.com/thumbs_juegos/180x146/concussionstick.jpg" border="0" width="100%">
+        </a>
+        <div class="divDescripcion">
+            <div class="ddheader">
+                <span><b>Stick Concussion</b></span>
+            </div>
+            <div class="ddbody">
+                <span>Os sticks voltam a Jogos10 com a sua forma violenta de entender a vida.</span>
+            </div>
+        </div>
+        <span>
+            <a class="link_azul_11 link_titulo_juego_listado" href="http://www.jogos10.com/jogos/stick-concussion_21475.php" target="_blank">
+        Stick Concussion            </a>   
+        </span>
+
+                                        </td>
+
+                            <td class="separador_juego_listado" >&nbsp;</td>
+                            
+
+                                <td class="juego_listado">
+                                    
+        <a class="juegoScreen" style="text-decoration: none;" href="http://www.jogos10.com/jogos/amigo-pancho-8-the-death-star_21471.php" target="_blank">
+            <img border="0" src="http://contenido.jogos10.com/thumbs_juegos/180x146/amigopanchothedeathstar.jpg" border="0" width="100%">
+        </a>
+        <div class="divDescripcion">
+            <div class="ddheader">
+                <span><b>Amigo Pancho 8 The Death Star</b></span>
+            </div>
+            <div class="ddbody">
+                <span>Nosso amigo Pancho deve salvar a Terra de um iminente perigo.</span>
+            </div>
+        </div>
+        <span>
+            <a class="link_azul_11 link_titulo_juego_listado" href="http://www.jogos10.com/jogos/amigo-pancho-8-the-death-star_21471.php" target="_blank">
+        Amigo Pancho 8 The Death Star            </a>   
+        </span>
+
+                                        </td>
+
+                            <td class="separador_juego_listado" >&nbsp;</td>
+                            
+
+                                <td class="juego_listado">
+                                    
+        <a class="juegoScreen" style="text-decoration: none;" href="http://www.jogos10.com/jogos/school-time_21482.php" target="_blank">
+            <img border="0" src="http://contenido.jogos10.com/thumbs_juegos/180x146/babyelsaschooltime.jpg" border="0" width="100%">
+        </a>
+        <div class="divDescripcion">
+            <div class="ddheader">
+                <span><b>School Time</b></span>
+            </div>
+            <div class="ddbody">
+                <span>O Olaf vigia de perto a uma jovem Elsa que se evade demasiado de fazer os deveres.</span>
+            </div>
+        </div>
+        <span>
+            <a class="link_azul_11 link_titulo_juego_listado" href="http://www.jogos10.com/jogos/school-time_21482.php" target="_blank">
+        School Time            </a>   
+        </span>
+
+                                        </td>
+
+                            </tr><tr height="12"><td></td></tr><tr>
+                            
+
+                                <td class="juego_listado">
+                                    
+        <a class="juegoScreen" style="text-decoration: none;" href="http://www.jogos10.com/jogos/moto-x3m-3_21435.php" target="_blank">
+            <img border="0" src="http://contenido.jogos10.com/thumbs_juegos/180x146/motox3m3.jpg" border="0" width="100%">
+        </a>
+        <div class="divDescripcion">
+            <div class="ddheader">
+                <span><b>Moto X3M 3</b></span>
+            </div>
+            <div class="ddbody">
+                <span>Terceira entrega do melhor jogo de motocross.</span>
+            </div>
+        </div>
+        <span>
+            <a class="link_azul_11 link_titulo_juego_listado" href="http://www.jogos10.com/jogos/moto-x3m-3_21435.php" target="_blank">
+        Moto X3M 3            </a>   
+        </span>
+
+                                        </td>
+
+                            <td class="separador_juego_listado" >&nbsp;</td>
+                            
+
+                                <td class="juego_listado">
+                                    
+        <a class="juegoScreen" style="text-decoration: none;" href="http://www.jogos10.com/jogos/gibbets-4_21454.php" target="_blank">
+            <img border="0" src="http://contenido.jogos10.com/thumbs_juegos/180x146/gibbets4.jpg" border="0" width="100%">
+        </a>
+        <div class="divDescripcion">
+            <div class="ddheader">
+                <span><b>Gibbets 4</b></span>
+            </div>
+            <div class="ddbody">
+                <span>Resgata &agrave; gente dantes de que morram por estrangulamento.</span>
+            </div>
+        </div>
+        <span>
+            <a class="link_azul_11 link_titulo_juego_listado" href="http://www.jogos10.com/jogos/gibbets-4_21454.php" target="_blank">
+        Gibbets 4            </a>   
+        </span>
+
+                                        </td>
+
+                            <td class="separador_juego_listado" >&nbsp;</td>
+                            
+
+                                <td class="juego_listado">
+                                    
+        <a class="juegoScreen" style="text-decoration: none;" href="http://www.jogos10.com/jogos/tank-mania_12142.php" target="_blank">
+            <img border="0" src="http://contenido.jogos10.com/thumbs_juegos/180x146/tankmania.jpg" border="0" width="100%">
+        </a>
+        <div class="divDescripcion">
+            <div class="ddheader">
+                <span><b>Tank Mania</b></span>
+            </div>
+            <div class="ddbody">
+                <span>Leva o teu impressionante tanque por terrenos pouco recomend&aacute;veis. &Eacute; melhor que te desfa&ccedil;as dos obst&aacute;culos com tiros de canh&atilde;o.</span>
+            </div>
+        </div>
+        <span>
+            <a class="link_azul_11 link_titulo_juego_listado" href="http://www.jogos10.com/jogos/tank-mania_12142.php" target="_blank">
+        Tank Mania            </a>   
+        </span>
+
+                                        </td>
+
+                            <td class="separador_juego_listado" >&nbsp;</td>
+                            
+
+                                <td class="juego_listado">
+                                    
+        <a class="juegoScreen" style="text-decoration: none;" href="http://www.jogos10.com/jogos/first-blood-escape-the-hell_10369.php" target="_blank">
+            <img border="0" src="http://contenido.jogos10.com/thumbs_juegos/180x146/firstbloodescapethehell.jpg" border="0" width="100%">
+        </a>
+        <div class="divDescripcion">
+            <div class="ddheader">
+                <span><b>First Blood Escape the Hell</b></span>
+            </div>
+            <div class="ddbody">
+                <span>I Diablo agora entret&eacute;m-se a torturar uns pobres duendes que inclusivamente perderam partes do seu corpo para escapar com vida.</span>
+            </div>
+        </div>
+        <span>
+            <a class="link_azul_11 link_titulo_juego_listado" href="http://www.jogos10.com/jogos/first-blood-escape-the-hell_10369.php" target="_blank">
+        First Blood Escape the Hell            </a>   
+        </span>
+
+                                        </td>
+
+                            <td class="separador_juego_listado" >&nbsp;</td>
+                            
+
+                                <td class="juego_listado">
+                                    
+        <a class="juegoScreen" style="text-decoration: none;" href="http://www.jogos10.com/jogos/jelly-friend_21430.php" target="_blank">
+            <img border="0" src="http://contenido.jogos10.com/thumbs_juegos/180x146/jellyfriend.jpg" border="0" width="100%">
+        </a>
+        <div class="divDescripcion">
+            <div class="ddheader">
+                <span><b>Jelly Friend</b></span>
+            </div>
+            <div class="ddbody">
+                <span>Magn&iacute;fico bejeweled de guloseimas.</span>
+            </div>
+        </div>
+        <span>
+            <a class="link_azul_11 link_titulo_juego_listado" href="http://www.jogos10.com/jogos/jelly-friend_21430.php" target="_blank">
+        Jelly Friend            </a>   
+        </span>
+
+                                        </td>
+
+                            </tr><tr height="12"><td></td></tr><tr>
+                            
+
+                                <td class="juego_listado">
+                                    
+        <a class="juegoScreen" style="text-decoration: none;" href="http://www.jogos10.com/jogos/beasts-battle_21420.php" target="_blank">
+            <img border="0" src="http://contenido.jogos10.com/thumbs_juegos/180x146/beastsbattle.jpg" border="0" width="100%">
+        </a>
+        <div class="divDescripcion">
+            <div class="ddheader">
+                <span><b>Beasts Battle</b></span>
+            </div>
+            <div class="ddbody">
+                <span>Luta com intelig&ecirc;ncia em o campo de batalha.</span>
+            </div>
+        </div>
+        <span>
+            <a class="link_azul_11 link_titulo_juego_listado" href="http://www.jogos10.com/jogos/beasts-battle_21420.php" target="_blank">
+        Beasts Battle            </a>   
+        </span>
+
+                                        </td>
+
+                            <td class="separador_juego_listado" >&nbsp;</td>
+                            
+
+                                <td class="juego_listado">
+                                    
+        <a class="juegoScreen" style="text-decoration: none;" href="http://www.jogos10.com/jogos/mexican-chicken-tortillas_21427.php" target="_blank">
+            <img border="0" src="http://contenido.jogos10.com/thumbs_juegos/180x146/mexicanchickentortillas.jpg" border="0" width="100%">
+        </a>
+        <div class="divDescripcion">
+            <div class="ddheader">
+                <span><b>Mexican Chicken Tortillas</b></span>
+            </div>
+            <div class="ddbody">
+                <span>Faz tortilhas mexicanas boas de verdade.</span>
+            </div>
+        </div>
+        <span>
+            <a class="link_azul_11 link_titulo_juego_listado" href="http://www.jogos10.com/jogos/mexican-chicken-tortillas_21427.php" target="_blank">
+        Mexican Chicken Tortillas            </a>   
+        </span>
+
+                                        </td>
+
+                            <td class="separador_juego_listado" >&nbsp;</td>
+                            
+
+                                <td class="juego_listado">
+                                    
+        <a class="juegoScreen" style="text-decoration: none;" href="http://www.jogos10.com/jogos/tiny-diggers_21412.php" target="_blank">
+            <img border="0" src="http://contenido.jogos10.com/thumbs_juegos/180x146/tinydiggers.jpg" border="0" width="100%">
+        </a>
+        <div class="divDescripcion">
+            <div class="ddheader">
+                <span><b>Tiny Diggers</b></span>
+            </div>
+            <div class="ddbody">
+                <span>Uns bichinhos mineiros devem colaborar para chegar at&eacute; a sa&iacute;da.</span>
+            </div>
+        </div>
+        <span>
+            <a class="link_azul_11 link_titulo_juego_listado" href="http://www.jogos10.com/jogos/tiny-diggers_21412.php" target="_blank">
+        Tiny Diggers            </a>   
+        </span>
+
+                                        </td>
+
+                            <td class="separador_juego_listado" >&nbsp;</td>
+                            
+
+                                <td class="juego_listado">
+                                    
+        <a class="juegoScreen" style="text-decoration: none;" href="http://www.jogos10.com/jogos/disaster-will-strike-7_21407.php" target="_blank">
+            <img border="0" src="http://contenido.jogos10.com/thumbs_juegos/180x146/disasterwillstrike7.jpg" border="0" width="100%">
+        </a>
+        <div class="divDescripcion">
+            <div class="ddheader">
+                <span><b>Disaster Will Strike 7</b></span>
+            </div>
+            <div class="ddbody">
+                <span>Continuamos com os desastres naturais mais devastadores.</span>
+            </div>
+        </div>
+        <span>
+            <a class="link_azul_11 link_titulo_juego_listado" href="http://www.jogos10.com/jogos/disaster-will-strike-7_21407.php" target="_blank">
+        Disaster Will Strike 7            </a>   
+        </span>
+
+                                        </td>
+
+                            <td class="separador_juego_listado" >&nbsp;</td>
+                            
+
+                                <td class="juego_listado">
+                                    
+        <a class="juegoScreen" style="text-decoration: none;" href="http://www.jogos10.com/jogos/hold-the-fort_21408.php" target="_blank">
+            <img border="0" src="http://contenido.jogos10.com/thumbs_juegos/180x146/holdthefort.jpg" border="0" width="100%">
+        </a>
+        <div class="divDescripcion">
+            <div class="ddheader">
+                <span><b>Hold The Fort</b></span>
+            </div>
+            <div class="ddbody">
+                <span>Defende o forte das hordas inimigas.</span>
+            </div>
+        </div>
+        <span>
+            <a class="link_azul_11 link_titulo_juego_listado" href="http://www.jogos10.com/jogos/hold-the-fort_21408.php" target="_blank">
+        Hold The Fort            </a>   
+        </span>
+
+                                        </td>
+
+                            </tr><tr height="12"><td></td></tr><tr>
+                            
+
+                                <td class="juego_listado">
+                                    
+        <a class="juegoScreen" style="text-decoration: none;" href="http://www.jogos10.com/jogos/the-horror-of-tiberian-valley_21397.php" target="_blank">
+            <img border="0" src="http://contenido.jogos10.com/thumbs_juegos/180x146/thehorrorsoftiberianvalley.jpg" border="0" width="100%">
+        </a>
+        <div class="divDescripcion">
+            <div class="ddheader">
+                <span><b>The Horror of Tiberian Valley</b></span>
+            </div>
+            <div class="ddbody">
+                <span>O Vale do T&iacute;ber encerra uns segredos terr&iacute;veis.</span>
+            </div>
+        </div>
+        <span>
+            <a class="link_azul_11 link_titulo_juego_listado" href="http://www.jogos10.com/jogos/the-horror-of-tiberian-valley_21397.php" target="_blank">
+        The Horror of Tiberian Valley            </a>   
+        </span>
+
+                                        </td>
+
+                            <td class="separador_juego_listado" >&nbsp;</td>
+                            
+
+                                <td class="juego_listado">
+                                    
+        <a class="juegoScreen" style="text-decoration: none;" href="http://www.jogos10.com/jogos/olympics-rio-2016_21392.php" target="_blank">
+            <img border="0" src="http://contenido.jogos10.com/thumbs_juegos/180x146/olympicsrio2016.jpg" border="0" width="100%">
+        </a>
+        <div class="divDescripcion">
+            <div class="ddheader">
+                <span><b>Olympics Rio 2016</b></span>
+            </div>
+            <div class="ddbody">
+                <span>Desfruta dos Jogos Ol&iacute;mpicos de Rio de Janeiro.</span>
+            </div>
+        </div>
+        <span>
+            <a class="link_azul_11 link_titulo_juego_listado" href="http://www.jogos10.com/jogos/olympics-rio-2016_21392.php" target="_blank">
+        Olympics Rio 2016            </a>   
+        </span>
+
+                                        </td>
+
+                            <td class="separador_juego_listado" >&nbsp;</td>
+                            
+
+                                <td class="juego_listado">
+                                    
+        <a class="juegoScreen" style="text-decoration: none;" href="http://www.jogos10.com/jogos/shop-empire-galaxy_21393.php" target="_blank">
+            <img border="0" src="http://contenido.jogos10.com/thumbs_juegos/180x146/shopempiregalaxy.jpg" border="0" width="100%">
+        </a>
+        <div class="divDescripcion">
+            <div class="ddheader">
+                <span><b>Shop Empire Galaxy</b></span>
+            </div>
+            <div class="ddbody">
+                <span>Cria um shopping no espa&ccedil;o.</span>
+            </div>
+        </div>
+        <span>
+            <a class="link_azul_11 link_titulo_juego_listado" href="http://www.jogos10.com/jogos/shop-empire-galaxy_21393.php" target="_blank">
+        Shop Empire Galaxy            </a>   
+        </span>
+
+                                        </td>
+
+                            <td class="separador_juego_listado" >&nbsp;</td>
+                            
+
+                                <td class="juego_listado">
+                                    
+        <a class="juegoScreen" style="text-decoration: none;" href="http://www.jogos10.com/jogos/vogue-dream-job_21359.php" target="_blank">
+            <img border="0" src="http://contenido.jogos10.com/thumbs_juegos/180x146/barbiesvoguedreamjob.jpg" border="0" width="100%">
+        </a>
+        <div class="divDescripcion">
+            <div class="ddheader">
+                <span><b>Vogue Dream Job</b></span>
+            </div>
+            <div class="ddbody">
+                <span>Encarrega-te da portada da revista Vogue.</span>
+            </div>
+        </div>
+        <span>
+            <a class="link_azul_11 link_titulo_juego_listado" href="http://www.jogos10.com/jogos/vogue-dream-job_21359.php" target="_blank">
+        Vogue Dream Job            </a>   
+        </span>
+
+                                        </td>
+
+                            <td class="separador_juego_listado" >&nbsp;</td>
+                            
+
+                                <td class="juego_listado">
+                                    
+        <a class="juegoScreen" style="text-decoration: none;" href="http://www.jogos10.com/jogos/princess-beach-party_21403.php" target="_blank">
+            <img border="0" src="http://contenido.jogos10.com/thumbs_juegos/180x146/princessbeachparty.jpg" border="0" width="100%">
+        </a>
+        <div class="divDescripcion">
+            <div class="ddheader">
+                <span><b>Princess Beach Party</b></span>
+            </div>
+            <div class="ddbody">
+                <span>As princesas desfrutam na praia.</span>
+            </div>
+        </div>
+        <span>
+            <a class="link_azul_11 link_titulo_juego_listado" href="http://www.jogos10.com/jogos/princess-beach-party_21403.php" target="_blank">
+        Princess Beach Party            </a>   
+        </span>
+
+                                        </td>
+
+                            </tr><tr height="12"><td></td></tr><tr>
+                            
+
+                                <td class="juego_listado">
+                                    
+        <a class="juegoScreen" style="text-decoration: none;" href="http://www.jogos10.com/jogos/rosewater-and-raspberry_21352.php" target="_blank">
+            <img border="0" src="http://contenido.jogos10.com/thumbs_juegos/180x146/rosewaterandraspberry.jpg" border="0" width="100%">
+        </a>
+        <div class="divDescripcion">
+            <div class="ddheader">
+                <span><b>Rosewater and Raspberry</b></span>
+            </div>
+            <div class="ddbody">
+                <span>Prepara um gelado com &aacute;gua de rosas e framboesa.</span>
+            </div>
+        </div>
+        <span>
+            <a class="link_azul_11 link_titulo_juego_listado" href="http://www.jogos10.com/jogos/rosewater-and-raspberry_21352.php" target="_blank">
+        Rosewater and Raspberry            </a>   
+        </span>
+
+                                        </td>
+
+                            <td class="separador_juego_listado" >&nbsp;</td>
+                            
+
+                                <td class="juego_listado">
+                                    
+        <a class="juegoScreen" style="text-decoration: none;" href="http://www.jogos10.com/jogos/ninja_21388.php" target="_blank">
+            <img border="0" src="http://contenido.jogos10.com/thumbs_juegos/180x146/ninja.jpg" border="0" width="100%">
+        </a>
+        <div class="divDescripcion">
+            <div class="ddheader">
+                <span><b>Ninja</b></span>
+            </div>
+            <div class="ddbody">
+                <span>&Eacute;s o melhor ninja da hist&oacute;ria, melhor que Musashi Miyamoto.</span>
+            </div>
+        </div>
+        <span>
+            <a class="link_azul_11 link_titulo_juego_listado" href="http://www.jogos10.com/jogos/ninja_21388.php" target="_blank">
+        Ninja            </a>   
+        </span>
+
+                                        </td>
+
+                            <td class="separador_juego_listado" >&nbsp;</td>
+                            
+
+                                <td class="juego_listado">
+                                    
+        <a class="juegoScreen" style="text-decoration: none;" href="http://www.jogos10.com/jogos/night-race-rally_21385.php" target="_blank">
+            <img border="0" src="http://contenido.jogos10.com/thumbs_juegos/180x146/nightracerally.jpg" border="0" width="100%">
+        </a>
+        <div class="divDescripcion">
+            <div class="ddheader">
+                <span><b>Night Race Rally</b></span>
+            </div>
+            <div class="ddbody">
+                <span>Compete no carro pela noite.</span>
+            </div>
+        </div>
+        <span>
+            <a class="link_azul_11 link_titulo_juego_listado" href="http://www.jogos10.com/jogos/night-race-rally_21385.php" target="_blank">
+        Night Race Rally            </a>   
+        </span>
+
+                                        </td>
+
+                            <td class="separador_juego_listado" >&nbsp;</td>
+                            
+
+                                <td class="juego_listado">
+                                    
+        <a class="juegoScreen" style="text-decoration: none;" href="http://www.jogos10.com/jogos/dragon-ball-z-ultimate-power_17372.php" target="_blank">
+            <img border="0" src="http://contenido.jogos10.com/thumbs_juegos/180x146/dragonballzultimatepower.jpg" border="0" width="100%">
+        </a>
+        <div class="divDescripcion">
+            <div class="ddheader">
+                <span><b>Dragon Ball Z Ultimate Power</b></span>
+            </div>
+            <div class="ddbody">
+                <span>Os personagens do Dragon Ball Z medem as suas habilidades em combates sem tr&eacute;gua.</span>
+            </div>
+        </div>
+        <span>
+            <a class="link_azul_11 link_titulo_juego_listado" href="http://www.jogos10.com/jogos/dragon-ball-z-ultimate-power_17372.php" target="_blank">
+        Dragon Ball Z Ultimate Power            </a>   
+        </span>
+
+                                        </td>
+
+                            <td class="separador_juego_listado" >&nbsp;</td>
+                            
+
+                                <td class="juego_listado">
+                                    
+        <a class="juegoScreen" style="text-decoration: none;" href="http://www.jogos10.com/jogos/shoot-in-the-west_21378.php" target="_blank">
+            <img border="0" src="http://contenido.jogos10.com/thumbs_juegos/180x146/shootoutinthewest.jpg" border="0" width="100%">
+        </a>
+        <div class="divDescripcion">
+            <div class="ddheader">
+                <span><b>Shoot in the West</b></span>
+            </div>
+            <div class="ddbody">
+                <span>Enfrenta os aliens no Selvagem Oeste.</span>
+            </div>
+        </div>
+        <span>
+            <a class="link_azul_11 link_titulo_juego_listado" href="http://www.jogos10.com/jogos/shoot-in-the-west_21378.php" target="_blank">
+        Shoot in the West            </a>   
+        </span>
+
+                                        </td>
+
+                                                    </tr>
+                    </table>
+
+                </td>
+            </tr>
+            <!-- celda de separación -->
+            <tr height="10" width="100%"></tr>
+            
+                    
+        <tr height="30" >
+            <td align="center" style="text-align:center;">
+                <table border="0" cellpadding="0" cellspacing="0" class="texto_naranja_11" style='font-weight:bolder;display:inline;'>
+                    <tr>
+                        <td width="125" align="left" style="text-align:left;">
+                                                    </td>
+                        <td width="685" align="center">
+                                                    </td>
+                        
+                        <td width="125" align="right" style="text-align:right;">
+                                                            | <a href="http://www.jogos10.com/todos_los_jogos-1.php" class="link_azul_11">
+                                    <b>30 seguintes</b></a> >
+                                                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        
+        
+        </table>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.juegoScreen').hover(function(e) {
+                    $(this).next('.divDescripcion').show();
+                }, function() {
+                    $(this).next('.divDescripcion').hide();
+                });
+                                
+                $('.juegoScreen').mousemove(function(e) {
+                    $(this).next('.divDescripcion').css('top', e.pageY ).css('left', e.pageX + 20);
+                });
+                                        
+                                        
+            });
+        </script>    
+                        </td>
+            </tr>
+            
+        </table>
+        	
+                                                </td>
+<!--                                                <td width="9" ></td>
+                                                <td valign="top" width="305">-->
+                                                                                                    <!--</td>-->
+                                            </tr>
+                                            
+                                                    <tr height="10" width="100%"><td></td></tr>
+        <tr>
+            <td height="25" class="header_seccion" bgcolor="#F27E07" style="padding-left:20px;text-align: left">
+                <span id="prueba" class="texto_prueba">
+                    <div style="float:left;"><img src="http://contenido.jogos10.com/imagenes/jogos10/Logito-Jogos10-nuevo.jpg" border="0"  height="33" width="168" align="top"></div>
+                    <div class="titulo_seccion"><strong>OUTROS JOGOS</strong></div>
+                </span>
+            </td>
+        </tr>
+        <tr bgcolor="#fff1da">
+            <td>
+                <ul class="listado_otros_juegos_portada">
+                    <li style="width:165px!important;">
+                        <a title="Jogos de Cartas" alt="1" href="http://www.jogos10.com/jogos_de_cartas.php" class="link_azul_12"  style="margin-right: 5px;">
+                            <img style="border: 0px" src="http://contenido.jogos10.com/imagenes/jogos10/iconos/cartas.png">
+                            <b>Cartas</b>
+                        </a>
+                    </li>
+                    <li style="width:165px!important;">
+                        <a href='http://www.jogos10.com/jogos/mahjong.php' alt='Mahjong' title='Mahjong'>
+                            <img style="border: 0px" src='http://contenido.jogos10.com/imagenes/jogos10/tags/mahjong.png'/>
+                            <span>Mahjong</span>
+                        </a>
+                    </li>
+                    <li style="width:155px!important;">
+                        <a href='http://www.jogos10.com/jogos/jogos-de-terror.php' alt='Jogos de terror' title='Juegos de terror' >
+                            <img style="border: 0px" src='http://contenido.jogos10.com/imagenes/jogos10/tags/jogos-de-terror.png'/>
+                            <span>Terror</span>
+                        </a>
+                    </li>
+                    <li style="width:155px!important;">
+                        <a href='http://www.jogos10.com/jogos/jogos-de-animais.php' alt='Jogos de animais' title='Juegos de animais' >
+                            <img style="border: 0px" src='http://contenido.jogos10.com/imagenes/jogos10/tags/jogos-de-animais.png'/>
+                            <span>Animais</span>
+                        </a>
+                    </li>
+                    <li style="width:155px!important;">
+                        <a href='http://www.jogos10.com/jogos/bubble-shooter.php' alt='Bubble Shooter' title='Bubble Shooter' >
+                            <img style="border: 0px" src='http://contenido.jogos10.com/imagenes/jogos10/tags/bubble-shooter.png'/>
+                            <span>Bubble</span>
+                        </a>
+                    </li>
+                    <li style="width:155px!important;">
+                        <a title="Jogos de Aventuras" alt="1" href="http://www.jogos10.com/jogos_de_aventuras.php" class="link_azul_12"  style="margin-right: 5px;">
+                            <img style="border: 0px" src="http://contenido.jogos10.com/imagenes/jogos10/iconos/aventuras.png">
+                            <b>Aventuras</b>
+                        </a>
+                    </li>
+                    <li style="width:165px!important;">
+                        <a title="Jogos Clássicos" alt="1" href="http://www.jogos10.com/jogos_classicos.php" class="link_azul_12"  style="margin-right: 5px;">
+                            <img style="border: 0px" src="http://contenido.jogos10.com/imagenes/jogos10/iconos/clasicos.png">
+                            <b>Cl&aacute;ssicos</b>
+                        </a>
+                    </li>
+                    <li style="width:165px!important;">
+                        <a href='http://www.jogos10.com/jogos/jogos-de-corrida.php' alt='Jogos de corrida' title='Jogos de corrida' >
+                            <img style="border: 0px" src='http://contenido.jogos10.com/imagenes/jogos10/tags/jogos-de-corrida.png'/>
+                            <span>Corrida</span>
+                        </a>
+                    </li>
+                    <li style="width:155px!important;">
+                        <a href='http://www.jogos10.com/jogos/jogos-de-pintar.php' alt='Jogos de pintar' title='Jogos de pintar' >
+                            <img style="border: 0px" src='http://contenido.jogos10.com/imagenes/jogos10/tags/jogos-de-pintar.png'/>
+                            <span>Pintar</span>
+                        </a>
+                    </li>
+                    <!--<li style="width:155px!important;">
+                        <a href='/jogos/tetris.php' alt='Tetris' title='Tetris' >
+                            <img style="border: 0px" src='http://contenido.jogos10.com/imagenes/jogos10/tags/tetris.png'/>
+                            <span>Tetris</span>
+                        </a>
+                    </li>-->
+                    <li style="width:155px!important;">
+                        <a title="Jogos Infantis" alt="1" href="http://www.jogos10.com/jogos_infantis.php" class="link_azul_12"  style="margin-right: 5px;">
+                            <img style="border: 0px" src="http://contenido.jogos10.com/imagenes/jogos10/iconos/infantiles.png">
+                            <b>Infantis</b>
+                        </a>
+                    </li>
+                    <li style="width:155px!important;">
+                        <a title="Jogos de Naves" alt="1" href="http://www.jogos10.com/jogos_de_naves.php" class="link_azul_12"  style="margin-right: 5px;">
+                            <img style="border: 0px" src="http://contenido.jogos10.com/imagenes/jogos10/iconos/naves.png">
+                            <b>Naves</b>
+                        </a>
+                    </li>
+                    <li style="width:155px!important;">
+                        <a title="Jogos de Tiro" alt="1" href="http://www.jogos10.com/jogos_de_tiros.php" class="link_azul_12"  style="margin-right: 5px;">
+                            <img style="border: 0px" src="http://contenido.jogos10.com/imagenes/jogos10/iconos/tiros.png">
+                            <b>Tiro</b>
+                        </a>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr height="10" width="100%"  bgcolor="#fff1da"><td></td></tr>
+                                                </table>
+                                        <!--Aqui salimos de la tabla principal, la que contiene columna izquierda, central y derecha-->
+                                    </div>
+                                </td></tr>
+
+                            <!--Aqui llamaremos a los Contadores-->
+                            		<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		_uacct = "UA-863435-2";
+		urchinTracker();
+		</script>		
+		<tr><td>
+                                    <!--mostramos el cierre dependiendo del País-->
+                                            <!--Table principal cierre-->
+        <table border="0" cellpadding="0" cellspacing="0" width="989" >
+            <tr><td bgcolor=#FFEBC8>
+                    <!--Primer bloque-->
+                                    </td></tr>
+                        <tr><td bgcolor="#F27E07" align="center" style="text-align: center;">
+                    <!--Segundo bloque-->
+                <style>
+            #infoWebFooter td
+            {
+                text-align: center;    
+            }
+        </style>
+        <div style='margin-top:10px;margin-bottom:10px;'>
+            <table border="0" cellpadding="0" cellspacing="0" class="texto_blanco_11" style="margin: 0 auto;" id="infoWebFooter">
+                <tr>
+                    <td><a href="index.php@option=com_weblinks&amp;task=view&amp;catid=30&amp;id=60.html#" onClick="enlaceNoFollow('/termos_e_condicoes.php')" class="link_blanco_11"><b>Termos e condi&ccedil;&otilde;es</b></a></td>
+                    <td width="30" align="center" >|</td>
+                    <td><a href="index.php@option=com_weblinks&amp;task=view&amp;catid=30&amp;id=60.html#" onClick="enlaceNoFollow('/privacidade.php')" class="link_blanco_11"><b>Pol&iacute;tica de Privacidade</b></a></td>
+                    <td width="30" align="center">|</td>
+                    <td><a href="index.php@option=com_weblinks&amp;task=view&amp;catid=30&amp;id=60.html#" OnClick="alert('Empresa produtora e de desenvolvimento de Jogos10.com:\n\nSoluciones Telematicas MOL, S.L.\nB63139265\nPaseo Maragall 405\n08032 Barcelona\ncarlosortiz@stmol.com')" class="link_blanco_11"><b>Quem somos</b></a></td>				
+                    <td width=30 align=center>|</td>
+                    <td><a href="index.php@option=com_weblinks&amp;task=view&amp;catid=30&amp;id=60.html#" onClick="enlaceNoFollowNewWindow('http://www.publicidad.net')" class="link_blanco_11"><b>Anuncia em Jogos10.com</b></a></td>
+                                    </tr>
+            </table>
+        </div>
+                        </td></tr>
+        </table>
+                                        </td></tr>
+                        </table>
+                    </td></tr>
+            </table>
+            <!-- 8862e2b22a5685b7ce8c81fdaee709cc -->	
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript">
+            var domain = "http://www.jogos10.com/";
+            var page = "portada";
+        </script>
+        <script src="http://www.jogos10.com/main/javascripts/tags.js?x=5" type="text/javascript"></script>
+    </body>
+</html>

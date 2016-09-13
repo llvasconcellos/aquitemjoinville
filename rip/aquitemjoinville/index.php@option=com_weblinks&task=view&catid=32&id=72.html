@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+<head>
+	<script src="http://www.receita.fazenda.gov.br/tema/detect-mobile.js"></script>
+	<script type="text/javascript">
+		if (window.location.pathname == "/") {
+			window.location = "//idg.receita.fazenda.gov.br/";
+		}
+		else if (isMobile() && window.location.pathname == "/aplicacoes/atbhe/tus/default.aspx") {
+			window.location = '//www.receita.fazenda.gov.br/mrfb/default.html';
+		}		
+	</script>
+</head>
+</html>
